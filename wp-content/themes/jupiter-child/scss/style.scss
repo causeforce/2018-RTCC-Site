@@ -19,6 +19,7 @@ $blue-dark: #004e86;
 $yellow: #FFCD00;
 $gray: #F4F4F4;
 $gray-dark: #5D5D5D;
+$gray-link-hover: #B7B7B7;
 $white: #FFFFFF;
 
 /* ============== Text Styles ==============  */
@@ -126,8 +127,13 @@ body {
     font-family: $font-family-base;
 }
 
-
 // ===  Custom Classes === //
+
+.pg-title > p {
+    font-size: $h1-heading;
+    text-transform: uppercase;
+    font-weight: 600;
+}
 
 .accordion-base > div> div> svg {
     fill: $blue;
@@ -162,11 +168,17 @@ ul#menu-main_menu {
 }
 
 ul#menu-main_menu > li>ul.sub-menu {
-    background-color: #fff !important;
+    background-color: $white !important;
     color: $black;
-    width: 160px; 
+    min-width: 160px; 
     position: absolute;
-    top: 10;
+    top: 60px;
+    left: -20px;
+}
+
+ul#menu-main_menu > li>ul.sub-menu > li > a {
+    text-align: center;
+    width: auto;
 }
 
 .mk-main-navigation ul.sub-menu a.menu-item-link {
@@ -183,15 +195,6 @@ ul#menu-main_menu > li>ul.sub-menu {
     color: $blue !important;
 }
 
-.bg-image-cover {
-    background: url(http://localhost/wp-content/uploads/2017/04/blue_image_01.png) no-repeat 100% center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    min-height: 300px;
-}
-
 // === Link Hover Effects for Main Menu === //
 
 .main-navigation-ul > li.menu-item > a.menu-item-link:hover {
@@ -202,7 +205,7 @@ ul#menu-main_menu > li>ul.sub-menu {
 
 .main-navigation-ul > li.menu-item > a.menu-item-link{
     font-size: 18px;
-    color: #000 !important;
+    color: $black !important;
     background-image: linear-gradient(to top,#FFCD00 46%,rgba(0,0,0,0) 45%);
     background-size: 2px 200%;
     -webkit-box-decoration-break: clone;
