@@ -77,11 +77,30 @@
 body {
   font-family: 'Futura LT Pro';
 }
+.pg-title-column {
+  position: relative;
+}
+.pg-title {
+  position: absolute;
+  top: 485px;
+  right: 60px;
+}
 .pg-title > p {
   font-size: 53px;
   text-transform: uppercase;
   font-weight: 600;
-  color: #fff;
+  color: #fff !important;
+  background-image: linear-gradient(to top, #000 46%, rgba(0, 0, 0, 0) 45%);
+  background-size: 2px 200%;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  color: inherit;
+  padding: 5px;
+  text-decoration: none;
+  transition: background-size 400ms ease-out;
+  background-size: 2px 100%;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
 }
 .accordion-base > div > div > svg {
   fill: #0075c9;
