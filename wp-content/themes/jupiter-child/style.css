@@ -81,6 +81,7 @@ body {
   font-size: 53px;
   text-transform: uppercase;
   font-weight: 600;
+  color: #fff;
 }
 .accordion-base > div > div > svg {
   fill: #0075c9;
