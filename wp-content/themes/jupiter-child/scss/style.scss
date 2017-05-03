@@ -129,6 +129,16 @@ body {
 
 // ===  Custom Classes === //
 
+.pg-title-column {
+    position: relative;
+}
+
+.pg-title {
+    position: absolute;
+    top: 485px;
+    right: 60px;
+}
+
 .pg-title > p {
     font-size: $h1-heading;
     text-transform: uppercase;
