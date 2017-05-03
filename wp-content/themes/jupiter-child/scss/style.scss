@@ -8,13 +8,207 @@ Template:       jupiter
 Version:        1.0
 */
 
+/**
+ * RTCC 2018 Theme Global Styles *
+ */
 
+/* ============== Font Colors ==============  */
+$black: #000000;
+$blue: #0075C9;
+$blue-dark: #004e86;
+$yellow: #FFCD00;
+$gray: #F4F4F4;
+$gray-dark: #5D5D5D;
+$white: #FFFFFF;
 
-/*
-Sample : remove the comment and start adding your own custom CSS rules.
-
-body {
-	background-color:#fff;
+/* ============== Text Styles ==============  */
+@font-face {
+  font-family: 'Futura LT Pro';
+  src: url('/scss/fonts/FuturaLTPro-Book.otf') format('otf');
 }
 
-*/
+$font-family-base: 'Futura LT Pro';
+$h1-heading: 53px; //40pts
+$h1-body: 36px; //27pts
+
+$h2-heading: 40px; //30pts
+$h2-body: 33px; //25pts
+
+$h3-body: 27px; //20pts
+
+/* ============== Button Styles ==============  */
+
+%btn-outline {
+  padding: 15px;
+  background: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+%btn-regular {
+  padding: 17px;
+  color: $white;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1px solid #9c9c9c;
+  cursor: pointer;
+}
+
+%link-yellow-hover{
+    background-image: linear-gradient(to top,#FFCD00 46%,rgba(0,0,0,0) 45%);
+    background-size: 2px 200%;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    color: inherit;
+    padding: 5px;
+    text-decoration: none;
+    transition: background-size 400ms ease-out;
+    &:hover {
+        background-size: 2px 100%;
+        transition-duration: 250ms;
+        transition-timing-function: ease; 
+    }
+}
+
+.btn-outline-blue > button {
+  @extend %btn-outline;
+  border: 3px solid $blue !important;
+  color: $blue !important;
+  transition: all 0.2s ease-in !important;
+    background-color: #fff !important;
+  &:hover {
+    background: $blue !important;
+    color: $white !important;
+  }
+  &:active {
+    background: $white !important;
+    color: $blue !important;
+  }
+}
+
+.btn-outline-black > button {
+  @extend %btn-outline;
+  border: 3px solid $black !important;
+  color: $black !important;
+  transition: all 0.2s ease-in !important;
+    background-color: #fff !important;
+  &:hover {
+    background: $black !important;
+    color: $white !important;
+  }
+  &:active {
+    background: $white !important;
+    color: $black !important;
+  }
+}
+
+.btn-regular-blue {
+  @extend %btn-regular;
+  background: $blue;
+  &:active {
+    background: $blue-dark;
+  }
+}
+
+.btn-regular-black {
+  @extend %btn-regular;
+  background: $black;
+  &:active {
+    background: $gray-dark;
+  }
+}
+
+// === Global Page Element Style === //
+body {
+    font-family: $font-family-base;
+}
+
+
+// ===  Custom Classes === //
+
+.accordion-base > div> div> svg {
+    fill: $blue;
+}
+
+.mk-accordion.simple-style .mk-accordion-single.current .mk-accordion-tab > .mk-svg-icon{
+    fill: #c1c1c1;
+}
+
+.paragraph-indent{
+    padding-left: 25px;
+}
+
+.header-column{
+    padding: 50px;
+}
+
+.text-column {
+    max-width: 500px;
+    float: none;
+    margin: 0 auto;
+}
+
+// === Menu Link Styling === //
+
+ul#menu-main_menu {
+    width: auto;
+}
+
+.mk-main-navigation{
+    position: relative;
+}
+
+ul#menu-main_menu > li>ul.sub-menu {
+    background-color: #fff !important;
+    color: $black;
+    width: 160px; 
+    position: absolute;
+    top: 10;
+}
+
+.mk-main-navigation ul.sub-menu a.menu-item-link {
+    color: $black;
+    font-family: $font-family-base;
+    font-weight: 700 !important;
+}
+
+.current_page_item {
+    color: $blue;
+}
+
+.mk-main-navigation ul.sub-menu a.menu-item-link:hover {
+    color: $blue !important;
+}
+
+.bg-image-cover {
+    background: url(http://localhost/wp-content/uploads/2017/04/blue_image_01.png) no-repeat 100% center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 300px;
+}
+
+// === Link Hover Effects for Main Menu === //
+
+.main-navigation-ul > li.menu-item > a.menu-item-link:hover {
+    background-size: 2px 100%;
+    transition-duration: 250ms;
+    transition-timing-function: ease; 
+}
+
+.main-navigation-ul > li.menu-item > a.menu-item-link{
+    font-size: 18px;
+    color: #000 !important;
+    background-image: linear-gradient(to top,#FFCD00 46%,rgba(0,0,0,0) 45%);
+    background-size: 2px 200%;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    color: inherit;
+    padding: 5px;
+    text-decoration: none;
+    transition: background-size 400ms ease-out;
+}

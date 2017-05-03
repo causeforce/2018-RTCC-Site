@@ -7,9 +7,139 @@
  Template:       jupiter
  Version:        1.0
  */
-/*
- Sample : remove the comment and start adding your own custom CSS rules.
- body {
- background-color:#fff;
- }
+/**
+ * RTCC 2018 Theme Global Styles *
  */
+/* ============== Font Colors ==============  */
+/* ============== Text Styles ==============  */
+@font-face {
+  font-family: 'Futura LT Pro';
+  src: url('/scss/fonts/FuturaLTPro-Book.otf') format('otf');
+}
+/* ============== Button Styles ==============  */
+.btn-outline-blue > button, .btn-outline-black > button {
+  padding: 15px;
+  background: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-regular-blue, .btn-regular-black {
+  padding: 17px;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1px solid #9c9c9c;
+  cursor: pointer;
+}
+.btn-outline-blue > button {
+  border: 3px solid #0075c9 !important;
+  color: #0075c9 !important;
+  transition: all 0.2s ease-in !important;
+  background-color: #fff !important;
+}
+.btn-outline-blue > button:hover {
+  background: #0075c9 !important;
+  color: #fff !important;
+}
+.btn-outline-blue > button:active {
+  background: #fff !important;
+  color: #0075c9 !important;
+}
+.btn-outline-black > button {
+  border: 3px solid #000 !important;
+  color: #000 !important;
+  transition: all 0.2s ease-in !important;
+  background-color: #fff !important;
+}
+.btn-outline-black > button:hover {
+  background: #000 !important;
+  color: #fff !important;
+}
+.btn-outline-black > button:active {
+  background: #fff !important;
+  color: #000 !important;
+}
+.btn-regular-blue {
+  background: #0075c9;
+}
+.btn-regular-blue:active {
+  background: #004e86;
+}
+.btn-regular-black {
+  background: #000;
+}
+.btn-regular-black:active {
+  background: #5d5d5d;
+}
+body {
+  font-family: 'Futura LT Pro';
+}
+.accordion-base > div > div > svg {
+  fill: #0075c9;
+}
+.mk-accordion.simple-style .mk-accordion-single.current .mk-accordion-tab > .mk-svg-icon {
+  fill: #c1c1c1;
+}
+.paragraph-indent {
+  padding-left: 25px;
+}
+.header-column {
+  padding: 50px;
+}
+.text-column {
+  max-width: 500px;
+  float: none;
+  margin: 0 auto;
+}
+ul#menu-main_menu {
+  width: auto;
+}
+.mk-main-navigation {
+  position: relative;
+}
+ul#menu-main_menu > li > ul.sub-menu {
+  background-color: #fff !important;
+  color: #000;
+  width: 160px;
+  position: absolute;
+  top: 10;
+}
+.mk-main-navigation ul.sub-menu a.menu-item-link {
+  color: #000;
+  font-family: 'Futura LT Pro';
+  font-weight: 700 !important;
+}
+.current_page_item {
+  color: #0075c9;
+}
+.mk-main-navigation ul.sub-menu a.menu-item-link:hover {
+  color: #0075c9 !important;
+}
+.bg-image-cover {
+  background: url(http://localhost/wp-content/uploads/2017/04/blue_image_01.png) no-repeat 100% center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 300px;
+}
+.main-navigation-ul > li.menu-item > a.menu-item-link:hover {
+  background-size: 2px 100%;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
+}
+.main-navigation-ul > li.menu-item > a.menu-item-link {
+  font-size: 18px;
+  color: #000 !important;
+  background-image: linear-gradient(to top, #ffcd00 46%, rgba(0, 0, 0, 0) 45%);
+  background-size: 2px 200%;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  color: inherit;
+  padding: 5px;
+  text-decoration: none;
+  transition: background-size 400ms ease-out;
+}
