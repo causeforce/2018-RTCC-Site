@@ -13,8 +13,12 @@
 /* ============== Font Colors ==============  */
 /* ============== Text Styles ==============  */
 @font-face {
-  font-family: 'Futura LT Pro';
-  src: url('/scss/fonts/FuturaLTPro-Book.otf') format('otf');
+  font-family: Futura LT Pro Body;
+  src: url(scss/fonts/FuturaLTPro-Book.otf);
+}
+@font-face {
+  font-family: Futura LT Pro Heading;
+  src: url(scss/fonts/FuturaLTPro-Bold.otf);
 }
 /* ============== Button Styles ==============  */
 .btn-outline-blue > button, .btn-outline-white > button, .btn-outline-black > button {
@@ -25,7 +29,7 @@
   font-weight: 600;
   cursor: pointer;
 }
-.btn-regular-blue, #menu-main_menu li:nth-child(4), .btn-regular-black {
+.btn-regular-blue, #menu-main_menu li.menu-item:nth-child(4), .btn-regular-black {
   padding: 17px;
   color: #fff;
   font-size: 14px;
@@ -33,21 +37,6 @@
   font-weight: 600;
   border: 1px solid #9c9c9c;
   cursor: pointer;
-}
-.main-navigation-ul > li.menu-item > a.menu-item-link:nth-child(n+3) {
-  background-image: linear-gradient(to top, #ffcd00 46%, rgba(0, 0, 0, 0) 45%);
-  background-size: 2px 200%;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-  color: inherit;
-  padding: 5px;
-  text-decoration: none;
-  transition: background-size 400ms ease-out;
-}
-.main-navigation-ul > li.menu-item > a.menu-item-link:nth-child(n+3):hover {
-  background-size: 2px 100%;
-  transition-duration: 250ms;
-  transition-timing-function: ease;
 }
 .btn-outline-blue > button {
   border: 3px solid #0075c9 !important;
@@ -91,10 +80,10 @@
   background: #fff !important;
   color: #000 !important;
 }
-.btn-regular-blue, #menu-main_menu li:nth-child(4) {
+.btn-regular-blue, #menu-main_menu li.menu-item:nth-child(4) {
   background: #0075c9;
 }
-.btn-regular-blue:active, #menu-main_menu li:nth-child(4):active {
+.btn-regular-blue:active, #menu-main_menu li.menu-item:nth-child(4):active {
   background: #004e86;
 }
 .btn-regular-black {
@@ -104,7 +93,7 @@
   background: #5d5d5d;
 }
 body {
-  font-family: 'Futura LT Pro';
+  font-family: Futura LT Pro Body;
 }
 .pg-title-column {
   position: relative;
@@ -117,7 +106,7 @@ body {
 .pg-title > p {
   font-size: 53px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-family: Futura LT Pro Heading;
   color: #fff !important;
 }
 @media screen and (max-width: 782px) {
@@ -226,8 +215,7 @@ ul#menu-main_menu > li > ul.sub-menu > li > a {
 }
 .mk-main-navigation ul.sub-menu a.menu-item-link {
   color: #000;
-  font-family: 'Futura LT Pro';
-  font-weight: 700 !important;
+  font-family: Futura LT Pro Heading;
 }
 .main-navigation-ul ul.sub-menu li.current-menu-item > a.menu-item-link {
   color: #0075c9 !important;
@@ -235,15 +223,28 @@ ul#menu-main_menu > li > ul.sub-menu > li > a {
 .mk-main-navigation ul.sub-menu a.menu-item-link:hover {
   color: #b7b7b7 !important;
 }
-#menu-main_menu li:nth-child(4) {
+#menu-main_menu li.menu-item:nth-child(4) {
   padding: 0px;
+  height: 40px;
+  top: 30px;
+  position: relative;
+  border: 3px solid #fff;
 }
-#menu-main_menu li:nth-child(4):hover {
+#menu-main_menu li.menu-item:nth-child(4) a {
+  height: 100%;
+  line-height: 45px;
+  color: #fff;
+}
+#menu-main_menu li.menu-item:nth-child(4):hover {
   background: #fff;
   color: #0075c9;
+  border: 3px solid #0075c9;
 }
 .main-navigation-ul > li.menu-item > a.menu-item-link:hover {
   background-size: 2px 100%;
   transition-duration: 250ms;
   transition-timing-function: ease;
+}
+.main-navigation-ul > li.menu-item > a.menu-item-link {
+  font-family: Futura LT Pro Heading;
 }

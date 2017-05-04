@@ -23,12 +23,19 @@ $gray-link-hover: #B7B7B7;
 $white: #FFFFFF;
 
 /* ============== Text Styles ==============  */
+
 @font-face {
-  font-family: 'Futura LT Pro';
-  src: url('/scss/fonts/FuturaLTPro-Book.otf') format('otf');
+    font-family: Futura LT Pro Body;
+    src: url(scss/fonts/FuturaLTPro-Book.otf);
 }
 
-$font-family-base: 'Futura LT Pro';
+@font-face {
+    font-family: Futura LT Pro Heading;
+    src: url(scss/fonts/FuturaLTPro-Bold.otf);
+}
+
+$p-font: Futura LT Pro Body;
+$h-font: Futura LT Pro Heading;
 $h1-heading: 53px; //40pts
 $h1-body: 36px; //27pts
 
@@ -140,7 +147,7 @@ $h3-body: 27px; //20pts
 
 // === Global Page Element Style === //
 body {
-    font-family: $font-family-base;
+    font-family: $p-font;
 }
 
 // ===  Custom Classes === //
@@ -158,7 +165,7 @@ body {
 .pg-title > p {
     font-size: $h1-heading;
     text-transform: uppercase;
-    font-weight: 600;
+    font-family: $h-font;
     color: $white !important;
     @media screen and (max-width: 782px){
         font-size: 5.6vw;
@@ -270,8 +277,7 @@ ul#menu-main_menu > li>ul.sub-menu > li > a {
 
 .mk-main-navigation ul.sub-menu a.menu-item-link {
     color: $black;
-    font-family: $font-family-base;
-    font-weight: 700 !important;
+    font-family: $h-font;
 }
 
 .main-navigation-ul ul.sub-menu li.current-menu-item > a.menu-item-link {
@@ -285,13 +291,23 @@ ul#menu-main_menu > li>ul.sub-menu > li > a {
 // === Menu Buttons === //
 
 #menu-main_menu{
-    li {
+    li.menu-item {
         &:nth-child(4){
             @extend .btn-regular-blue;
             padding: 0px;
+            height: 40px;
+            top: 30px;
+            position: relative;
+            border: 3px solid $white;
+            a{
+                height: 100%;
+                line-height: 45px;
+                color: $white;
+            }
         &:hover {
             background: $white;
             color: $blue;
+            border: 3px solid $blue;
             }
         }
     }
@@ -307,7 +323,6 @@ ul#menu-main_menu > li>ul.sub-menu > li > a {
 }
 
 .main-navigation-ul > li.menu-item > a.menu-item-link{
-    &:nth-child(n+3){
-        @extend %link-yellow-hover;
-    }
-}
+//    @extend %link-yellow-hover;
+    font-family: $h-font;
+ }
