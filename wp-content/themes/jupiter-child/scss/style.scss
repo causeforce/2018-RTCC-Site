@@ -291,7 +291,7 @@ ul#menu-main_menu > li>ul.sub-menu > li > a {
 // === Menu Buttons === //
 
 #menu-main_menu{
-    li.menu-item {
+    li.menu-item.no-mega-menu {
         &:nth-child(4){
             @extend .btn-regular-blue;
             padding: 0px;

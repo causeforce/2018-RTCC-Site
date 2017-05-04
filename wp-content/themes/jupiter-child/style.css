@@ -29,7 +29,7 @@
   font-weight: 600;
   cursor: pointer;
 }
-.btn-regular-blue, #menu-main_menu li.menu-item:nth-child(4), .btn-regular-black {
+.btn-regular-blue, #menu-main_menu li.menu-item.no-mega-menu:nth-child(4), .btn-regular-black {
   padding: 17px;
   color: #fff;
   font-size: 14px;
@@ -80,10 +80,10 @@
   background: #fff !important;
   color: #000 !important;
 }
-.btn-regular-blue, #menu-main_menu li.menu-item:nth-child(4) {
+.btn-regular-blue, #menu-main_menu li.menu-item.no-mega-menu:nth-child(4) {
   background: #0075c9;
 }
-.btn-regular-blue:active, #menu-main_menu li.menu-item:nth-child(4):active {
+.btn-regular-blue:active, #menu-main_menu li.menu-item.no-mega-menu:nth-child(4):active {
   background: #004e86;
 }
 .btn-regular-black {
@@ -223,19 +223,19 @@ ul#menu-main_menu > li > ul.sub-menu > li > a {
 .mk-main-navigation ul.sub-menu a.menu-item-link:hover {
   color: #b7b7b7 !important;
 }
-#menu-main_menu li.menu-item:nth-child(4) {
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(4) {
   padding: 0px;
   height: 40px;
   top: 30px;
   position: relative;
   border: 3px solid #fff;
 }
-#menu-main_menu li.menu-item:nth-child(4) a {
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(4) a {
   height: 100%;
   line-height: 45px;
   color: #fff;
 }
-#menu-main_menu li.menu-item:nth-child(4):hover {
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(4):hover {
   background: #fff;
   color: #0075c9;
   border: 3px solid #0075c9;
