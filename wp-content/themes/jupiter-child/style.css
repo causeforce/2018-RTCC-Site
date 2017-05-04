@@ -25,7 +25,7 @@
   font-weight: 600;
   cursor: pointer;
 }
-.btn-regular-blue, .btn-regular-black {
+.btn-regular-blue, #menu-main_menu li:nth-child(4), .btn-regular-black {
   padding: 17px;
   color: #fff;
   font-size: 14px;
@@ -33,6 +33,21 @@
   font-weight: 600;
   border: 1px solid #9c9c9c;
   cursor: pointer;
+}
+.main-navigation-ul > li.menu-item > a.menu-item-link:nth-child(n+3) {
+  background-image: linear-gradient(to top, #ffcd00 46%, rgba(0, 0, 0, 0) 45%);
+  background-size: 2px 200%;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  color: inherit;
+  padding: 5px;
+  text-decoration: none;
+  transition: background-size 400ms ease-out;
+}
+.main-navigation-ul > li.menu-item > a.menu-item-link:nth-child(n+3):hover {
+  background-size: 2px 100%;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
 }
 .btn-outline-blue > button {
   border: 3px solid #0075c9 !important;
@@ -76,10 +91,10 @@
   background: #fff !important;
   color: #000 !important;
 }
-.btn-regular-blue {
+.btn-regular-blue, #menu-main_menu li:nth-child(4) {
   background: #0075c9;
 }
-.btn-regular-blue:active {
+.btn-regular-blue:active, #menu-main_menu li:nth-child(4):active {
   background: #004e86;
 }
 .btn-regular-black {
@@ -104,17 +119,6 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   color: #fff !important;
-  background-image: linear-gradient(to top, #000 55%, rgba(0, 0, 0, 0) 55%);
-  background-size: 2px 200%;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-  color: inherit;
-  padding: 5px;
-  text-decoration: none;
-  transition: background-size 400ms ease-out;
-  background-size: 2px 100%;
-  transition-duration: 250ms;
-  transition-timing-function: ease;
 }
 @media screen and (max-width: 782px) {
   .pg-title > p {
@@ -142,6 +146,11 @@ body {
   padding: 10px;
   border-bottom: 20px solid white;
 }
+@media screen and (max-width: 768px) {
+  .bw-column {
+    margin-top: -20px;
+  }
+}
 .bw-column > div > h2 {
   color: #fff;
   padding: 15% 20px 0px;
@@ -154,7 +163,8 @@ body {
 }
 @media screen and (max-width: 768px) {
   .bw-column > div > h2 {
-    padding: 10px;
+    padding: 20px;
+    font-size: 20px;
   }
 }
 .bw-column > div > button {
@@ -162,7 +172,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .bw-column > div > button {
-    margin-left: 10px;
+    margin-left: 20px;
   }
 }
 .bw-column-text > p {
@@ -173,7 +183,7 @@ body {
 @media screen and (max-width: 768px) {
   .bw-column-text > p {
     font-size: 16px;
-    padding: 0px 10px;
+    padding: 0px 20px;
   }
 }
 .video-column {
@@ -225,20 +235,15 @@ ul#menu-main_menu > li > ul.sub-menu > li > a {
 .mk-main-navigation ul.sub-menu a.menu-item-link:hover {
   color: #b7b7b7 !important;
 }
+#menu-main_menu li:nth-child(4) {
+  padding: 0px;
+}
+#menu-main_menu li:nth-child(4):hover {
+  background: #fff;
+  color: #0075c9;
+}
 .main-navigation-ul > li.menu-item > a.menu-item-link:hover {
   background-size: 2px 100%;
   transition-duration: 250ms;
   transition-timing-function: ease;
-}
-.main-navigation-ul > li.menu-item > a.menu-item-link {
-  font-size: 18px;
-  color: #000 !important;
-  background-image: linear-gradient(to top, #ffcd00 46%, rgba(0, 0, 0, 0) 45%);
-  background-size: 2px 200%;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-  color: inherit;
-  padding: 5px;
-  text-decoration: none;
-  transition: background-size 400ms ease-out;
 }

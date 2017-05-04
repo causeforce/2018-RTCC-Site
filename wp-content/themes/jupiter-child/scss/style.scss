@@ -160,17 +160,6 @@ body {
     text-transform: uppercase;
     font-weight: 600;
     color: $white !important;
-    background-image: linear-gradient(to top,#000 55%,rgba(0,0,0,0) 55%);
-    background-size: 2px 200%;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-    color: inherit;
-    padding: 5px;
-    text-decoration: none;
-    transition: background-size 400ms ease-out;
-    background-size: 2px 100%;
-    transition-duration: 250ms;
-    transition-timing-function: ease;
     @media screen and (max-width: 782px){
         font-size: 5.6vw;
     }
@@ -194,6 +183,9 @@ body {
     background: $black;
     padding: 10px;
     border-bottom: 20px solid white;
+    @media screen and (max-width: 768px) {
+        margin-top: -20px;
+    }
 }
 
 .bw-column>div>h2{ 
@@ -205,6 +197,7 @@ body {
     }
     @media screen and (max-width: 768px) {
         padding: 20px;
+        font-size: 20px;
     }
 }
 
@@ -289,6 +282,22 @@ ul#menu-main_menu > li>ul.sub-menu > li > a {
     color: $gray-link-hover !important;
 }
 
+// === Menu Buttons === //
+
+#menu-main_menu{
+    li {
+        &:nth-child(4){
+            @extend .btn-regular-blue;
+            padding: 0px;
+        &:hover {
+            background: $white;
+            color: $blue;
+            }
+        }
+    }
+   
+}
+
 // === Link Hover Effects for Main Menu === //
 
 .main-navigation-ul > li.menu-item > a.menu-item-link:hover {
@@ -298,14 +307,7 @@ ul#menu-main_menu > li>ul.sub-menu > li > a {
 }
 
 .main-navigation-ul > li.menu-item > a.menu-item-link{
-    font-size: 18px;
-    color: $black !important;
-    background-image: linear-gradient(to top,#FFCD00 46%,rgba(0,0,0,0) 45%);
-    background-size: 2px 200%;
-    -webkit-box-decoration-break: clone;
-    box-decoration-break: clone;
-    color: inherit;
-    padding: 5px;
-    text-decoration: none;
-    transition: background-size 400ms ease-out;
+    &:nth-child(n+3){
+        @extend %link-yellow-hover;
+    }
 }
