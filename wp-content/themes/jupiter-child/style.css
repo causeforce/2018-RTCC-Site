@@ -17,7 +17,7 @@
   src: url('/scss/fonts/FuturaLTPro-Book.otf') format('otf');
 }
 /* ============== Button Styles ==============  */
-.btn-outline-blue > button, .btn-outline-black > button {
+.btn-outline-blue > button, .btn-outline-white > button, .btn-outline-black > button {
   padding: 15px;
   background: #fff;
   font-size: 14px;
@@ -47,6 +47,20 @@
 .btn-outline-blue > button:active {
   background: #fff !important;
   color: #0075c9 !important;
+}
+.btn-outline-white > button {
+  border: 3px solid #fff !important;
+  color: #fff !important;
+  transition: all 0.2s ease-in;
+  background-color: #000 !important;
+}
+.btn-outline-white > button:hover {
+  background: #0075c9 !important;
+  color: #fff !important;
+}
+.btn-outline-white > button:active {
+  background: #000 !important;
+  color: #fff !important;
 }
 .btn-outline-black > button {
   border: 3px solid #000 !important;
@@ -90,7 +104,7 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   color: #fff !important;
-  background-image: linear-gradient(to top, #000 46%, rgba(0, 0, 0, 0) 45%);
+  background-image: linear-gradient(to top, #000 55%, rgba(0, 0, 0, 0) 55%);
   background-size: 2px 200%;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
@@ -101,6 +115,69 @@ body {
   background-size: 2px 100%;
   transition-duration: 250ms;
   transition-timing-function: ease;
+}
+@media screen and (max-width: 782px) {
+  .pg-title > p {
+    font-size: 5.6vw;
+  }
+}
+.pg-indent {
+  padding: 0px 50px;
+}
+@media screen and (max-width: 782px) {
+  .pg-indent {
+    padding: 0px 25px;
+  }
+}
+.pg-heading > h2 {
+  font-size: 33px;
+}
+@media screen and (max-width: 782px) {
+  .pg-heading > h2 {
+    font-size: 5.6vw;
+  }
+}
+.bw-column {
+  background: #000;
+  padding: 10px;
+  border-bottom: 20px solid white;
+}
+.bw-column > div > h2 {
+  color: #fff;
+  padding: 15% 20px 0px;
+  font-size: 2.2vw;
+}
+@media screen and (max-width: 949px) {
+  .bw-column > div > h2 {
+    padding: 3% 20px 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bw-column > div > h2 {
+    padding: 10px;
+  }
+}
+.bw-column > div > button {
+  margin-left: 40px;
+}
+@media screen and (max-width: 768px) {
+  .bw-column > div > button {
+    margin-left: 10px;
+  }
+}
+.bw-column-text > p {
+  color: #fff;
+  font-size: 1.25vw;
+  padding: 0px 40px;
+}
+@media screen and (max-width: 768px) {
+  .bw-column-text > p {
+    font-size: 16px;
+    padding: 0px 10px;
+  }
+}
+.video-column {
+  padding: 0px;
 }
 .accordion-base > div > div > svg {
   fill: #0075c9;
@@ -131,7 +208,7 @@ ul#menu-main_menu > li > ul.sub-menu {
   min-width: 160px;
   position: absolute;
   top: 60px;
-  left: -20px;
+  left: -18px;
 }
 ul#menu-main_menu > li > ul.sub-menu > li > a {
   text-align: center;
@@ -142,11 +219,11 @@ ul#menu-main_menu > li > ul.sub-menu > li > a {
   font-family: 'Futura LT Pro';
   font-weight: 700 !important;
 }
-.current_page_item {
-  color: #0075c9;
+.main-navigation-ul ul.sub-menu li.current-menu-item > a.menu-item-link {
+  color: #0075c9 !important;
 }
 .mk-main-navigation ul.sub-menu a.menu-item-link:hover {
-  color: #0075c9 !important;
+  color: #b7b7b7 !important;
 }
 .main-navigation-ul > li.menu-item > a.menu-item-link:hover {
   background-size: 2px 100%;
