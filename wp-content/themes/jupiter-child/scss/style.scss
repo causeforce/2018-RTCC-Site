@@ -292,6 +292,11 @@ ul#menu-main_menu > li>ul.sub-menu > li > a {
 
 #menu-main_menu{
     li.menu-item.no-mega-menu {
+        margin-right: 10px;
+    }
+}
+#menu-main_menu{
+    li.menu-item.no-mega-menu {
         &:nth-child(4){
             @extend .btn-regular-blue;
             padding: 0px;
@@ -299,9 +304,10 @@ ul#menu-main_menu > li>ul.sub-menu > li > a {
             top: 30px;
             position: relative;
             border: 3px solid $white;
+            margin-left: 20px;
             a{
                 height: 100%;
-                line-height: 45px;
+                line-height: 45px !important;
                 color: $white;
             }
         &:hover {
@@ -311,7 +317,30 @@ ul#menu-main_menu > li>ul.sub-menu > li > a {
             }
         }
     }
-   
+}
+
+#menu-main_menu{
+    li.menu-item.no-mega-menu {
+        &:nth-child(n+5){
+            @extend .btn-outline-blue;
+            padding: 0px;
+            height: 40px;
+            top: 30px;
+            position: relative;
+            border: 3px solid $blue;
+            margin-right: 10px;
+            a{
+                height: 100%;
+                line-height: 45px !important;
+                color: $blue;
+            }
+        &:hover {
+            background: $blue;
+            color: $white;
+            border: 3px solid $white;
+            }
+        }
+    }
 }
 
 // === Link Hover Effects for Main Menu === //
