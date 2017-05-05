@@ -151,8 +151,9 @@ body {
     font-family: $p-font;
 }
 
-// === Bounce Hover Effect === //
-.current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a {
+// === Link Hover Effect === //
+
+%link-hover-effect{
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -163,34 +164,51 @@ body {
     transition-property: color;
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: $gold;
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    &:hover:before,
+    &:focus:before,
+    &:active:before {
+          -webkit-transform: scaleY(0.5);
+          transform: scaleY(0.5);
+          -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+          transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    }
 }
 
-.current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a:before {
-    content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: $gold;
-  -webkit-transform: scaleY(0);
-  transform: scaleY(0);
-  -webkit-transform-origin: 50% 100%;
-  transform-origin: 50% 100%;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+.current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a {
+    @extend %link-hover-effect;
 }
 
-.current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a:hover:before, .current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a:focus:before, .current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a:active:before {
-  -webkit-transform: scaleY(0.5);
-  transform: scaleY(0.5);
-  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+// === Active Menu List
+.menu-hover-style-2 .main-navigation-ul {
+    li.current-page-ancestor {
+        a{
+            background-image: linear-gradient(bottom, $gold 50%, transparent 50%);
+            background-image: -o-linear-gradient(bottom, $gold 50%, transparent 50%);
+            background-image: -moz-linear-gradient(bottom, $gold 50%, transparent 50%);
+            background-image: -webkit-linear-gradient(bottom, $gold 50%, transparent 50%);
+            background-image: -ms-linear-gradient(bottom, $gold 50%, transparent 50%);
+        }
+    }
 }
 
 // ===  Custom Classes === //
@@ -206,23 +224,22 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     display: block;
-}
-
-.pg-title > p {
-    background-image: linear-gradient(bottom, #000 50%, transparent 50%);
-    background-image: -o-linear-gradient(bottom, #000 50%, transparent 50%);
-    background-image: -moz-linear-gradient(bottom, #000 50%, transparent 50%);
-    background-image: -webkit-linear-gradient(bottom, #000 50%, transparent 50%);
-    background-image: -ms-linear-gradient(bottom, #000 50%, transparent 50%);    
-    font-size: $h1-heading;
-    text-transform: uppercase;
-    font-family: $h-font;
-    color: $white !important;
-    padding: 0 15px;
-    height: auto;
-    display: inline-block;    
-    @media screen and (max-width: 782px){
-        font-size: 5.6vw;
+    p {
+        background-image: linear-gradient(bottom, #000 50%, transparent 50%);
+        background-image: -o-linear-gradient(bottom, #000 50%, transparent 50%);
+        background-image: -moz-linear-gradient(bottom, #000 50%, transparent 50%);
+        background-image: -webkit-linear-gradient(bottom, #000 50%, transparent 50%);
+        background-image: -ms-linear-gradient(bottom, #000 50%, transparent 50%);    
+        font-size: $h1-heading;
+        text-transform: uppercase;
+        font-family: $h-font;
+        color: $white !important;
+        padding: 0 15px;
+        height: auto;
+        display: inline-block;    
+        @media screen and (max-width: 782px){
+            font-size: 5.6vw;
+        }
     }
 }
 
@@ -233,10 +250,12 @@ body {
     }
 }
 
-.pg-heading > h2 {
+.pg-heading {
+    h2 {
     font-size: $h2-body;
     @media screen and (max-width: 782px){
         font-size: 5.6vw;
+        }
     }
 }
 
@@ -247,52 +266,43 @@ body {
     @media screen and (max-width: 768px) {
         margin-top: -20px;
     }
+    div {
+        button {
+            margin-left: 40px;
+            @media screen and (max-width: 768px) {
+            margin-left: 20px;
+            }
+        }
+        h2{ 
+            color: $white;
+            padding: 15% 20px 0px;
+            font-size: 2.2vw;
+            @media screen and (max-width: 949px){
+            padding: 3% 20px 0px;
+            }
+            @media screen and (max-width: 768px) {
+            padding: 20px;
+            font-size: 20px;
+            }
+        }
+    }
 }
 
-.bw-column>div>h2{ 
-    color: $white;
-    padding: 15% 20px 0px;
-    font-size: 2.2vw;
-    @media screen and (max-width: 949px){
-        padding: 3% 20px 0px;
+.bw-column-text {
+    p {
+        color: $white;
+        font-size: 1.25vw;
+        padding: 0px 40px;
+        @media screen and (max-width: 768px) {
+            font-size: 16px;
+            padding: 0px 20px;
+        }
     }
-    @media screen and (max-width: 768px) {
-        padding: 20px;
-        font-size: 20px;
-    }
-}
-
-.bw-column>div>button {
-    margin-left: 40px;
-     @media screen and (max-width: 768px) {
-         margin-left: 20px;
-    }
-}
-
-.bw-column-text>p {
-    color: $white;
-    font-size: 1.25vw;
-    padding: 0px 40px;
-    @media screen and (max-width: 768px) {
-        font-size: 16px;
-        padding: 0px 20px;
-    }
+    
 }
 
 .video-column {
     padding: 0px;
-}
-
-.accordion-base > div> div> svg {
-    fill: $blue;
-}
-
-.mk-accordion.simple-style .mk-accordion-single.current .mk-accordion-tab > .mk-svg-icon{
-    fill: #c1c1c1;
-}
-
-.paragraph-indent{
-    padding-left: 25px;
 }
 
 .header-column{
@@ -303,6 +313,22 @@ body {
     max-width: 500px;
     float: none;
     margin: 0 auto;
+}
+
+// === Accordoin Styling === //
+
+.accordion-base {
+    div {
+        div {
+            svg{
+                fill: $blue;
+            }
+        }
+    }
+}
+
+.mk-accordion.simple-style .mk-accordion-single.current .mk-accordion-tab > .mk-svg-icon{
+    fill: #c1c1c1;
 }
 
 // === Menu Link Styling === //
@@ -319,64 +345,65 @@ ul#menu-main_menu {
     position: relative;
 }
 
-ul#menu-main_menu > li>ul.sub-menu {
-    background-color: $white !important;
-    color: $black;
-    min-width: 160px; 
-    position: absolute;
-    top: 20px;
-    left: -20px;
+ul#menu-main_menu {
+    li {
+        ul.sub-menu{
+            background-color: $white !important;
+            color: $black;
+            min-width: 160px; 
+            position: absolute;
+            top: 20px;
+            left: -20px;
+            li{
+                a {
+                    text-align: center;
+                    width: auto;
+                    font-size: 12px !important;
+                    background-image: none;
+                }
+            }
+        }
+    }
 }
 
-ul#menu-main_menu > li>ul.sub-menu > li > a {
-    text-align: center;
-    width: auto;
-    font-size: 12px !important;
-}
+.main-navigation-ul {
+    li.menu-item {
+        a.menu-item-link{
+            font-family: $h-font;
+        }
+    }
+ }
 
 .mk-main-navigation ul.sub-menu a.menu-item-link {
     color: $black;
     font-family: $h-font;
+    &:hover {
+        color: $gray-link-hover !important;
+    }
 }
 
-.main-navigation-ul ul.sub-menu li.current-menu-item > a.menu-item-link {
-    color: $blue !important;
+.main-navigation-ul ul.sub-menu li.current-menu-item {
+    a.menu-item-link{
+        color: $blue !important;
+    }
 }
 
-.mk-main-navigation ul.sub-menu a.menu-item-link:hover {
-    color: $gray-link-hover !important;
-}
-
-// ===  Main Menu Links and Buttons === //
+// ===  Main Menu Links, Buttons and Styles === //
 
 #menu-main_menu{
     li.menu-item.no-mega-menu{
         margin-right: 10px;
         height: auto !important;
         margin-top: 45px !important;
-    }
-}
-
-#menu-main_menu{
-    li.menu-item.no-mega-menu{
         a{
             height: auto !important;
             line-height: normal !important;
         }
-    }
-}
-
-#menu-main_menu{
-    li.menu-item.no-mega-menu {
         &:nth-child(-n+3){
             a {
                 font-size: 18px;
             }
         }
-    }
-}
-#menu-main_menu{
-    li.menu-item.no-mega-menu {
         &:nth-child(4){
             @extend .btn-regular-blue;
             padding: 0px;
@@ -401,11 +428,12 @@ ul#menu-main_menu > li>ul.sub-menu > li > a {
             border: 3px solid $blue;
             }
         }
-    }
-}
-
-#menu-main_menu{
-    li.menu-item.no-mega-menu {
+        &:nth-child(n+4){
+            width: 140px;
+            @media screen and (max-width: 1220px){
+                width: 120px;
+            }
+        }
         &:nth-child(n+5){
             @extend .btn-outline-blue;
             padding: 0px;
@@ -439,15 +467,3 @@ ul#menu-main_menu > li>ul.sub-menu > li > a {
 .mk-header-nav-container.one-row-style.menu-hover-style-2 {
     padding: 0px 25px;
 }
-
-// === Link Hover Effects for Main Menu === //
-
-.main-navigation-ul > li.menu-item > a.menu-item-link:hover {
-    background-size: 2px 100%;
-    transition-duration: 250ms;
-    transition-timing-function: ease; 
-}
-
-.main-navigation-ul > li.menu-item > a.menu-item-link{
-    font-family: $h-font;
- }
