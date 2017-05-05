@@ -95,7 +95,7 @@
 body {
   font-family: Futura LT Pro Body;
 }
-.pg-heading h2, .current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a {
+.current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -107,7 +107,7 @@ body {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-.pg-heading h2:before, .current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a:before {
+.current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -127,7 +127,7 @@ body {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.pg-heading h2:hover:before, .current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a:hover:before, .pg-heading h2:focus:before, .current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a:focus:before, .pg-heading h2:active:before, .current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a:active:before {
+.current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a:hover:before, .current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a:focus:before, .current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a:active:before {
   -webkit-transform: scaleY(0.5);
   transform: scaleY(0.5);
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
@@ -179,6 +179,7 @@ body {
   }
 }
 .pg-heading h2 {
+  font-family: Futura LT Pro Heading;
   font-size: 33px;
 }
 @media screen and (max-width: 782px) {
@@ -295,6 +296,7 @@ ul#menu-main_menu li ul.sub-menu li a {
 }
 #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3) a {
   font-size: 18px;
+  margin-right: 10px;
 }
 #menu-main_menu li.menu-item.no-mega-menu:nth-child(4) {
   padding: 0px;

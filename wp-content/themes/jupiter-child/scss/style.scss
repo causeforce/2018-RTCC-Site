@@ -252,8 +252,9 @@ body {
 
 .pg-heading {
     h2 {
-    font-size: $h2-body;
-    @media screen and (max-width: 782px){
+        font-family: $h-font;
+        font-size: $h2-body;
+        @media screen and (max-width: 782px){
         font-size: 5.6vw;
         }
     }
@@ -402,6 +403,7 @@ ul#menu-main_menu {
         &:nth-child(-n+3){
             a {
                 font-size: 18px;
+                margin-right: 10px;
             }
         }
         &:nth-child(4){
