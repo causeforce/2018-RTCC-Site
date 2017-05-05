@@ -157,16 +157,27 @@ body {
 }
 
 .pg-title {
-    position: absolute;
+    position: relative;
     top: 485px;
-    right: 60px;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: block;
 }
 
 .pg-title > p {
+    background-image: linear-gradient(bottom, #000 50%, transparent 50%);
+    background-image: -o-linear-gradient(bottom, #000 50%, transparent 50%);
+    background-image: -moz-linear-gradient(bottom, #000 50%, transparent 50%);
+    background-image: -webkit-linear-gradient(bottom, #000 50%, transparent 50%);
+    background-image: -ms-linear-gradient(bottom, #000 50%, transparent 50%);    
     font-size: $h1-heading;
     text-transform: uppercase;
     font-family: $h-font;
     color: $white !important;
+    padding: 0 15px;
+    height: auto;
+    display: inline-block;    
     @media screen and (max-width: 782px){
         font-size: 5.6vw;
     }
