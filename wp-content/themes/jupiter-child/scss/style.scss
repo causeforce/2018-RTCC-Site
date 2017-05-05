@@ -21,6 +21,7 @@ $gray: #F4F4F4;
 $gray-dark: #5D5D5D;
 $gray-link-hover: #B7B7B7;
 $white: #FFFFFF;
+$gold: #FFCD00;
 
 /* ============== Text Styles ==============  */
 
@@ -150,6 +151,48 @@ body {
     font-family: $p-font;
 }
 
+// === Bounce Hover Effect === //
+.current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+.current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a:before {
+    content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $gold;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a:hover:before, .current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a:focus:before, .current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a:active:before {
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
 // ===  Custom Classes === //
 
 .pg-title-column {
@@ -253,6 +296,10 @@ body {
 
 // === Menu Link Styling === //
 
+.dark-logo {
+    width: 200px;
+}
+
 ul#menu-main_menu {
     width: auto;
 }
@@ -266,13 +313,14 @@ ul#menu-main_menu > li>ul.sub-menu {
     color: $black;
     min-width: 160px; 
     position: absolute;
-    top: 60px;
-    left: -18px;
+    top: 20px;
+    left: -20px;
 }
 
 ul#menu-main_menu > li>ul.sub-menu > li > a {
     text-align: center;
     width: auto;
+    font-size: 12px !important;
 }
 
 .mk-main-navigation ul.sub-menu a.menu-item-link {
@@ -288,11 +336,32 @@ ul#menu-main_menu > li>ul.sub-menu > li > a {
     color: $gray-link-hover !important;
 }
 
-// === Menu Buttons === //
+// ===  Main Menu Links and Buttons === //
+
+#menu-main_menu{
+    li.menu-item.no-mega-menu{
+        margin-right: 10px;
+        height: auto !important;
+        margin-top: 45px !important;
+    }
+}
+
+#menu-main_menu{
+    li.menu-item.no-mega-menu{
+        a{
+            height: auto !important;
+            line-height: normal !important;
+        }
+    }
+}
 
 #menu-main_menu{
     li.menu-item.no-mega-menu {
-        margin-right: 10px;
+        &:nth-child(-n+3){
+            a {
+                font-size: 18px;
+            }
+        }
     }
 }
 #menu-main_menu{
@@ -303,12 +372,17 @@ ul#menu-main_menu > li>ul.sub-menu > li > a {
             height: 40px;
             top: 30px;
             position: relative;
-            border: 3px solid $white;
+            border: 3px solid $blue;
             margin-left: 20px;
+            transition: all 0.3s ease-in;
+            margin-top: 0px !important;
             a{
                 height: 100%;
                 line-height: 45px !important;
                 color: $white;
+                &:hover {
+                    color: $blue !important;
+                }
             }
         &:hover {
             background: $white;
@@ -329,18 +403,30 @@ ul#menu-main_menu > li>ul.sub-menu > li > a {
             position: relative;
             border: 3px solid $blue;
             margin-right: 10px;
+            transition: all 0.3s ease-in;
+            margin-top: 0px !important;
             a{
                 height: 100%;
                 line-height: 45px !important;
                 color: $blue;
+                &:hover {
+                    color: $white !important;
+                }
             }
         &:hover {
             background: $blue;
             color: $white;
-            border: 3px solid $white;
             }
         }
     }
+}
+
+.header-grid {
+    max-width: none;
+}
+
+.mk-header-nav-container.one-row-style.menu-hover-style-2 {
+    padding: 0px 25px;
 }
 
 // === Link Hover Effects for Main Menu === //
@@ -352,6 +438,5 @@ ul#menu-main_menu > li>ul.sub-menu > li > a {
 }
 
 .main-navigation-ul > li.menu-item > a.menu-item-link{
-//    @extend %link-yellow-hover;
     font-family: $h-font;
  }
