@@ -95,7 +95,7 @@
 body {
   font-family: Futura LT Pro Body;
 }
-.pg-heading h2, .current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a {
+.current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a, .mk-tabs-tab > a {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -107,7 +107,7 @@ body {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-.pg-heading h2:before, .current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a:before {
+.current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a:before, .mk-tabs-tab > a:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -127,7 +127,7 @@ body {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.pg-heading h2:hover:before, .current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a:hover:before, .pg-heading h2:focus:before, .current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a:focus:before, .pg-heading h2:active:before, .current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a:active:before {
+.current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a:hover:before, .mk-tabs-tab > a:hover:before, .current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a:focus:before, .mk-tabs-tab > a:focus:before, .current-page-ancestor.current-menu-ancestor.current-menu-parent.current-page-parent > a:active:before, .mk-tabs-tab > a:active:before {
   -webkit-transform: scaleY(0.5);
   transform: scaleY(0.5);
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
@@ -354,4 +354,24 @@ ul#menu-main_menu li ul.sub-menu li a {
 }
 .mk-header-nav-container.one-row-style.menu-hover-style-2 {
   padding: 0px 25px;
+}
+.mk-tabs.default-style.vertical-style .mk-tabs-panes {
+  border: none;
+}
+.mk-tabs.default-style.vertical-style .mk-tabs-tabs li.is-active a {
+  border-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  padding-right: 10px !important;
+}
+.mk-tabs.default-style.vertical-style .mk-tabs-tabs {
+  border: none !important;
+}
+.mk-tabs.default-style .mk-tabs-tabs li a {
+  padding: 0 10px;
+  margin-bottom: 25px;
+  display: inline-block;
+  font-size: 16px;
+  display: inline-block;
+  border: 0px !important;
+  background-color: #fff;
 }
