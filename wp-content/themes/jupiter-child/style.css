@@ -97,6 +97,9 @@ body {
 p {
   color: #000;
 }
+h1, h2, h3, h4 {
+  font-family: Futura LT Pro Heading;
+}
 /* ============== Link Hover Effect ============== */
 #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3), .mk-tabs-tab > a {
   display: inline-block;
@@ -178,6 +181,7 @@ p {
 @media screen and (max-width: 482px) {
   .pg-title {
     top: 500px;
+    text-align: center !important;
   }
 }
 .pg-title p {
@@ -309,12 +313,41 @@ p {
   left: -250px;
 }
 /* ============== Accordion Styling  ============== */
+.safety-accordion-section .vc_tta-panel-body div p {
+  padding: 0px 40px;
+}
+@media screen and (max-width: 768px) {
+  .safety-accordion-section .vc_tta-panel-body div p {
+    padding: 0px;
+  }
+}
+.safety-accordion-section .vc_tta-panel-heading h4 {
+  color: #000;
+  font-size: 26px;
+}
+@media screen and (max-width: 768px) {
+  .safety-accordion-section .vc_tta-panel-heading h4 {
+    font-size: 4vw;
+  }
+}
 .safety-accordion-section .vc_tta-panel-heading .vc_tta-panel-title a span {
   color: #000;
   font-family: Futura LT Pro Heading;
 }
 .wpb-js-composer .vc_tta-color-white.vc_tta-style-flat .vc_tta-panel .vc_tta-panel-heading {
   background-color: #fff !important;
+}
+.wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus {
+  width: 15px;
+  height: 15px;
+}
+.wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus::before {
+  border-width: 3px 0 0 !important;
+  border-radius: 60%;
+}
+.wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus::after {
+  border-width: 0 0 0 3px !important;
+  border-radius: 60%;
 }
 .wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus::before, .wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus::after {
   border-color: #0075c9 !important;
@@ -440,7 +473,7 @@ ul#menu-main_menu li ul.sub-menu li a {
 #menu-main_menu li.menu-item.no-mega-menu:nth-child(4):hover a {
   color: #0075c9 !important;
 }
-.header-grid {
+.header-grid.mk-grid {
   max-width: none;
 }
 .mk-header-nav-container.one-row-style.menu-hover-style-2 {
@@ -519,7 +552,7 @@ ul#menu-main_menu li ul.sub-menu li a {
   }
 }
 @media screen and (max-width: 782px) {
-  .p-block {
+  div.p-block {
     margin-top: 50px !important;
     margin-bottom: 50px !important;
   }
