@@ -98,7 +98,7 @@ p {
   color: #000;
 }
 /* ============== Link Hover Effect ============== */
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3) {
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3), .mk-tabs-tab > a {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -110,7 +110,7 @@ p {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):before {
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):before, .mk-tabs-tab > a:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -130,7 +130,7 @@ p {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):hover:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):focus:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):active:before {
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):hover:before, .mk-tabs-tab > a:hover:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):focus:before, .mk-tabs-tab > a:focus:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):active:before, .mk-tabs-tab > a:active:before {
   -webkit-transform: scaleY(0.5);
   transform: scaleY(0.5);
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
@@ -189,7 +189,7 @@ p {
   font-size: 53px;
   text-transform: uppercase;
   font-family: Futura LT Pro Heading;
-  color: #ffcd00 !important;
+  color: #fff !important;
   padding: 0 15px;
   height: auto;
   display: inline-block;
@@ -308,9 +308,32 @@ p {
   bottom: 0px;
   left: -250px;
 }
-/* ============== Accordoin Styling  ============== */
-.accordion-base div div svg {
-  fill: #0075c9;
+/* ============== Accordion Styling  ============== */
+.safety-accordion-section .vc_tta-panel-heading .vc_tta-panel-title a span {
+  color: #000;
+  font-family: Futura LT Pro Heading;
+}
+.wpb-js-composer .vc_tta-color-white.vc_tta-style-flat .vc_tta-panel .vc_tta-panel-heading {
+  background-color: #fff !important;
+}
+.wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus::before, .wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus::after {
+  border-color: #0075c9 !important;
+}
+.wpb-js-composer .vc_tta.vc_tta-accordion .vc_tta-controls-icon-position-right .vc_tta-controls-icon {
+  display: none !important;
+}
+@media screen and (max-width: 768px) {
+  .wpb-js-composer .vc_tta.vc_tta-accordion .vc_tta-controls-icon-position-right .vc_tta-controls-icon {
+    display: block !important;
+  }
+}
+.vc_tta-panel-heading {
+  pointer-events: none;
+}
+@media screen and (max-width: 768px) {
+  .vc_tta-panel-heading {
+    pointer-events: auto;
+  }
 }
 .mk-accordion.simple-style .mk-accordion-single.current .mk-accordion-tab > .mk-svg-icon {
   fill: #c1c1c1;
@@ -494,4 +517,30 @@ ul#menu-main_menu li ul.sub-menu li a {
   .footer-column p {
     text-align: center;
   }
+}
+@media screen and (max-width: 782px) {
+  .p-block {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+  }
+}
+.mk-tabs.default-style.vertical-style .mk-tabs-panes {
+  border: none;
+}
+.mk-tabs.default-style.vertical-style .mk-tabs-tabs li.is-active a {
+  border-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  padding-right: 10px !important;
+}
+.mk-tabs.default-style.vertical-style .mk-tabs-tabs {
+  border: none !important;
+}
+.mk-tabs.default-style .mk-tabs-tabs li a {
+  padding: 0 10px;
+  margin-bottom: 25px;
+  display: inline-block;
+  font-size: 16px;
+  display: inline-block;
+  border: 0px !important;
+  background-color: #fff;
 }

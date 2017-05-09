@@ -383,15 +383,41 @@ p {
     }
 }
 
-/* ============== Accordoin Styling  ============== */
+/* ============== Accordion Styling  ============== */
 
-.accordion-base {
-    div {
-        div {
-            svg{
-                fill: $blue;
+.safety-accordion-section{
+    .vc_tta-panel-heading{
+        .vc_tta-panel-title {
+            a{
+                span {
+                    color: $black;
+                    font-family: $h-font;
+                }
             }
         }
+    }
+}
+
+.wpb-js-composer .vc_tta-color-white.vc_tta-style-flat .vc_tta-panel .vc_tta-panel-heading {
+    background-color: $white !important;
+}
+
+.wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus::before,
+.wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus::after{
+    border-color: $blue !important;
+}
+
+.wpb-js-composer .vc_tta.vc_tta-accordion .vc_tta-controls-icon-position-right .vc_tta-controls-icon {
+    display: none !important;
+    @media screen and (max-width: 768px) {
+        display: block !important;
+    }
+}
+
+.vc_tta-panel-heading {
+    pointer-events: none;
+    @media screen and (max-width: 768px) {
+        pointer-events: auto;
     }
 }
 
