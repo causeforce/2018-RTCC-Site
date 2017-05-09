@@ -155,6 +155,10 @@ p {
     color: $black;
 }
 
+h1,h2,h3,h4 {
+    @extend %h-font;
+}
+
 /* ============== Link Hover Effect ============== */
 
 %link-hover-effect{
@@ -631,7 +635,7 @@ ul#menu-main_menu {
 }
 
 // ===  TEXT BLOCK SPACING === //
-.p-block {
+div.p-block {
     @media screen and (max-width: 782px){
         margin-top: 50px !important;
         margin-bottom: 50px !important;
