@@ -468,6 +468,14 @@ ul#menu-main_menu {
     padding: 0px 25px;
 }
 
+// ===  TEXT BLOCK SPACING === //
+.p-block {
+    @media screen and (max-width: 782px){
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
+    }
+}
+
 // ===  TAB STYLES === //
 
 .mk-tabs.default-style.vertical-style .mk-tabs-panes {
