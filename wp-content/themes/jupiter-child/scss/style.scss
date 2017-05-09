@@ -259,6 +259,7 @@ li.mk-tabs-tab {
     display: block;
     @media screen and (max-width: 482px){
             top: 500px;
+            text-align: center !important;
         }
     p {
         background-image: linear-gradient(bottom, #000 50%, transparent 50%);
@@ -393,7 +394,24 @@ li.mk-tabs-tab {
 /* ============== Accordion Styling  ============== */
 
 .safety-accordion-section{
+    .vc_tta-panel-body{
+        div {
+            p {
+                padding: 0px 40px;
+                @media screen and (max-width: 768px) {
+                    padding: 0px;
+                }
+            }
+        }
+    }
     .vc_tta-panel-heading{
+        h4 {
+            color: $black;
+            font-size: 26px;
+            @media screen and (max-width: 768px) {
+                font-size: 4vw;
+            }
+        }
         .vc_tta-panel-title {
             a{
                 span {
@@ -412,6 +430,24 @@ li.mk-tabs-tab {
 .wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus::before,
 .wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus::after{
     border-color: $blue !important;
+.wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus{
+    width: 15px;
+    height: 15px;
+    &::before {
+        border-width: 3px 0 0 !important;
+        border-radius: 60%;
+    }
+    &::after {
+        border-width: 0 0 0 3px !important;
+        border-radius: 60%;
+    }
+}
+
+.wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus {
+    &::before,
+    &::after{
+        border-color: $blue !important;
+    }
 }
 
 .wpb-js-composer .vc_tta.vc_tta-accordion .vc_tta-controls-icon-position-right .vc_tta-controls-icon {
@@ -564,6 +600,7 @@ ul#menu-main_menu {
 }
 
 .header-grid {
+.header-grid.mk-grid {
     max-width: none;
 }
 
