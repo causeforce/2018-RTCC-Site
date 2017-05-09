@@ -11,11 +11,11 @@
 /* ============== Font Colors ==============  */
 /* ============== Text Styles ==============  */
 @font-face {
-  font-family: Futura LT Pro Body;
+  font-family: "Futura LT Pro Body";
   src: url(scss/fonts/FuturaLTPro-Book.otf);
 }
 @font-face {
-  font-family: Futura LT Pro Heading;
+  font-family: "Futura LT Pro Heading";
   src: url(scss/fonts/FuturaLTPro-Bold.otf);
 }
 /* ============== Button Styles ==============  */
@@ -92,10 +92,16 @@
 }
 /* ============== Global Page Element Style ============== */
 body {
-  font-family: Futura LT Pro Body;
+  font-family: "Futura LT Pro Body", Helvetica, sans-serif;
 }
 p {
   color: #000;
+}
+h1, h2, h3, h4 {
+  font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
+}
+li.mk-tabs-tab {
+  font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
 }
 /* ============== Link Hover Effect ============== */
 #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3), .mk-tabs-tab > a {
@@ -188,7 +194,7 @@ p {
   background-image: -ms-linear-gradient(bottom, #000 50%, transparent 50%);
   font-size: 53px;
   text-transform: uppercase;
-  font-family: Futura LT Pro Heading;
+  font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
   color: #fff !important;
   padding: 0 15px;
   height: auto;
@@ -217,7 +223,7 @@ p {
   }
 }
 .pg-heading h2 {
-  font-family: Futura LT Pro Heading;
+  font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
   font-size: 33px;
 }
 @media screen and (max-width: 782px) {
@@ -311,7 +317,7 @@ p {
 /* ============== Accordion Styling  ============== */
 .safety-accordion-section .vc_tta-panel-heading .vc_tta-panel-title a span {
   color: #000;
-  font-family: Futura LT Pro Heading;
+  font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
 }
 .wpb-js-composer .vc_tta-color-white.vc_tta-style-flat .vc_tta-panel .vc_tta-panel-heading {
   background-color: #fff !important;
@@ -363,11 +369,11 @@ ul#menu-main_menu li ul.sub-menu li a {
   background-image: none;
 }
 .main-navigation-ul li.menu-item a.menu-item-link {
-  font-family: Futura LT Pro Heading;
+  font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
 }
 .mk-main-navigation ul.sub-menu a.menu-item-link {
   color: #000;
-  font-family: Futura LT Pro Heading;
+  font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
 }
 .mk-main-navigation ul.sub-menu a.menu-item-link:hover {
   color: #b7b7b7 !important;
@@ -481,7 +487,7 @@ ul#menu-main_menu li ul.sub-menu li a {
   text-align: center;
   color: #fff !important;
   text-transform: uppercase;
-  font-family: Futura LT Pro Heading;
+  font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
   font-size: 16px;
 }
 #mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu {
@@ -495,7 +501,7 @@ ul#menu-main_menu li ul.sub-menu li a {
 }
 #mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a {
   color: #95989a !important;
-  font-family: Futura LT Pro Body;
+  font-family: "Futura LT Pro Body", Helvetica, sans-serif;
   font-size: 14px;
   text-transform: capitalize;
 }
@@ -507,7 +513,7 @@ ul#menu-main_menu li ul.sub-menu li a {
 }
 .footer-column .footer-text-gold {
   color: #ffcd00 !important;
-  font-family: Futura LT Pro Heading;
+  font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
 }
 @media screen and (max-width: 768px) {
   .footer-column img {
@@ -519,7 +525,7 @@ ul#menu-main_menu li ul.sub-menu li a {
   }
 }
 @media screen and (max-width: 782px) {
-  .p-block {
+  div.p-block {
     margin-top: 50px !important;
     margin-bottom: 50px !important;
   }

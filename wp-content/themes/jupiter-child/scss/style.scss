@@ -25,17 +25,17 @@ $gold: #FFCD00;
 /* ============== Text Styles ==============  */
 
 @font-face {
-    font-family: Futura LT Pro Body;
+    font-family: "Futura LT Pro Body";
     src: url(scss/fonts/FuturaLTPro-Book.otf);
 }
 
 @font-face {
-    font-family: Futura LT Pro Heading;
+    font-family: "Futura LT Pro Heading";
     src: url(scss/fonts/FuturaLTPro-Bold.otf);
 }
 
-$p-font: Futura LT Pro Body;
-$h-font: Futura LT Pro Heading;
+$p-font: "Futura LT Pro Body", Helvetica, sans-serif;
+$h-font: "Futura LT Pro Heading", Helvetica, sans-serif;
 $h1-heading: 53px; //40pts
 $h1-body: 36px; //27pts
 
@@ -156,9 +156,12 @@ p {
 }
 
 h1,h2,h3,h4 {
-    @extend %h-font;
+    font-family: $h-font;
 }
 
+li.mk-tabs-tab {
+    font-family: $h-font;
+}
 /* ============== Link Hover Effect ============== */
 
 %link-hover-effect{
