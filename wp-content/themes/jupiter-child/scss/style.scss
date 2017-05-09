@@ -629,3 +629,37 @@ ul#menu-main_menu {
         }
     }
 }
+
+// ===  TEXT BLOCK SPACING === //
+.p-block {
+    @media screen and (max-width: 782px){
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
+    }
+}
+// ===  TAB STYLES === //
+
+.mk-tabs.default-style.vertical-style .mk-tabs-panes {
+    border: none;
+}
+.mk-tabs-tab > a {
+    @extend %link-hover-effect;
+}
+.mk-tabs.default-style.vertical-style .mk-tabs-tabs li.is-active a {
+    border-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    padding-right: 10px !important;
+}
+.mk-tabs.default-style.vertical-style .mk-tabs-tabs {
+    border: none !important;
+}
+
+.mk-tabs.default-style .mk-tabs-tabs li a {
+    padding: 0 10px;
+    margin-bottom: 25px;
+    display: inline-block;
+    font-size: 16px;
+    display: inline-block;
+    border: 0px !important;
+    background-color: #fff;
+}
