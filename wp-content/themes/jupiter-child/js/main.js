@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    
+    $('.safety-accordion-section').addClass('vc_active');
       function shortString(string) {
             return '#menu-'+string+'_footer_menu>li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children>.sub-menu';
         }
@@ -10,9 +12,11 @@ $(document).ready(function() {
 
       if ($(this).width() < 782) {
             $(shortStringOther('about, rider-hub, impact')).removeClass("toggle-active");
+            $('.safety-accordion-section').removeClass('vc_active');
       } else {
             $(shortString('about, rider-hub, impact')).show();
             $(shortStringOther('about, rider-hub, impact')).addClass("toggle-active");
+            $('.safety-accordion-section').addClass('vc_active');
         }
     });
     
