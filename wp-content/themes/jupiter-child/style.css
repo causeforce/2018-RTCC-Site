@@ -98,14 +98,11 @@ p {
   color: #000;
 }
 h1, h2, h3, h4 {
-<<<<<<< HEAD
+
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
 }
 li.mk-tabs-tab {
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
-=======
-  font-family: Futura LT Pro Heading;
->>>>>>> 775c9d767cc0e515c3b4f105cbc25251f45694da
 }
 /* ============== Link Hover Effect ============== */
 #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3), .mk-tabs-tab > a {
