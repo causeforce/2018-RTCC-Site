@@ -316,29 +316,32 @@ li.mk-tabs-tab {
   left: -250px;
 }
 /* ============== Accordion Styling  ============== */
-.safety-accordion-section .vc_tta-panel-body div p {
+.safety-accordion-section .vc_tta-panel-body div p, .outfitters-accordion-section .vc_tta-panel-body div p {
   padding: 0px 40px;
 }
 @media screen and (max-width: 768px) {
-  .safety-accordion-section .vc_tta-panel-body div p {
+  .safety-accordion-section .vc_tta-panel-body div p, .outfitters-accordion-section .vc_tta-panel-body div p {
     padding: 0px;
   }
 }
-.safety-accordion-section .vc_tta-panel-heading h4 {
+.safety-accordion-section .vc_tta-panel-heading h4, .outfitters-accordion-section .vc_tta-panel-heading h4 {
   color: #000;
   font-size: 26px;
 }
 @media screen and (max-width: 768px) {
-  .safety-accordion-section .vc_tta-panel-heading h4 {
+  .safety-accordion-section .vc_tta-panel-heading h4, .outfitters-accordion-section .vc_tta-panel-heading h4 {
     font-size: 4vw;
   }
 }
-.safety-accordion-section .vc_tta-panel-heading .vc_tta-panel-title a span {
+.safety-accordion-section .vc_tta-panel-heading .vc_tta-panel-title a span, .outfitters-accordion-section .vc_tta-panel-heading .vc_tta-panel-title a span {
   color: #000;
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
 }
 .wpb-js-composer .vc_tta-color-white.vc_tta-style-flat .vc_tta-panel .vc_tta-panel-heading {
   background-color: #fff !important;
+}
+.wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus::before, .wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus::after {
+  border-color: #0075c9 !important;
 }
 .wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus {
   width: 15px;
@@ -503,13 +506,8 @@ ul#menu-main_menu li ul.sub-menu li a {
 @media screen and (max-width: 768px) {
   #mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before {
     display: block;
-    right: 35%;
+    right: 25%;
     font-size: 25px;
-  }
-}
-@media screen and (max-width: 485px) {
-  #mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before {
-    right: 30%;
   }
 }
 #mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a {
@@ -579,4 +577,26 @@ ul#menu-main_menu li ul.sub-menu li a {
   display: inline-block;
   border: 0px !important;
   background-color: #fff;
+}
+.bw-page-section {
+  background: #000;
+}
+.bw-page-section h2 {
+  color: #fff;
+  padding-top: 30px;
+}
+@media screen and (max-width: 768px) {
+  .bw-page-section h2 {
+    text-align: left;
+    font-size: 20px;
+  }
+}
+.bw-page-section p {
+  color: #fff;
+}
+.outfitters-accordion-section .vc_tta-panel-heading h4 {
+  font-size: 20px;
+}
+.outfitters-accordion-section div p {
+  padding: 0px !important;
 }

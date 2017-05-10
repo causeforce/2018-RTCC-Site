@@ -426,10 +426,10 @@ li.mk-tabs-tab {
 .wpb-js-composer .vc_tta-color-white.vc_tta-style-flat .vc_tta-panel .vc_tta-panel-heading {
     background-color: $white !important;
 }
-
 .wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus::before,
 .wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus::after{
     border-color: $blue !important;
+}
 .wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus{
     width: 15px;
     height: 15px;
@@ -599,7 +599,6 @@ ul#menu-main_menu {
     }
 }
 
-.header-grid {
 .header-grid.mk-grid {
     max-width: none;
 }
@@ -641,11 +640,8 @@ ul#menu-main_menu {
                         color: rgba(255,255,255,0.7);
                         @media screen and (max-width: 768px){
                             display: block;
-                            right: 35%;
+                            right: 25%;
                             font-size: 25px;
-                        }
-                        @media screen and (max-width: 485px) {
-                            right: 30%;
                         }
                     }
                     a {
@@ -732,4 +728,34 @@ div.p-block {
     display: inline-block;
     border: 0px !important;
     background-color: #fff;
+}
+
+// === OUTFITTERS PAGE === //
+.bw-page-section {
+    background: #000;
+    h2 {
+        color: #fff;
+        padding-top: 30px;
+        @media screen and (max-width: 768px) {
+            text-align: left;
+            font-size: 20px;
+        }
+    }
+    p {
+        color: #fff;
+    }
+}
+
+.outfitters-accordion-section {
+    @extend .safety-accordion-section;
+    .vc_tta-panel-heading {
+        h4 {
+            font-size: 20px;
+        }
+    }
+    div {
+        p{
+            padding: 0px !important;
+        }
+    }
 }

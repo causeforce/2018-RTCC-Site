@@ -4,9 +4,9 @@ $(document).ready(function() {
     
     var windowSize = $(window).width();
     if (windowSize < 782) {
-        $('.safety-accordion-section').removeClass('vc_active');
+        $('.safety-accordion-section, .outfitters-accordion-section').removeClass('vc_active');
     } else {
-        $('.safety-accordion-section').addClass('vc_active');
+        $('.safety-accordion-section, .outfitters-accordion-section').addClass('vc_active');
     }
     
     function shortString(string) {
@@ -21,11 +21,11 @@ $(document).ready(function() {
 
       if ($(this).width() < 782) {
             $(shortStringOther('about, rider-hub, impact')).removeClass("toggle-active");
-            $('.safety-accordion-section').removeClass('vc_active');
+            $('.safety-accordion-section, .outfitters-accordion-section').removeClass('vc_active');
       } else {
             $(shortString('about, rider-hub, impact')).show();
             $(shortStringOther('about, rider-hub, impact')).addClass("toggle-active");
-            $('.safety-accordion-section').addClass('vc_active');
+            $('.safety-accordion-section, .outfitters-accordion-section').addClass('vc_active');
         }
     });
 // === END Footer Resize === //
