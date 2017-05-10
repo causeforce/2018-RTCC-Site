@@ -507,6 +507,7 @@ ul#menu-main_menu li ul.sub-menu li a {
   #mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before {
     display: block;
     right: 35%;
+    right: 25%;
     font-size: 25px;
   }
 }
@@ -629,4 +630,25 @@ ul#menu-main_menu li ul.sub-menu li a {
 }
 .mobile-nav-tab-container-header .vc_tta-panel-title a {
   margin: 15px 0;
+.bw-page-section {
+  background: #000;
+}
+.bw-page-section h2 {
+  color: #fff;
+  padding-top: 30px;
+}
+@media screen and (max-width: 768px) {
+  .bw-page-section h2 {
+    text-align: left;
+    font-size: 20px;
+  }
+}
+.bw-page-section p {
+  color: #fff;
+}
+.outfitters-accordion-section .vc_tta-panel-heading h4 {
+  font-size: 20px;
+}
+.outfitters-accordion-section div p {
+  padding: 0px !important;
 }

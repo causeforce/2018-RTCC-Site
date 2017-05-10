@@ -30,12 +30,16 @@ $(document).ready(function() {
 
             $(shortStringOther('about, rider-hub, impact')).removeClass("toggle-active");
             $('.safety-accordion-section').removeClass('vc_active');
+            $('.safety-accordion-section, .outfitters-accordion-section').removeClass('vc_active');
       } else {
             $(shortString('about, rider-hub, impact')).show();
             $(shortStringOther('about, rider-hub, impact')).addClass("toggle-active");
+<<<<<<< HEAD
             $('.safety-accordion-section').addClass('vc_active');
 
             $('.tab-content-container').prepend(jQuery('#mk-tabs-tabs-4'));
+=======
+            $('.safety-accordion-section, .outfitters-accordion-section').addClass('vc_active');
         }
     });
 // === END Footer Resize === //

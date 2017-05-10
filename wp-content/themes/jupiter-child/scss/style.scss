@@ -642,6 +642,7 @@ ul#menu-main_menu {
                         @media screen and (max-width: 768px){
                             display: block;
                             right: 35%;
+                            right: 25%;
                             font-size: 25px;
                         }
                         @media screen and (max-width: 485px) {
@@ -732,4 +733,34 @@ div.p-block {
     display: inline-block;
     border: 0px !important;
     background-color: #fff;
+}
+
+// === OUTFITTERS PAGE === //
+.bw-page-section {
+    background: #000;
+    h2 {
+        color: #fff;
+        padding-top: 30px;
+        @media screen and (max-width: 768px) {
+            text-align: left;
+            font-size: 20px;
+        }
+    }
+    p {
+        color: #fff;
+    }
+}
+
+.outfitters-accordion-section {
+    @extend .safety-accordion-section;
+    .vc_tta-panel-heading {
+        h4 {
+            font-size: 20px;
+        }
+    }
+    div {
+        p{
+            padding: 0px !important;
+        }
+    }
 }
