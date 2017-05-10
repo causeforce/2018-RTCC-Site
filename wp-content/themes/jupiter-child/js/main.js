@@ -4,6 +4,9 @@ $(document).ready(function() {
     
     var windowSize = $(window).width();
     if (windowSize < 782) {
+        
+        $('.mobile-nav-tab-container').append(jQuery('#mk-tabs-tabs-4'));
+        
         $('.safety-accordion-section').removeClass('vc_active');
     } else {
         $('.safety-accordion-section').addClass('vc_active');
@@ -19,13 +22,20 @@ $(document).ready(function() {
 // === Footer Resize Area === //
     $(window).resize(function() {
 
+
+
       if ($(this).width() < 782) {
+
+            $('.mobile-nav-tab-container').append(jQuery('#mk-tabs-tabs-4'));
+
             $(shortStringOther('about, rider-hub, impact')).removeClass("toggle-active");
             $('.safety-accordion-section').removeClass('vc_active');
       } else {
             $(shortString('about, rider-hub, impact')).show();
             $(shortStringOther('about, rider-hub, impact')).addClass("toggle-active");
             $('.safety-accordion-section').addClass('vc_active');
+
+            $('.tab-content-container').prepend(jQuery('#mk-tabs-tabs-4'));
         }
     });
 // === END Footer Resize === //
@@ -40,4 +50,6 @@ $(document).ready(function() {
 //       }
 //    });
 //    
+
+
 });

@@ -98,7 +98,6 @@ p {
   color: #000;
 }
 h1, h2, h3, h4 {
-
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
 }
 li.mk-tabs-tab {
@@ -341,6 +340,9 @@ li.mk-tabs-tab {
 .wpb-js-composer .vc_tta-color-white.vc_tta-style-flat .vc_tta-panel .vc_tta-panel-heading {
   background-color: #fff !important;
 }
+.wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus::before, .wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus::after {
+  border-color: #0075c9 !important;
+}
 .wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus {
   width: 15px;
   height: 15px;
@@ -580,4 +582,51 @@ ul#menu-main_menu li ul.sub-menu li a {
   display: inline-block;
   border: 0px !important;
   background-color: #fff;
+}
+.tab-content-container .tab-img-header img {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .tab-content-container .tab-img-header img {
+    margin-bottom: 40px;
+  }
+}
+.tab-content-container .tab-copy p {
+  padding-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .tab-content-container .tab-copy p {
+    padding-left: 75px;
+  }
+}
+.mobile-nav-tab-container {
+  text-align: center;
+}
+.mobile-nav-tab-container .vc_tta-panel-title a {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.mobile-nav-tab-container .vc_tta-panel-body {
+  border-top: none;
+}
+.mobile-nav-tab-container ul {
+  margin: 0 auto;
+}
+.mobile-nav-tab-container ul li {
+  list-style-type: none;
+  font-size: 16px;
+  margin: 20px 0;
+}
+.mobile-nav-tab-container ul li a {
+  padding: 0 5px;
+}
+.mobile-nav-tab-container-header {
+  border: 1px solid #000;
+}
+.mobile-nav-tab-container-header .vc_tta-panel-body {
+  border-top: none;
+  padding-top: 0;
+}
+.mobile-nav-tab-container-header .vc_tta-panel-title a {
+  margin: 15px 0;
 }
