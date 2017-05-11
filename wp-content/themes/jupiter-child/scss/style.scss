@@ -731,6 +731,60 @@ div.p-block {
     background-color: #fff;
 }
 
+.tab-content-container {
+    .tab-img-header {
+        img {
+            margin-bottom: 20px;
+            @media screen and (min-width:768px) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .tab-copy {
+        p {
+            padding-left: 20px;
+            @media screen and (min-width:768px) {
+                padding-left: 75px;
+            }
+        }
+    }
+}
+.mobile-nav-tab-container {
+    text-align: center;
+    .vc_tta-panel-title {
+        a {
+            margin-top: 10px;
+            margin-bottom: 10px
+        }
+    }
+    .vc_tta-panel-body {
+        border-top:none;
+    }
+    ul {
+        margin:0 auto;
+        li {
+            list-style-type: none;
+            font-size: 16px;
+            margin: 20px 0;
+            a {
+                padding: 0 5px;
+            }
+        }
+    }
+}
+.mobile-nav-tab-container-header {
+    border: 1px solid #000;
+    .vc_tta-panel-body {
+        border-top:none !important;
+        padding-top: 0;
+    }
+    .vc_tta-panel-title {
+        a {
+            margin: 15px 0;
+        }
+    }
+}
+
 // === OUTFITTERS PAGE === //
 .bw-page-section {
     background: #000;
