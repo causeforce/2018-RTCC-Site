@@ -222,6 +222,7 @@ li.mk-tabs-tab {
 /* ============== Custom Classes ============== */
 
 .header-pg-row {
+    z-index: 100 !important;
     .page-section-content {
         height: 100%;
         padding: 0px;
@@ -426,7 +427,6 @@ li.mk-tabs-tab {
 .wpb-js-composer .vc_tta-color-white.vc_tta-style-flat .vc_tta-panel .vc_tta-panel-heading {
     background-color: $white !important;
 }
-
 .wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus::before,
 .wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus::after{
     border-color: $blue !important;
@@ -641,12 +641,8 @@ ul#menu-main_menu {
                         color: rgba(255,255,255,0.7);
                         @media screen and (max-width: 768px){
                             display: block;
-                            right: 35%;
                             right: 25%;
                             font-size: 25px;
-                        }
-                        @media screen and (max-width: 485px) {
-                            right: 30%;
                         }
                     }
                     a {
@@ -761,6 +757,143 @@ div.p-block {
     div {
         p{
             padding: 0px !important;
+        }
+    }
+}
+
+
+// === HOMEPAGE STYLING === //
+
+.home-gray-section {
+    @extend .bw-page-section;
+    background: $gray;
+    h2, p {
+        color: #000;
+    }
+    h2 {
+        padding-top: 150px;
+    }
+    p {
+        padding-bottom: 150px;
+    }
+}
+
+.home-gray-icon-section {
+    @extend .home-gray-section;
+    padding-top: 145px;
+    h2,p {
+        padding-top: 0px;
+        @media screen and (max-width: 768px) {
+            text-align: center;
+        }
+    }
+}
+
+.home-bw-column {
+    @extend .bw-column;
+    border-bottom: 35px solid $white;
+    div {
+        button {
+            margin-left: 70px;
+            padding: 5% 10%;
+            @media screen and (max-width: 768px) {
+                margin-left: 30px;
+            }
+        }
+        h2 {
+            @media screen and (max-width: 768px) {
+                padding: 40px 20px 5px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    .home-bw-column-text {
+        @extend .bw-column-text;
+        padding: 0px 50px;
+        @media screen and (max-width: 768px) {
+            padding: 10px 30px;
+            p {
+                padding: 0px;
+            }
+        }
+    }
+    .btn-outline-white {
+        margin-bottom: 0px;
+        @media screen and (max-width: 768px) {
+            margin-bottom: 40px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        margin-top: auto;
+        border-bottom: none;
+    }
+}
+
+.home {
+    .mk-padding-wrapper {
+        padding: 0px;
+    }
+    .btn-column{
+        display: block;
+        text-align: center;
+        button {
+            padding: 10px 40px;
+            font-size: 18px;
+            font-weight: 800;
+        }
+    }
+}
+
+// === PHOTOS PAGE STYLING === //
+
+#photos-accordion {
+    div {
+        h4 {
+            a {
+                span {
+                    @media screen and (max-width: 768px) {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.photos-gray-section {
+    @extend .home-gray-section;
+    p {
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+}
+
+.photos-accordion-section {
+    @extend .outfitters-accordion-section;
+    margin-top: 10%;
+}
+
+.wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus.show-plus::after,
+.wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus.show-plus::before{
+    display: block;
+}
+
+.wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus:not(.show-minus):after {
+    display: block;
+}
+
+.wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus.show-minus {
+    display: none;
+}
+
+// === ABOUT CANCER PAGE STYLING === //
+
+.about-white-pg-section {
+    .column_container {
+        div {
+            p {
+                padding: 2% 0 2% 15%;
+            }
         }
     }
 }
