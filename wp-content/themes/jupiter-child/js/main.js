@@ -1,12 +1,18 @@
 $(document).ready(function() {
     
-
+    $('.outfitters-accordion-section').removeClass('vc_active');
     
     var windowSize = $(window).width();
-    if (windowSize < 782) {
-        $('.safety-accordion-section, .outfitters-accordion-section').removeClass('vc_active');
-    } else {
+    if (windowSize > 782) {
         $('.safety-accordion-section, .outfitters-accordion-section').addClass('vc_active');
+    } else {
+        //click function for accordion toggle only if window is below 782px
+        $('.vc_tta-panel-heading').click(function(e) {
+            e.preventDefault();   
+            $(this).next('.vc_tta-panel-body').slideToggle('slow');
+            $('.wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus').toggleClass('show-minus').siblings().addClass('show-plus');
+//            $('.wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus').toggleClass('show');
+        });
     }
     
     function shortString(string) {
@@ -28,6 +34,9 @@ $(document).ready(function() {
             $('.safety-accordion-section, .outfitters-accordion-section').addClass('vc_active');
         }
     });
+    
+    
+    
 // === END Footer Resize === //
     
 // Scroll and become Fixed //
@@ -39,5 +48,5 @@ $(document).ready(function() {
 //           $('ul-class').removeClass('fixed-position');
 //       }
 //    });
-//    
+  
 });
