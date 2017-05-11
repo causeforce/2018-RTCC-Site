@@ -669,10 +669,17 @@ ul#menu-main_menu li ul.sub-menu li a {
     border-bottom: none;
   }
 }
-.btn-column {
+.home .mk-padding-wrapper {
+  padding: 0px;
+}
+.home .btn-column {
   display: block;
   text-align: center;
-  margin-top: 50px;
+}
+.home .btn-column button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 800;
 }
 @media screen and (max-width: 768px) {
   #photos-accordion div h4 a span {
@@ -694,4 +701,7 @@ ul#menu-main_menu li ul.sub-menu li a {
 }
 .wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus.show-minus {
   display: none;
+}
+.about-white-pg-section .column_container div p {
+  padding: 2% 0 2% 15%;
 }

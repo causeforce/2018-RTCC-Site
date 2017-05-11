@@ -829,10 +829,19 @@ div.p-block {
     }
 }
 
-.btn-column {
-    display: block;
-    text-align: center;
-    margin-top: 50px;
+.home {
+    .mk-padding-wrapper {
+        padding: 0px;
+    }
+    .btn-column{
+        display: block;
+        text-align: center;
+        button {
+            padding: 10px 40px;
+            font-size: 18px;
+            font-weight: 800;
+        }
+    }
 }
 
 // === PHOTOS PAGE STYLING === //
@@ -875,4 +884,16 @@ div.p-block {
 
 .wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus.show-minus {
     display: none;
+}
+
+// === ABOUT CANCER PAGE STYLING === //
+
+.about-white-pg-section {
+    .column_container {
+        div {
+            p {
+                padding: 2% 0 2% 15%;
+            }
+        }
+    }
 }
