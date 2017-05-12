@@ -1,4 +1,6 @@
 $(document).ready(function() {
+    // === STICKY SIDE NAV === //
+    $(".mk-tabs-tabs").stick_in_parent({offset_top: 150});
     
     $('.outfitters-accordion-section').removeClass('vc_active');
     
@@ -44,18 +46,6 @@ $(document).ready(function() {
         }
     });
     
-    
-    
 // === END Footer Resize === //
-    
-// Scroll and become Fixed //
-//
-//    $(window).scroll(function() {
-//       if ($(this).scrollTop() > 147) {
-//           $('ul-class>').addClass('fixed-postion');
-//       } else {
-//           $('ul-class').removeClass('fixed-position');
-//       }
-//    });
   
 });

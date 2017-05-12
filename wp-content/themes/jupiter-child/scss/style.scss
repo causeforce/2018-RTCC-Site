@@ -951,3 +951,28 @@ div.p-block {
         }
     }
 }
+
+.about-cancer-tabs {
+    @extend .tab-content-container;
+    ul {
+        background: $gray;
+        li.mk-tabs-tab {
+            a {
+                background-color: $gray !important;
+                border: none !important;
+                &:first-child {
+                    margin-top: 25px;
+                }
+            }
+        }
+        li.is-active {
+            background: $gray;
+        }
+    }
+}
+
+.fixed-postion {
+    position: fixed !important;
+    left: 315px;
+    top: 140px;
+}
