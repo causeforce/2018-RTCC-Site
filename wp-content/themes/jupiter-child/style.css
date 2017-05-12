@@ -594,8 +594,8 @@ ul#menu-main_menu li ul.sub-menu li a {
 }
 @media screen and (min-width: 768px) {
   .tab-content-container .tab-copy p, .about-cancer-tabs .tab-copy p {
-    padding-left: 75px;
-  }
+      padding-left: 75px;
+    }
 }
 .mobile-nav-tab-container {
   text-align: center;
