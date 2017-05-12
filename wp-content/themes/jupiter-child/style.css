@@ -628,6 +628,9 @@ ul#menu-main_menu li ul.sub-menu li a {
 .mobile-nav-tab-container-header .vc_tta-panel-title a {
   margin: 15px 0;
 }
+.mobile-nav-tab-container-header .vc_tta-panel-heading {
+  border-bottom: 1px solid black;
+}
 .bw-page-section, .home-gray-section, .home-gray-icon-section, .photos-gray-section {
   background: #000;
 }
