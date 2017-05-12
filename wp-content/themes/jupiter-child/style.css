@@ -581,21 +581,21 @@ ul#menu-main_menu li ul.sub-menu li a {
   border: 0px !important;
   background-color: #fff;
 }
-.tab-content-container .tab-img-header img {
+.tab-content-container .tab-img-header img, .about-cancer-tabs .tab-img-header img {
   margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
-  .tab-content-container .tab-img-header img {
+  .tab-content-container .tab-img-header img, .about-cancer-tabs .tab-img-header img {
     margin-bottom: 40px;
   }
 }
-.tab-content-container .tab-copy p {
+.tab-content-container .tab-copy p, .about-cancer-tabs .tab-copy p {
   padding-left: 20px;
 }
 @media screen and (min-width: 768px) {
-  .tab-content-container .tab-copy p {
-    padding-left: 75px;
-  }
+  .tab-content-container .tab-copy p, .about-cancer-tabs .tab-copy p {
+      padding-left: 75px;
+    }
 }
 .mobile-nav-tab-container {
   text-align: center;
@@ -754,4 +754,22 @@ ul#menu-main_menu li ul.sub-menu li a {
 }
 .about-white-pg-section .column_container div p {
   padding: 2% 0 2% 15%;
+}
+.about-cancer-tabs ul {
+  background: #f4f4f4;
+}
+.about-cancer-tabs ul li.mk-tabs-tab a {
+  background-color: #f4f4f4 !important;
+  border: none !important;
+}
+.about-cancer-tabs ul li.mk-tabs-tab a:first-child {
+  margin-top: 25px;
+}
+.about-cancer-tabs ul li.is-active {
+  background: #f4f4f4;
+}
+.fixed-postion {
+  position: fixed !important;
+  left: 315px;
+  top: 140px;
 }

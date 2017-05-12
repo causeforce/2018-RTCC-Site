@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+    // === STICKY SIDE NAV === //
+    $(".mk-tabs-tabs").stick_in_parent({offset_top: 150});
+
     var windowSize = $(window).width();
 
     function shortString(string) {
@@ -47,17 +50,7 @@ $(document).ready(function () {
             $('.safety-accordion-section, .outfitters-accordion-section').addClass('vc_active');
         }
     });
-
-    // === END Footer Resize === //
-
-    // Scroll and become Fixed //
-    //
-    //    $(window).scroll(function() {
-    //       if ($(this).scrollTop() > 147) {
-    //           $('ul-class>').addClass('fixed-postion');
-    //       } else {
-    //           $('ul-class').removeClass('fixed-position');
-    //       }
-    //    });
+    
+// === END Footer Resize === //
 
 });
