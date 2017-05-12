@@ -594,8 +594,8 @@ ul#menu-main_menu li ul.sub-menu li a {
 }
 @media screen and (min-width: 768px) {
   .tab-content-container .tab-copy p, .about-cancer-tabs .tab-copy p {
-      padding-left: 75px;
-    }
+    padding-left: 75px;
+  }
 }
 .mobile-nav-tab-container {
   text-align: center;
@@ -752,15 +752,106 @@ ul#menu-main_menu li ul.sub-menu li a {
 .wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus.show-minus {
   display: none;
 }
+@media screen and (max-width: 768px) {
+  .about-white-pg-section {
+    margin-top: 70px;
+  }
+}
 .about-white-pg-section .column_container div p {
   padding: 2% 0 2% 15%;
+}
+@media screen and (max-width: 768px) {
+  .about-white-pg-section .column_container div p {
+    padding: 2% 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-white-pg-section .column_container div h2 {
+    font-size: 5.5vw;
+  }
+}
+.about-zebra-border-column div {
+  margin-bottom: 0px;
+}
+.about-zebra-border-column div figure div img {
+  max-width: 70%;
+  position: absolute;
+  bottom: 0;
+  max-height: 30px;
+}
+.about-cancer-tabs {
+  margin-bottom: 0px !important;
+}
+.about-cancer-tabs div.page-bg-color div .title-mobile {
+  text-transform: uppercase;
+  border-bottom: none;
+  padding-left: 30px;
+  background: none;
+  cursor: pointer;
+  font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
+}
+.about-cancer-tabs div.page-bg-color div .title-mobile:after {
+  content: "+";
+  color: #0075c9;
+  float: right;
+  font-size: 24px;
+}
+.about-cancer-tabs div.page-bg-color div .title-mobile:before {
+  content: "-";
+  color: #5d5d5d;
+  float: right;
+  display: none;
+  font-size: 24px;
+}
+.about-cancer-tabs div.page-bg-color div .title-mobile:first-child {
+  padding-top: 20px;
+}
+.about-cancer-tabs div.page-bg-color div .title-mobile.display-none:before {
+  display: block;
+}
+.about-cancer-tabs div.page-bg-color div .title-mobile.display-none:after {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .about-cancer-tabs div.page-bg-color .mk-tabs-pane {
+    margin-bottom: 0px !important;
+  }
+}
+.about-cancer-tabs div.page-bg-color .mk-tabs-pane-content {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .about-cancer-tabs div.page-bg-color .mk-tabs-pane-content {
+    display: none;
+  }
+}
+.about-cancer-tabs div.page-bg-color div div h3 {
+  color: #0075c9;
+  padding-left: 3%;
+}
+.about-cancer-tabs div.page-bg-color div div p {
+  padding: 3% 7% 0;
+}
+@media screen and (max-width: 768px) {
+  .about-cancer-tabs div.page-bg-color {
+    background: #f4f4f4 !important;
+  }
 }
 .about-cancer-tabs ul {
   background: #f4f4f4;
 }
+.about-cancer-tabs ul li.mk-tabs-tab {
+  max-height: 150px;
+}
 .about-cancer-tabs ul li.mk-tabs-tab a {
+  margin: 20px 0px;
+  text-transform: uppercase;
   background-color: #f4f4f4 !important;
   border: none !important;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -5%);
 }
 .about-cancer-tabs ul li.mk-tabs-tab a:first-child {
   margin-top: 25px;

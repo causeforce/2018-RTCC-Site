@@ -21,19 +21,21 @@ $(document).ready(function () {
         $('.safety-accordion-section, .outfitters-accordion-section').addClass('vc_active');
 
     } else {
-        //click function for accordion toggle only if window is below 782px
+        // Click function for accordion toggle only if window is below 782px //
         $('.vc_tta-panel-heading').click(function (e) {
             e.preventDefault();
             $(this).next('.vc_tta-panel-body').slideToggle('slow');
             $('.wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus').toggleClass('show-minus').siblings().addClass('show-plus');
-            //            $('.wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus').toggleClass('show');
-
         });
-
+        // Click function for Tab into Accordion to toggle content //
+        $('.title-mobile').click(function (e) {
+            e.preventDefault();
+            $(this).next('.mk-tabs-pane-content').slideToggle('slow');
+            $('.title-mobile').not(this).addClass('display-none');   
+            $('.title-mobile').toggleClass('display-none');
+        });
         $('.mobile-nav-tab-container').append(jQuery('#mk-tabs-tabs-4'));
-
     }
-
     // === Footer Resize Area === //
     $(window).resize(function () {
 
@@ -49,8 +51,5 @@ $(document).ready(function () {
             $(shortStringOther('about, rider-hub, impact')).addClass("toggle-active");
             $('.safety-accordion-section, .outfitters-accordion-section').addClass('vc_active');
         }
-    });
-    
-// === END Footer Resize === //
-
+    });// === END Footer Resize === //
 });

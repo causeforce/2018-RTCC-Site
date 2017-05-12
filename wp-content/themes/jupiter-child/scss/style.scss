@@ -946,10 +946,37 @@ div.p-block {
 // === ABOUT CANCER PAGE STYLING === //
 
 .about-white-pg-section {
+    @media screen and (max-width: 768px) {
+        margin-top: 70px;
+    }
     .column_container {
         div {
             p {
                 padding: 2% 0 2% 15%;
+                @media screen and (max-width: 768px) {
+                    padding: 2% 0;
+                }
+            }
+            h2 {
+                @media screen and (max-width: 768px) {
+                    font-size: 5.5vw;
+                }
+            }
+        }
+    }
+}
+
+.about-zebra-border-column {
+    div {
+        margin-bottom: 0px;
+        figure {
+            div {
+                img {
+                    max-width: 70%;
+                    position: absolute;
+                    bottom: 0;
+                    max-height: 30px;
+                }
             }
         }
     }
@@ -957,12 +984,81 @@ div.p-block {
 
 .about-cancer-tabs {
     @extend .tab-content-container;
+    margin-bottom: 0px !important;
+    div.page-bg-color {
+        div {
+            .title-mobile{
+                text-transform: uppercase;
+                border-bottom: none;
+                padding-left: 30px;
+                background: none;
+                cursor: pointer;
+                font-family: $h-font;
+                &:after {
+                    content: "+";
+                    color: $blue;
+                    float: right;
+                    font-size: 24px;
+                }
+                &:before {
+                    content: "-";
+                    color: $gray-dark;
+                    float: right;
+                    display: none;
+                    font-size: 24px;
+                }
+                &:first-child {
+                    padding-top: 20px;
+                }
+            }
+            .title-mobile.display-none {
+                &:before {
+                    display: block;
+                }
+                &:after {
+                    display: none;
+                }
+            }
+        }
+        .mk-tabs-pane{
+            @media screen and (max-width: 767px) {
+                margin-bottom: 0px !important;
+            }
+        }
+        .mk-tabs-pane-content {
+            display: block;
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+        div{
+            div{
+                h3 {
+                    color: $blue;
+                    padding-left: 3%;
+                }
+                p {
+                    padding: 3% 7% 0;
+                }
+            }
+        }
+        @media screen and (max-width: 768px) {
+            background: $gray !important;
+        }
+    }
     ul {
         background: $gray;
         li.mk-tabs-tab {
+            max-height: 150px;
             a {
+                margin: 20px 0px;
+                text-transform: uppercase; 
                 background-color: $gray !important;
                 border: none !important;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -5%);
                 &:first-child {
                     margin-top: 25px;
                 }
