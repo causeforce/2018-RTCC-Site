@@ -1,8 +1,5 @@
 $(document).ready(function () {
 
-    // === STICKY SIDE NAV === //
-    $(".mk-tabs-tabs").stick_in_parent({offset_top: 150});
-
     var windowSize = $(window).width();
 
     function shortString(string) {
@@ -16,16 +13,18 @@ $(document).ready(function () {
     $('.outfitters-accordion-section').removeClass('vc_active');
     // toggle class for mobile tab accordion
     // $('.mobile-nav-tab-container-header').toggleClass('vc_active');
-
+    
     if (windowSize > 782) {
         $('.safety-accordion-section, .outfitters-accordion-section').addClass('vc_active');
-
+        // === STICKY SIDE NAV === //
+        $(".mk-tabs-tabs").stick_in_parent({offset_top: 150});
     } else {
         // Click function for accordion toggle only if window is below 782px //
-        $('.vc_tta-panel-heading').click(function (e) {
-            e.preventDefault();
+        $('.vc_tta-panel-heading').click(function () {
+            $('.vc_tta-panel-body').not(this).slideUp('slow');
             $(this).next('.vc_tta-panel-body').slideToggle('slow');
-            $('.wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus').toggleClass('show-minus').siblings().addClass('show-plus');
+            $('span.vc_tta-title-text').not(this).removeClass('down');
+            $('span.vc_tta-title-text', this).toggleClass('down');
         });
         // Click function for Tab into Accordion to toggle content //
         $('.title-mobile').click(function (e) {
