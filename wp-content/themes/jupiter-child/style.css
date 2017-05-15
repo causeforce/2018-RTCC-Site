@@ -104,7 +104,7 @@ li.mk-tabs-tab {
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
 }
 /* ============== Link Hover Effect ============== */
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3), .mk-tabs-tab > a, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a {
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3), .mk-tabs-tab > a, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -116,7 +116,7 @@ li.mk-tabs-tab {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):before, .mk-tabs-tab > a:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:before {
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):before, .mk-tabs-tab > a:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -136,7 +136,7 @@ li.mk-tabs-tab {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):hover:before, .mk-tabs-tab > a:hover:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:hover:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):focus:before, .mk-tabs-tab > a:focus:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:focus:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):active:before, .mk-tabs-tab > a:active:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:active:before {
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):hover:before, .mk-tabs-tab > a:hover:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:hover:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:hover:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):focus:before, .mk-tabs-tab > a:focus:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:focus:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:focus:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):active:before, .mk-tabs-tab > a:active:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:active:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:active:before {
   -webkit-transform: scaleY(0.5);
   transform: scaleY(0.5);
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
@@ -789,6 +789,9 @@ span.vc_tta-title-text.display-none-accordion:after {
     padding: 2% 0;
   }
 }
+.about-white-pg-section .column_container div h2 {
+  color: #000;
+}
 @media screen and (max-width: 768px) {
   .about-white-pg-section .column_container div h2 {
     font-size: 5.5vw;
@@ -807,6 +810,7 @@ span.vc_tta-title-text.display-none-accordion:after {
   margin-bottom: 0px !important;
 }
 .about-cancer-tabs div.page-bg-color div .title-mobile {
+  color: #000;
   text-transform: uppercase;
   border-bottom: none;
   padding-left: 30px;
@@ -876,9 +880,11 @@ span.vc_tta-title-text.display-none-accordion:after {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -5%);
+  color: #000;
+  margin: 10px !important;
 }
 .about-cancer-tabs ul li.mk-tabs-tab a:first-child {
-  margin-top: 25px;
+  margin-top: 20px !important;
 }
 .about-cancer-tabs ul li.is-active {
   background: #f4f4f4;
@@ -896,6 +902,9 @@ span.vc_tta-title-text.display-none-accordion:after {
     margin-left: 20px;
   }
 }
+.programs-tabs-column .mk-tabs-pane-content div h2 {
+  color: #000;
+}
 @media screen and (max-width: 768px) {
   .programs-tabs-column .mk-tabs-pane-content div h2 {
     font-size: 5.5vw;
@@ -909,6 +918,10 @@ span.vc_tta-title-text.display-none-accordion:after {
     margin-left: 0;
   }
 }
+.programs-tabs-column div #mk-tabs-tabs-4 li a {
+  text-transform: uppercase;
+  color: #000;
+}
 .programs-mobile-tab-menu {
   margin-top: 50px;
 }
@@ -921,6 +934,61 @@ span.vc_tta-title-text.display-none-accordion:after {
 .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div div .vc_tta-panel-heading h4 a span {
   font-size: 3.5vw;
   color: #000;
+}
+.programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container ul li a {
+  text-transform: uppercase;
+  color: #000;
+}
+.programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container ul li a:hover {
+  color: #000;
+}
+.programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a {
+  color: #000;
+}
+.programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:hover {
+  color: #000;
+}
+@media screen and (max-width: 768px) {
+  .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a {
+    font-size: calc(1.5vw + 0.5em);
+  }
+}
+.programs-front-row {
+  margin-top: 125px;
+}
+@media screen and (max-width: 768px) {
+  .programs-front-row {
+    margin-top: 10px;
+  }
+}
+.programs-front-row .programs-tabs-link-column div h4 {
+  margin-bottom: 20px;
+}
+.programs-front-row .programs-tabs-link-column div h4 a {
+  color: #000;
+}
+.programs-front-row .column_container div h2 {
+  color: #000;
+}
+@media screen and (max-width: 768px) {
+  .programs-front-row .column_container div h2 {
+    font-size: 5.5vw;
+  }
+}
+.programs-front-row .column_container div p {
+  color: #000;
+  padding-left: 3%;
+}
+.programs-zebra-row {
+  margin-top: 25px;
+}
+.programs-zebra-row .about-zebra-border-column div figure div img {
+  left: -185px;
+}
+@media screen and (max-width: 768px) {
+  .programs-zebra-row .about-zebra-border-column div figure div img {
+    left: -85px;
+  }
 }
 @media screen and (max-width: 1140px) {
   .mk-responsive-wrap {

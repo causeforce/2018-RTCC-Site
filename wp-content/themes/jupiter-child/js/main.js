@@ -17,7 +17,6 @@ $(document).ready(function () {
     if (windowSize > 782) {
         $('.safety-accordion-section, .outfitters-accordion-section').addClass('vc_active');
         // === STICKY SIDE NAV === //
-        $(".mk-tabs-tabs").stick_in_parent({offset_top: 150});
     } else {
         // Click function for accordion toggle only if window is below 782px //
         $('.vc_tta-panel-heading').click(function () {
@@ -26,6 +25,7 @@ $(document).ready(function () {
             $('span.vc_tta-title-text').not(this).removeClass('down');
             $('span.vc_tta-title-text', this).toggleClass('down');
         });
+        $('.mobile-nav-tab-container-header>div>div>div>.vc_tta-panel-body').hide();
         // Click function for Tab into Accordion to toggle content //
         $('.title-mobile').click(function (e) {
             e.preventDefault();
@@ -33,22 +33,33 @@ $(document).ready(function () {
             $('.title-mobile').not(this).addClass('display-none');   
             $('.title-mobile').toggleClass('display-none');
         });
-        $('.mobile-nav-tab-container').append(jQuery('#mk-tabs-tabs-4'));
+        $('.mobile-nav-tab-container').append(jQuery('#mk-tabs-tabs-4, .programs-tabs-link-column'));
     }
     // === Footer Resize Area === //
     $(window).resize(function () {
 
         if ($(this).width() < 782) {
-            $('.mobile-nav-tab-container').append(jQuery('#mk-tabs-tabs-4'));
+            $('.mobile-nav-tab-container').append(jQuery('#mk-tabs-tabs-4, .programs-tabs-link-column'));
 
             $(shortStringOther('about, rider-hub, impact')).removeClass("toggle-active");
             $('.safety-accordion-section, .outfitters-accordion-section').removeClass('vc_active');
         } else {
-            $('.tab-content-container').prepend(jQuery('#mk-tabs-tabs-4'));
+            $('.tab-content-container').prepend(jQuery('#mk-tabs-tabs-4, .programs-tabs-link-column'));
 
             $(shortString('about, rider-hub, impact')).show();
             $(shortStringOther('about, rider-hub, impact')).addClass("toggle-active");
             $('.safety-accordion-section, .outfitters-accordion-section').addClass('vc_active');
         }
     });// === END Footer Resize === //
+    
+    // === Sticky Side Nav Area === //
+    $("ul.mk-tabs-tabs").stick_in_parent({offset_top: 150});
+    
+    $('ul.mk-tabs-tabs')
+    .on('sticky_kit:bottom', function(e) {
+    $(this).parent().css('position', 'static');
+    }) 
+    .on('sticky_kit:unbottom', function(e) {
+    $(this).parent().css('position', 'relative');
+    });
 });
