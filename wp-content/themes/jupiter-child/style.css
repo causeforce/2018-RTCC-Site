@@ -65,6 +65,8 @@
   color: #fff !important;
 }
 .btn-outline-white-trans > button {
+  padding: 10px 25px;
+  text-transform: uppercase;
   border: 3px solid #fff !important;
   color: #fff !important;
   transition: all 0.2s ease-in;
@@ -1102,5 +1104,42 @@ span.vc_tta-title-text.display-none-accordion:after {
   }
   form.responsive-searchform {
     display: none;
+  }
+}
+.pic-text-row .pic-column {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 269px;
+}
+@media screen and (min-width: 768px) {
+  .pic-text-row .pic-column {
+    height: inherit;
+  }
+}
+.pic-text-row .mini-text-container {
+  max-width: 538px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.pic-text-row .mini-text-container h2 {
+  color: #fff;
+}
+.pic-text-row .mini-text-container p {
+  color: #fff;
+}
+@media screen and (min-width: 692px) {
+  .pic-text-row .mini-text-container {
+    margin: 80px auto !important;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+@media screen and (min-width: 1120px) {
+  .pic-text-row .mini-text-container p {
+    margin-left: 25px;
+  }
+  .pic-text-row .mini-text-container .vc_btn3-container a {
+    margin-left: 25px;
   }
 }
