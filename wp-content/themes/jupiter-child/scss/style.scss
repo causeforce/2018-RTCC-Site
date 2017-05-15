@@ -36,6 +36,7 @@ $gold: #FFCD00;
 
 $p-font: "Futura LT Pro Body", Helvetica, sans-serif;
 $h-font: "Futura LT Pro Heading", Helvetica, sans-serif;
+$a-font: FontAwesome;
 $h1-heading: 53px; //40pts
 $h1-body: 36px; //27pts
 
@@ -637,6 +638,17 @@ ul#menu-main_menu {
 
 .mk-header-nav-container.one-row-style.menu-hover-style-2 {
     padding: 0px 25px;
+}
+
+.main-nav-side-search {
+    a {
+        i {
+            svg {
+                width: 30px !important;
+                height: 30px !important;
+            }
+        }
+    }
 }
 
 /* ============== Footer Menu ============== */
@@ -1449,4 +1461,33 @@ display: inline-block;
 
     }
 
+}
+
+// === CAROUSEL STYLING === //
+.icon-next,
+.icon-prev{
+    height: 30px !important;
+    width: 30px !important;
+    font-size: 40px !important;
+    color: $white;
+}
+.icon-next:before {
+    content: "\f0a9" !important;
+    font-family: $a-font;
+}
+.icon-prev:before {
+    content: "\f0a8" !important;
+    font-family: $a-font;
+}
+
+.vc_images_carousel {
+    .vc_carousel-indicators {
+        bottom: -10px !important;
+        li.vc_active {
+            background-color: $blue !important;
+        }
+        li {
+            background-color: $white !important;
+        }
+    }
 }

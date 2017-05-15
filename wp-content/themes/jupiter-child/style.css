@@ -511,6 +511,10 @@ ul#menu-main_menu li ul.sub-menu li a {
 .mk-header-nav-container.one-row-style.menu-hover-style-2 {
   padding: 0px 25px;
 }
+.main-nav-side-search a i svg {
+  width: 30px !important;
+  height: 30px !important;
+}
 /* ============== Footer Menu ============== */
 #mk-footer {
   background-color: #000 !important;
@@ -1142,4 +1146,27 @@ span.vc_tta-title-text.display-none-accordion:after {
   .pic-text-row .mini-text-container .vc_btn3-container a {
     margin-left: 25px;
   }
+}
+.icon-next, .icon-prev {
+  height: 30px !important;
+  width: 30px !important;
+  font-size: 40px !important;
+  color: #fff;
+}
+.icon-next:before {
+  content: "\f0a9" !important;
+  font-family: FontAwesome;
+}
+.icon-prev:before {
+  content: "\f0a8" !important;
+  font-family: FontAwesome;
+}
+.vc_images_carousel .vc_carousel-indicators {
+  bottom: -10px !important;
+}
+.vc_images_carousel .vc_carousel-indicators li.vc_active {
+  background-color: #0075c9 !important;
+}
+.vc_images_carousel .vc_carousel-indicators li {
+  background-color: #fff !important;
 }
