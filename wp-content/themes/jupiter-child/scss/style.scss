@@ -81,7 +81,8 @@ $h3-body: 27px; //20pts
     }
 }
 
-.btn-outline-blue > button {
+.btn-outline-blue > button,
+.btn-with-link-blue > a {
   @extend %btn-outline;
   border: 3px solid $blue !important;
   color: $blue !important;
@@ -97,7 +98,8 @@ $h3-body: 27px; //20pts
   }
 }
 
-.btn-outline-white > button {
+.btn-outline-white > button,
+.btn-with-link-white > a {
   @extend %btn-outline;
   border: 3px solid $white !important;
   color: $white !important;
@@ -112,6 +114,7 @@ $h3-body: 27px; //20pts
     color: $white !important;
   }
 }
+
 
 .btn-outline-white-trans > button {
   @extend %btn-outline;
@@ -136,7 +139,10 @@ $h3-body: 27px; //20pts
   }
 }
 
-.btn-outline-black > button {
+
+.btn-outline-black > button,
+.btn-with-link-black > a{
+
   @extend %btn-outline;
   border: 3px solid $black !important;
   color: $black !important;
@@ -827,34 +833,47 @@ div.p-block {
     }
 }
 
-.outfitters-accordion-section {
-    @extend .safety-accordion-section;
-    .vc_tta-panel-heading {
-        h4 {
-            font-size: 20px;
-        }
-    }
-    div {
-        p{
-            padding: 0px !important;
+.outfitters-full-accordion-section {
+    .outfitters-accordion-column {
+        .vc_tta-container{
+            @media screen and (max-width: 768px) {
+                margin-bottom: 0px;
+            }
+            .outfitters-accordion-section {
+                @extend .safety-accordion-section;
+                .vc_tta-panel-heading {
+                    h4 {
+                        font-size: 20px;
+                        a {
+                            span {
+                                @media screen and (max-width: 768px) {
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+                div {
+                    p {
+                        padding: 0px !important;
+                    }
+                }
+            }
         }
     }
 }
-
 
 // === HOMEPAGE STYLING === //
 
 .home-gray-section {
     @extend .bw-page-section;
     background: $gray;
+    padding: 6% 0;
     h2, p {
         color: #000;
     }
     h2 {
-        padding-top: 150px;
-    }
-    p {
-        padding-bottom: 150px;
+        text-align: center;
     }
 }
 
@@ -942,10 +961,6 @@ div.p-block {
 
 .photos-gray-section {
     @extend .home-gray-section;
-    p {
-        padding-top: 15%;
-        padding-bottom: 15%;
-    }
 }
 
 .photos-accordion-section {
@@ -953,26 +968,79 @@ div.p-block {
     margin-top: 10%;
 }
 
-.wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus.show-plus::after,
-.wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus.show-plus::before{
-    display: block;
+.wpb-js-composer .vc_tta.vc_tta-accordion .vc_tta-controls-icon-position-right .vc_tta-controls-icon{
+    @media screen and (max-width: 768px) {
+        display: none !important;
+    }
 }
 
-.wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus:not(.show-minus):after {
-    display: block;
+.vc_tta-title-text{
+    @media screen and (max-width: 768px) {
+        &:after {
+            font-family: FontAwesome;
+            content: "\f062";
+            color: $blue;
+            float: right;
+            font-size: 18px;
+            position: relative;
+            left: 20px;
+            top: 0px;
+        }
+    } 
+}
+.down{
+    &:after {
+        -ms-transform:rotate(180deg);
+        -moz-transform:rotate(180deg);
+        -webkit-transform:rotate(180deg);
+        transform:rotate(180deg);
+    }
 }
 
-.wpb-js-composer .vc_tta .vc_tta-controls-icon.vc_tta-controls-icon-plus.show-minus {
-    display: none;
+span.vc_tta-title-text.display-none-accordion{
+    &:before {
+        display: block;
+    }
+    &:after {
+        display: none;
+    }
 }
 
 // === ABOUT CANCER PAGE STYLING === //
 
 .about-white-pg-section {
+    @media screen and (max-width: 768px) {
+        margin-top: 70px;
+    }
     .column_container {
         div {
             p {
                 padding: 2% 0 2% 15%;
+                @media screen and (max-width: 768px) {
+                    padding: 2% 0;
+                }
+            }
+            h2 {
+                color: $black;
+                @media screen and (max-width: 768px) {
+                    font-size: 5.5vw;
+                }
+            }
+        }
+    }
+}
+
+.about-zebra-border-column {
+    div {
+        margin-bottom: 0px;
+        figure {
+            div {
+                img {
+                    max-width: 70%;
+                    position: absolute;
+                    bottom: 0;
+                    max-height: 30px;
+                }
             }
         }
     }
@@ -980,14 +1048,86 @@ div.p-block {
 
 .about-cancer-tabs {
     @extend .tab-content-container;
+    margin-bottom: 0px !important;
+    div.page-bg-color {
+        div {
+            .title-mobile{
+                color: $black;
+                text-transform: uppercase;
+                border-bottom: none;
+                padding-left: 30px;
+                background: none;
+                cursor: pointer;
+                font-family: $h-font;
+                &:after {
+                    content: "+";
+                    color: $blue;
+                    float: right;
+                    font-size: 24px;
+                }
+                &:before {
+                    content: "-";
+                    color: $gray-dark;
+                    float: right;
+                    display: none;
+                    font-size: 24px;
+                }
+                &:first-child {
+                    padding-top: 20px;
+                }
+            }
+            .title-mobile.display-none {
+                &:before {
+                    display: block;
+                }
+                &:after {
+                    display: none;
+                }
+            }
+        }
+        .mk-tabs-pane{
+            @media screen and (max-width: 767px) {
+                margin-bottom: 0px !important;
+            }
+        }
+        .mk-tabs-pane-content {
+            display: block;
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+        div{
+            div{
+                h3 {
+                    color: $blue;
+                    padding-left: 3%;
+                }
+                p {
+                    padding: 3% 7% 0;
+                }
+            }
+        }
+        @media screen and (max-width: 768px) {
+            background: $gray !important;
+        }
+    }
     ul {
         background: $gray;
         li.mk-tabs-tab {
+            max-height: 150px;
             a {
+                margin: 20px 0px;
+                text-transform: uppercase; 
                 background-color: $gray !important;
                 border: none !important;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -5%);
+                color: $black;
+                margin: 10px !important;
                 &:first-child {
-                    margin-top: 25px;
+                    margin-top: 20px !important;
                 }
             }
         }
@@ -1002,6 +1142,7 @@ div.p-block {
     left: 315px;
     top: 140px;
 }
+
 
 // ABOUT PAGE STYLES 
 
@@ -1061,3 +1202,209 @@ display: inline-block;
         margin: 100px 0;
     }
 }
+
+// === PROGRAMS/AMBASSADOR PAGE STYLING === //
+
+.programs-tabs-column {
+    .mk-tabs-pane-content {
+        div {
+            p {
+                margin-left: 50px;
+                @media screen and (max-width: 768px) {
+                    margin-left: 20px;
+                }
+            }
+            h2 {
+                color: $black;
+                @media screen and (max-width: 768px) {
+                    font-size: 5.5vw;
+                }
+            }
+            figure {
+                div {
+                    img {
+                        margin-left: 50px;
+                        @media screen and (max-width: 768px) {
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div {
+        #mk-tabs-tabs-4{
+            li {
+                a {
+                    text-transform: uppercase;
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+.programs-mobile-tab-menu {
+    margin-top: 50px;
+    div {
+        .vc_tta-container {
+            .mobile-nav-tab-container-header {
+                border: none;
+                div {
+                    div {
+                        .vc_tta-panel-heading,
+                        .vc_tta-panel-body{
+                            border-color: $black !important;
+                        }
+                        .vc_tta-panel-heading {
+                            h4 {
+                                a {
+                                    span {
+                                        font-size: 3.5vw;
+                                        color: $black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .mobile-nav-tab-container {
+                        ul {
+                            li {
+                                a {
+                                    text-transform: uppercase;
+                                    color: $black;
+                                    &:hover {
+                                        color: $black;
+                                    }
+                                }
+                            }
+                        }
+                        div {
+                            div {
+                                h4 {
+                                    a {
+                                        @extend %link-hover-effect; 
+                                        color: $black;
+                                        &:hover {
+                                            color: $black;
+                                        }
+                                        @media screen and (max-width: 768px) {
+                                            font-size: calc(1.5vw + 0.5em);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// === PROGRAMS FRONT-PAGE STYLINE === //
+
+.programs-front-row {
+    margin-top: 125px;
+    @media screen and (max-width: 768px) {
+        margin-top: 10px;
+    }
+    .programs-tabs-link-column {
+        div {
+            h4 {
+                margin-bottom: 20px;
+                a {
+                    color: $black;
+                }
+            }
+        }
+    }
+    .column_container {
+        div {
+            h2 {
+                color: $black;
+                @media screen and (max-width: 768px) {
+                    font-size: 5.5vw;
+                }
+            }
+            p {
+                color: $black;
+                padding-left: 3%;
+            }
+        }
+    }
+}
+
+.programs-zebra-row {
+    margin-top: 25px;
+    .about-zebra-border-column {
+        div {
+            figure {
+                div {
+                    img {
+                        left: -185px;
+                        @media screen and (max-width: 768px) {
+                            left: -85px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// === MOBILE MENU STYLING === //
+
+@media screen and (max-width: 1140px) {
+    .mk-responsive-wrap{
+        overflow-y: hidden;
+    }
+    .mk-header-inner.add-header-height{
+        border-bottom: none;
+    }
+    nav.menu-main_menu-container{
+        ul.mk-responsive-nav {
+            li.menu-item-object-custom {
+                &:nth-child(n+4) {
+                    @extend .btn-with-link-black;
+                }
+                a {
+                    border-top: none;
+                    width: 100px;
+                    text-align: center;
+                    margin: 0 auto;
+                    margin-bottom: 10px;
+                }
+            }
+            li.menu-item-object-page {
+                a {
+                    color: $black !important;
+                    font-size: 16px;
+                    font-family: $h-font;
+                    margin-left: 17%;
+                }
+                ul.sub-menu {
+                    border-top: none;
+                    a {
+                        font-family: $p-font;
+                        font-size: 14px;
+                        width: auto;
+                        margin-left: 20%;
+                        padding: 10px 5px;
+                        @extend %link-hover-effect;
+                        &:hover {
+                            background: none;
+                        }
+                    }
+                }
+            }
+            li {
+                border: none;
+            }
+        }
+    }
+    form.responsive-searchform{
+        display: none;
+    }
+}
+
