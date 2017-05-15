@@ -7,9 +7,244 @@
  Template:       jupiter
  Version:        1.0
  */
-/*
- Sample : remove the comment and start adding your own custom CSS rules.
- body {
- background-color:#fff;
- }
+/**
+ * RTCC 2018 Theme Global Styles *
  */
+/* ============== Font Colors ==============  */
+/* ============== Text Styles ==============  */
+@font-face {
+  font-family: Futura LT Pro Body;
+  src: url(scss/fonts/FuturaLTPro-Book.otf);
+}
+@font-face {
+  font-family: Futura LT Pro Heading;
+  src: url(scss/fonts/FuturaLTPro-Bold.otf);
+}
+/* ============== Button Styles ==============  */
+.btn-outline-blue > button, .btn-outline-white > button, .btn-outline-black > button {
+  padding: 15px;
+  background: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-regular-blue, #menu-main_menu li.menu-item.no-mega-menu:nth-child(4), .btn-regular-black {
+  padding: 17px;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 1px solid #9c9c9c;
+  cursor: pointer;
+}
+.btn-outline-blue > button {
+  border: 3px solid #0075c9 !important;
+  color: #0075c9 !important;
+  transition: all 0.2s ease-in !important;
+  background-color: #fff !important;
+}
+.btn-outline-blue > button:hover {
+  background: #0075c9 !important;
+  color: #fff !important;
+}
+.btn-outline-blue > button:active {
+  background: #fff !important;
+  color: #0075c9 !important;
+}
+.btn-outline-white > button {
+  border: 3px solid #fff !important;
+  color: #fff !important;
+  transition: all 0.2s ease-in;
+  background-color: #000 !important;
+}
+.btn-outline-white > button:hover {
+  background: #0075c9 !important;
+  color: #fff !important;
+}
+.btn-outline-white > button:active {
+  background: #000 !important;
+  color: #fff !important;
+}
+.btn-outline-black > button {
+  border: 3px solid #000 !important;
+  color: #000 !important;
+  transition: all 0.2s ease-in !important;
+  background-color: #fff !important;
+}
+.btn-outline-black > button:hover {
+  background: #000 !important;
+  color: #fff !important;
+}
+.btn-outline-black > button:active {
+  background: #fff !important;
+  color: #000 !important;
+}
+.btn-regular-blue, #menu-main_menu li.menu-item.no-mega-menu:nth-child(4) {
+  background: #0075c9;
+}
+.btn-regular-blue:active, #menu-main_menu li.menu-item.no-mega-menu:nth-child(4):active {
+  background: #004e86;
+}
+.btn-regular-black {
+  background: #000;
+}
+.btn-regular-black:active {
+  background: #5d5d5d;
+}
+body {
+  font-family: Futura LT Pro Body;
+}
+.pg-title-column {
+  position: relative;
+}
+.pg-title {
+  position: absolute;
+  top: 485px;
+  right: 60px;
+}
+.pg-title > p {
+  font-size: 53px;
+  text-transform: uppercase;
+  font-family: Futura LT Pro Heading;
+  color: #fff !important;
+}
+@media screen and (max-width: 782px) {
+  .pg-title > p {
+    font-size: 5.6vw;
+  }
+}
+.pg-indent {
+  padding: 0px 50px;
+}
+@media screen and (max-width: 782px) {
+  .pg-indent {
+    padding: 0px 25px;
+  }
+}
+.pg-heading > h2 {
+  font-size: 33px;
+}
+@media screen and (max-width: 782px) {
+  .pg-heading > h2 {
+    font-size: 5.6vw;
+  }
+}
+.bw-column {
+  background: #000;
+  padding: 10px;
+  border-bottom: 20px solid white;
+}
+@media screen and (max-width: 768px) {
+  .bw-column {
+    margin-top: -20px;
+  }
+}
+.bw-column > div > h2 {
+  color: #fff;
+  padding: 15% 20px 0px;
+  font-size: 2.2vw;
+}
+@media screen and (max-width: 949px) {
+  .bw-column > div > h2 {
+    padding: 3% 20px 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bw-column > div > h2 {
+    padding: 20px;
+    font-size: 20px;
+  }
+}
+.bw-column > div > button {
+  margin-left: 40px;
+}
+@media screen and (max-width: 768px) {
+  .bw-column > div > button {
+    margin-left: 20px;
+  }
+}
+.bw-column-text > p {
+  color: #fff;
+  font-size: 1.25vw;
+  padding: 0px 40px;
+}
+@media screen and (max-width: 768px) {
+  .bw-column-text > p {
+    font-size: 16px;
+    padding: 0px 20px;
+  }
+}
+.video-column {
+  padding: 0px;
+}
+.accordion-base > div > div > svg {
+  fill: #0075c9;
+}
+.mk-accordion.simple-style .mk-accordion-single.current .mk-accordion-tab > .mk-svg-icon {
+  fill: #c1c1c1;
+}
+.paragraph-indent {
+  padding-left: 25px;
+}
+.header-column {
+  padding: 50px;
+}
+.text-column {
+  max-width: 500px;
+  float: none;
+  margin: 0 auto;
+}
+ul#menu-main_menu {
+  width: auto;
+}
+.mk-main-navigation {
+  position: relative;
+}
+ul#menu-main_menu > li > ul.sub-menu {
+  background-color: #fff !important;
+  color: #000;
+  min-width: 160px;
+  position: absolute;
+  top: 60px;
+  left: -18px;
+}
+ul#menu-main_menu > li > ul.sub-menu > li > a {
+  text-align: center;
+  width: auto;
+}
+.mk-main-navigation ul.sub-menu a.menu-item-link {
+  color: #000;
+  font-family: Futura LT Pro Heading;
+}
+.main-navigation-ul ul.sub-menu li.current-menu-item > a.menu-item-link {
+  color: #0075c9 !important;
+}
+.mk-main-navigation ul.sub-menu a.menu-item-link:hover {
+  color: #b7b7b7 !important;
+}
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(4) {
+  padding: 0px;
+  height: 40px;
+  top: 30px;
+  position: relative;
+  border: 3px solid #fff;
+}
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(4) a {
+  height: 100%;
+  line-height: 45px;
+  color: #fff;
+}
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(4):hover {
+  background: #fff;
+  color: #0075c9;
+  border: 3px solid #0075c9;
+}
+.main-navigation-ul > li.menu-item > a.menu-item-link:hover {
+  background-size: 2px 100%;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
+}
+.main-navigation-ul > li.menu-item > a.menu-item-link {
+  font-family: Futura LT Pro Heading;
+}

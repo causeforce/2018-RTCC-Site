@@ -9,6 +9,7 @@ wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
+wp-content/plugins
 
 /.htaccess
 /license.txt
@@ -16,3 +17,4 @@ wp-content/plugins/hello.php
 /sitemap.xml
 /sitemap.xml.gz
 
+wp-content/plugins
