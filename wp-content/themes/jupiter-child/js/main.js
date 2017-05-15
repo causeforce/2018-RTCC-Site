@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    
     // === STICKY SIDE NAV === //
     $(".mk-tabs-tabs").stick_in_parent({offset_top: 150});
 

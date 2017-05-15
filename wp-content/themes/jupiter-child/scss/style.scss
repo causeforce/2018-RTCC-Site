@@ -113,6 +113,29 @@ $h3-body: 27px; //20pts
   }
 }
 
+.btn-outline-white-trans > button {
+  @extend %btn-outline;
+  a{
+      color: #fff;
+      font-family: $h-font;
+  }
+  border: 3px solid $white !important;
+  color: $white !important;
+  transition: all 0.2s ease-in;
+  background-color: transparent !important;
+  &:hover {
+    background: $white !important;
+    color: $black!important;
+    a {
+        color: #000;
+    }
+  }
+  &:active {
+    background: $black !important;
+    color: $white !important;
+  }
+}
+
 .btn-outline-black > button {
   @extend %btn-outline;
   border: 3px solid $black !important;
@@ -978,4 +1001,63 @@ div.p-block {
     position: fixed !important;
     left: 315px;
     top: 140px;
+}
+
+// ABOUT PAGE STYLES 
+
+%about-text-container {
+    padding: 75px 0;
+    .pg-indent {
+        padding-left: 0px;
+    }    
+    @media screen and (min-width: 692px) {
+        padding: 125px 0;
+        .pg-indent {
+            padding-left: 175px;
+        }            
+    }
+}
+
+.about-text-block {
+    @extend %about-text-container;
+}
+.about-text-block-black {
+    @extend %about-text-container;
+    background-color: #000;
+    color: #fff;
+    h2, p {
+        color: #fff;
+    }
+}
+// image hover style
+
+.img-hover-box {
+position: relative;
+display: inline-block;
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }    
+    .text-box {
+        position: absolute;    
+        height: 100%;
+        text-align: center;    
+        width: 100%;
+        p {
+          display: inline-block;
+        }
+        &:before {
+          content: '';
+          display: inline-block;
+          height: 100%;
+          vertical-align: middle;
+        }        
+    }
+}
+.img-hover-row {
+    margin: 50px 0;
+    @media screen and (min-width: 692px) {
+        margin: 100px 0;
+    }
 }

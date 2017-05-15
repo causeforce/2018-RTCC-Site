@@ -19,7 +19,7 @@
   src: url(scss/fonts/FuturaLTPro-Bold.otf);
 }
 /* ============== Button Styles ==============  */
-.btn-outline-blue > button, .btn-outline-white > button, .btn-outline-black > button {
+.btn-outline-blue > button, .btn-outline-white > button, .btn-outline-white-trans > button, .btn-outline-black > button {
   padding: 15px;
   background: #fff;
   font-size: 14px;
@@ -61,6 +61,27 @@
   color: #fff !important;
 }
 .btn-outline-white > button:active {
+  background: #000 !important;
+  color: #fff !important;
+}
+.btn-outline-white-trans > button {
+  border: 3px solid #fff !important;
+  color: #fff !important;
+  transition: all 0.2s ease-in;
+  background-color: transparent !important;
+}
+.btn-outline-white-trans > button a {
+  color: #fff;
+  font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
+}
+.btn-outline-white-trans > button:hover {
+  background: #fff !important;
+  color: #000 !important;
+}
+.btn-outline-white-trans > button:hover a {
+  color: #000;
+}
+.btn-outline-white-trans > button:active {
   background: #000 !important;
   color: #fff !important;
 }
@@ -594,8 +615,8 @@ ul#menu-main_menu li ul.sub-menu li a {
 }
 @media screen and (min-width: 768px) {
   .tab-content-container .tab-copy p, .about-cancer-tabs .tab-copy p {
-      padding-left: 75px;
-    }
+    padding-left: 75px;
+  }
 }
 .mobile-nav-tab-container {
   text-align: center;
@@ -772,4 +793,57 @@ ul#menu-main_menu li ul.sub-menu li a {
   position: fixed !important;
   left: 315px;
   top: 140px;
+}
+.about-text-block, .about-text-block-black {
+  padding: 75px 0;
+}
+.about-text-block .pg-indent, .about-text-block-black .pg-indent {
+  padding-left: 0px;
+}
+@media screen and (min-width: 692px) {
+  .about-text-block, .about-text-block-black {
+    padding: 125px 0;
+  }
+  .about-text-block .pg-indent, .about-text-block-black .pg-indent {
+    padding-left: 175px;
+  }
+}
+.about-text-block-black {
+  background-color: #000;
+  color: #fff;
+}
+.about-text-block-black h2, .about-text-block-black p {
+  color: #fff;
+}
+.img-hover-box {
+  position: relative;
+  display: inline-block;
+}
+.img-hover-box img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.img-hover-box .text-box {
+  position: absolute;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+}
+.img-hover-box .text-box p {
+  display: inline-block;
+}
+.img-hover-box .text-box:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.img-hover-row {
+  margin: 50px 0;
+}
+@media screen and (min-width: 692px) {
+  .img-hover-row {
+    margin: 100px 0;
+  }
 }
