@@ -19,8 +19,7 @@
   src: url(scss/fonts/FuturaLTPro-Bold.otf);
 }
 /* ============== Button Styles ==============  */
-
-.btn-outline-blue > button, .btn-with-link-blue > a, .btn-outline-white > button, .btn-with-link-white > a, .btn-outline-black > button, .btn-with-link-black > a {
+.btn-outline-blue > button, .btn-with-link-blue > a, .btn-outline-white > button, .btn-with-link-white > a, .btn-outline-white-trans > button, .btn-outline-black > button, .btn-with-link-black > a {
   padding: 15px;
   background: #fff;
   font-size: 14px;
@@ -86,7 +85,6 @@
   background: #000 !important;
   color: #fff !important;
 }
-
 .btn-outline-black > button, .btn-with-link-black > a, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom:nth-child(n+4) > a {
   border: 3px solid #000 !important;
   color: #000 !important;
@@ -229,7 +227,7 @@ li.mk-tabs-tab {
 }
 @media screen and (max-width: 782px) {
   .pg-title p {
-    font-size: 7.06vw;
+    font-size: 6.5vw;
   }
 }
 @media screen and (max-width: 482px) {
@@ -917,7 +915,6 @@ span.vc_tta-title-text.display-none-accordion:after {
   left: 315px;
   top: 140px;
 }
-
 .about-text-block, .about-text-block-black {
   padding: 75px 0;
 }
