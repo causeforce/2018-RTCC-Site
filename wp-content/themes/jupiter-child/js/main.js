@@ -16,7 +16,14 @@ $(document).ready(function () {
     
     if (windowSize > 782) {
         $('.safety-accordion-section, .outfitters-accordion-section').addClass('vc_active');
-        // === STICKY SIDE NAV === //
+        // === ON SCROLL HIDE LOGO === //
+        $(window).scroll(function() {
+           if ($(this).scrollTop() > 100 ) {
+               $('.page-template-template-splash>div>div>header>div>div>div>div>a>.mk-desktop-logo.dark-logo').fadeOut('slow');
+           } else {
+               $('.page-template-template-splash>div>div>header>div>div>div>div>a>.mk-desktop-logo.dark-logo').fadeIn('slow');
+           } 
+        });
     } else {
         // Click function for accordion toggle only if window is below 782px //
         $('.vc_tta-panel-heading').click(function () {

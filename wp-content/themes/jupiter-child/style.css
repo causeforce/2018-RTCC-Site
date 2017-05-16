@@ -27,7 +27,7 @@
   font-weight: 600;
   cursor: pointer;
 }
-.btn-regular-blue, #menu-main_menu li.menu-item.no-mega-menu:nth-child(4), .btn-regular-black {
+.btn-regular-blue, #menu-main_menu li.menu-item.no-mega-menu:nth-child(4), .btn-regular-with-link-blue > a, .btn-regular-black {
   padding: 17px;
   color: #fff;
   font-size: 14px;
@@ -50,17 +50,17 @@
   background: #fff !important;
   color: #0075c9 !important;
 }
-.btn-outline-white > button, .btn-with-link-white > a {
+.btn-outline-white > button, .btn-with-link-white > a, .page-template-template-splash .splash-page-header-text div p:nth-child(3) > a {
   border: 3px solid #fff !important;
   color: #fff !important;
   transition: all 0.2s ease-in;
   background-color: #000 !important;
 }
-.btn-outline-white > button:hover, .btn-with-link-white > a:hover {
+.btn-outline-white > button:hover, .btn-with-link-white > a:hover, .page-template-template-splash .splash-page-header-text div p:nth-child(3) > a:hover {
   background: #0075c9 !important;
   color: #fff !important;
 }
-.btn-outline-white > button:active, .btn-with-link-white > a:active {
+.btn-outline-white > button:active, .btn-with-link-white > a:active, .page-template-template-splash .splash-page-header-text div p:nth-child(3) > a:active {
   background: #000 !important;
   color: #fff !important;
 }
@@ -101,10 +101,10 @@
   background: #fff !important;
   color: #000 !important;
 }
-.btn-regular-blue, #menu-main_menu li.menu-item.no-mega-menu:nth-child(4) {
-  background: #0075c9;
+.btn-regular-blue, #menu-main_menu li.menu-item.no-mega-menu:nth-child(4), .btn-regular-with-link-blue > a {
+  background: #0075c9 !important;
 }
-.btn-regular-blue:active, #menu-main_menu li.menu-item.no-mega-menu:nth-child(4):active {
+.btn-regular-blue:active, #menu-main_menu li.menu-item.no-mega-menu:nth-child(4):active, .btn-regular-with-link-blue > a:active {
   background: #004e86;
 }
 .btn-regular-black {
@@ -1169,4 +1169,205 @@ span.vc_tta-title-text.display-none-accordion:after {
 }
 .vc_images_carousel .vc_carousel-indicators li {
   background-color: #fff !important;
+}
+.page-template-template-splash .mk-css-icon-menu {
+  display: none;
+}
+.page-template-template-splash header.mk-header {
+  background: transparent;
+  position: absolute;
+}
+.page-template-template-splash header.mk-header .mk-header-inner {
+  border-bottom: none;
+}
+.page-template-template-splash header.mk-header .mk-header-inner .mk-header-bg {
+  background: transparent;
+}
+.page-template-template-splash .splash-page-header-text div {
+  position: relative;
+  top: 26vh;
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-splash .splash-page-header-text div {
+    top: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-splash .splash-page-header-text div:nth-child(2) {
+    top: 235px;
+  }
+}
+.page-template-template-splash .splash-page-header-text div h1 {
+  font-size: 15vw;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-splash .splash-page-header-text div h1 {
+    font-size: 6em;
+  }
+}
+.page-template-template-splash .splash-page-header-text div p {
+  display: inline;
+  margin-right: 6vw;
+}
+.page-template-template-splash .splash-page-header-text div p:nth-child(3) a {
+  background: transparent !important;
+  padding: 10px 25px;
+}
+.page-template-template-splash .splash-page-header-text div p a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-splash .splash-page-header-text div p a {
+    font-size: 3.2vw;
+  }
+}
+.page-template-template-splash .mk-search-trigger {
+  display: none;
+}
+.page-template-template-splash .splash-location-row {
+  padding: 5% 0;
+}
+.page-template-template-splash .splash-location-row div p {
+  text-transform: uppercase;
+  color: #0075c9;
+  font-size: 25px;
+}
+.page-template-template-splash .splash-location-row div a:hover {
+  color: #000;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-splash .odd-bg-row {
+    top: 0;
+  }
+}
+.page-template-template-splash .odd-bg-row .bw-column, .page-template-template-splash .odd-bg-row .home-bw-column {
+  min-height: 500px;
+  border-bottom: none;
+  padding: 2% 5% 0;
+  z-index: 99;
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-splash .odd-bg-row .bw-column, .page-template-template-splash .odd-bg-row .home-bw-column {
+    border-top: none;
+    padding: 5%;
+    min-height: auto;
+  }
+}
+.page-template-template-splash .odd-bg-row .bw-column div h2, .page-template-template-splash .odd-bg-row .home-bw-column div h2 {
+  padding: 0;
+  font-size: 2vw;
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-splash .odd-bg-row .bw-column div h2, .page-template-template-splash .odd-bg-row .home-bw-column div h2 {
+    font-size: 1.2em;
+  }
+}
+.page-template-template-splash .odd-bg-row .bw-column div p, .page-template-template-splash .odd-bg-row .home-bw-column div p {
+  padding-left: 10%;
+  color: #fff;
+}
+.page-template-template-splash .odd-bg-row .bw-column .btn-with-link-white, .page-template-template-splash .odd-bg-row .home-bw-column .btn-with-link-white, .page-template-template-splash .odd-bg-row .home-bw-column .page-template-template-splash .splash-page-header-text div p:nth-child(3), .page-template-template-splash .splash-page-header-text div .page-template-template-splash .odd-bg-row .home-bw-column p:nth-child(3), .page-template-template-splash .odd-bg-row .bw-column .splash-page-header-text div p:nth-child(3), .page-template-template-splash .splash-page-header-text div .odd-bg-row .bw-column p:nth-child(3) {
+  padding-left: 10%;
+}
+.page-template-template-splash .odd-bg-row .bw-column .btn-with-link-white a, .page-template-template-splash .odd-bg-row .home-bw-column .btn-with-link-white a, .page-template-template-splash .odd-bg-row .home-bw-column .page-template-template-splash .splash-page-header-text div p:nth-child(3) a, .page-template-template-splash .splash-page-header-text div .page-template-template-splash .odd-bg-row .home-bw-column p:nth-child(3) a, .page-template-template-splash .odd-bg-row .bw-column .splash-page-header-text div p:nth-child(3) a, .page-template-template-splash .splash-page-header-text div .odd-bg-row .bw-column p:nth-child(3) a {
+  padding: 10px 30px;
+}
+.page-template-template-splash .odd-bg-row .odd-column-right {
+  padding: 8% 5% 0;
+}
+.page-template-template-splash .odd-bg-row .zebra-top-left {
+  position: absolute;
+  top: 0px;
+  left: -150px;
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-splash .odd-bg-row .zebra-top-left {
+    top: 0px;
+  }
+}
+.page-template-template-splash .odd-bg-row .zebra-top-left figure div img {
+  height: 30px;
+  width: auto;
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-splash .odd-bg-row .zebra-top-left figure div img {
+    height: 5vw;
+  }
+}
+.page-template-template-splash .splash-video-row .bw-column, .page-template-template-splash .splash-video-row .home-bw-column {
+  padding: 2% 5% 0;
+  border-color: #f4f4f4;
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-splash .splash-video-row .bw-column, .page-template-template-splash .splash-video-row .home-bw-column {
+    padding: 10% 5% 5%;
+    border-bottom: none;
+  }
+}
+.page-template-template-splash .splash-video-row .bw-column div h2, .page-template-template-splash .splash-video-row .home-bw-column div h2 {
+  padding: 0;
+  font-size: 2vw;
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-splash .splash-video-row .bw-column div h2, .page-template-template-splash .splash-video-row .home-bw-column div h2 {
+    font-size: 1.2em;
+  }
+}
+.page-template-template-splash .splash-video-row .bw-column div p, .page-template-template-splash .splash-video-row .home-bw-column div p {
+  color: #fff;
+  font-size: 1.2vw;
+  padding-left: 10%;
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-splash .splash-video-row .bw-column div p, .page-template-template-splash .splash-video-row .home-bw-column div p {
+    font-size: 1em;
+  }
+}
+.page-template-template-splash .splash-video-row .bw-column .btn-with-link-white, .page-template-template-splash .splash-video-row .home-bw-column .btn-with-link-white, .page-template-template-splash .splash-video-row .home-bw-column .page-template-template-splash .splash-page-header-text div p:nth-child(3), .page-template-template-splash .splash-page-header-text div .page-template-template-splash .splash-video-row .home-bw-column p:nth-child(3), .page-template-template-splash .splash-video-row .bw-column .splash-page-header-text div p:nth-child(3), .page-template-template-splash .splash-page-header-text div .splash-video-row .bw-column p:nth-child(3) {
+  padding-left: 10%;
+}
+.page-template-template-splash .splash-video-row .bw-column .btn-with-link-white a, .page-template-template-splash .splash-video-row .home-bw-column .btn-with-link-white a, .page-template-template-splash .splash-video-row .home-bw-column .page-template-template-splash .splash-page-header-text div p:nth-child(3) a, .page-template-template-splash .splash-page-header-text div .page-template-template-splash .splash-video-row .home-bw-column p:nth-child(3) a, .page-template-template-splash .splash-video-row .bw-column .splash-page-header-text div p:nth-child(3) a, .page-template-template-splash .splash-page-header-text div .splash-video-row .bw-column p:nth-child(3) a {
+  padding: 10px 30px;
+}
+.page-template-template-splash .splash-video-row .video-column {
+  border-bottom: 20px solid #f4f4f4;
+}
+.page-template-template-splash .splash-video-row .video-column .video-container {
+  margin-bottom: 0px;
+}
+.page-template-template-splash .home-gray-section, .page-template-template-splash .home-gray-icon-section, .page-template-template-splash .photos-gray-section {
+  padding: 0px;
+}
+.page-template-template-splash .home-gray-section .page-section-content, .page-template-template-splash .home-gray-icon-section .page-section-content, .page-template-template-splash .photos-gray-section .page-section-content {
+  padding: 5% 0;
+}
+.page-template-template-splash .home-gray-section .column_container div h2, .page-template-template-splash .home-gray-icon-section .column_container div h2, .page-template-template-splash .photos-gray-section .column_container div h2 {
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-splash .home-gray-section .splash-gray-column-bottom div, .page-template-template-splash .home-gray-icon-section .splash-gray-column-bottom div, .page-template-template-splash .photos-gray-section .splash-gray-column-bottom div {
+    text-align: left;
+  }
+}
+.page-template-template-splash .home-gray-section .splash-gray-column-bottom div p, .page-template-template-splash .home-gray-icon-section .splash-gray-column-bottom div p, .page-template-template-splash .photos-gray-section .splash-gray-column-bottom div p {
+  color: #000;
+  font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
+}
+.page-template-template-splash .home-gray-section .splash-gray-column-bottom div a, .page-template-template-splash .home-gray-icon-section .splash-gray-column-bottom div a, .page-template-template-splash .photos-gray-section .splash-gray-column-bottom div a {
+  color: #fff;
+  padding: 10px 40px;
+  border: 3px solid #0075c9;
+}
+.page-template-template-splash .home-gray-section .splash-gray-column-bottom div a:hover, .page-template-template-splash .home-gray-icon-section .splash-gray-column-bottom div a:hover, .page-template-template-splash .photos-gray-section .splash-gray-column-bottom div a:hover {
+  color: #0075c9;
+  background: #fff !important;
+  border: 3px solid #0075c9;
+}
+.page-template-template-splash .home-gray-section .splash-gray-column-bottom div a:focus, .page-template-template-splash .home-gray-icon-section .splash-gray-column-bottom div a:focus, .page-template-template-splash .photos-gray-section .splash-gray-column-bottom div a:focus {
+  color: #fff;
 }

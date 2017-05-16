@@ -161,9 +161,10 @@ $h3-body: 27px; //20pts
   }
 }
 
-.btn-regular-blue {
+.btn-regular-blue,
+.btn-regular-with-link-blue > a{
   @extend %btn-regular;
-  background: $blue;
+  background: $blue !important;
   &:active {
     background: $blue-dark;
   }
@@ -1488,6 +1489,217 @@ display: inline-block;
         }
         li {
             background-color: $white !important;
+        }
+    }
+}
+
+// === SPLASH PAGE STYLING === //
+
+.page-template-template-splash {
+    .mk-css-icon-menu {
+        display: none;
+    }
+    header.mk-header {
+        background: transparent;
+        position: absolute;
+        .mk-header-inner {
+            border-bottom: none;
+            .mk-header-bg {
+                background: transparent;
+            }
+        }
+    }
+    .splash-page-header-text {
+        div {
+            position: relative;
+            top: 26vh;
+            @media screen and (max-width: 768px) {
+                top: 200px;
+            }
+            &:nth-child(2) {
+                @media screen and (max-width: 768px){
+                    top: 235px;
+                }
+            }
+            h1 {
+                font-size: 15vw;
+                color: $white;
+                @media screen and (max-width: 768px) {
+                    font-size: 6em;
+                }
+            }
+            p {
+                display: inline;
+                margin-right: 6vw;
+                &:nth-child(3) {
+                    @extend .btn-with-link-white;
+                    a {
+                        background: transparent !important;
+                        padding: 10px 25px;
+                    }
+                }
+                a {
+                    color: $white;
+                    text-transform: uppercase;
+                    font-size: 24px;
+                    font-weight: 700;
+                    @media screen and (max-width: 768px) {
+                        font-size: 3.2vw;
+                    }
+                }
+            }
+        }
+    }
+    .mk-search-trigger {
+        display: none;
+    }
+    .splash-location-row {
+        padding: 5% 0;
+        div {
+            p {
+                text-transform: uppercase;
+                color: $blue;
+                font-size: 25px;
+            }
+            a {
+                &:hover {
+                    color: $black;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .odd-bg-row {
+        @media screen and (max-width: 768px) {
+            top: 0;
+        }
+        .bw-column {
+            min-height: 500px;
+            border-bottom: none;
+            padding: 2% 5% 0;
+            z-index: 99;
+            @media screen and (max-width: 768px){
+                border-top: none;
+                padding: 5%;
+                min-height: auto;
+            }
+            div {
+                h2 {
+                    padding: 0;
+                    font-size: 2.0vw;
+                    @media screen and (max-width: 768px) {
+                        font-size: 1.2em;
+                    }
+                }
+                p {
+                    padding-left: 10%;
+                    color: $white;
+                }
+            }
+            .btn-with-link-white{
+                padding-left: 10%;
+                a {
+                    padding: 10px 30px;
+                }
+            }
+        }
+        .odd-column-right {
+            padding: 8% 5% 0;
+        }
+        .zebra-top-left {
+            position: absolute;
+            top: 0px;
+            left: -150px;
+            @media screen and (max-width: 768px) {
+                top: 0px;
+            }
+            figure {
+                div {
+                    img {
+                        height: 30px;
+                        width: auto;
+                        @media screen and (max-width: 768px) {
+                            height: 5vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .splash-video-row {
+        .bw-column {
+            padding: 2% 5% 0;
+            border-color: $gray;
+            @media screen and (max-width: 768px) {
+                padding: 10% 5% 5%;
+                border-bottom: none;
+            }
+            div {
+                h2 {
+                    padding: 0;
+                    font-size: 2.0vw;
+                    @media screen and (max-width: 768px) {
+                        font-size: 1.2em;
+                    }
+                }
+                p {
+                    color: $white;
+                    font-size: 1.2vw;
+                    padding-left: 10%;
+                    @media screen and (max-width: 768px) {
+                        font-size: 1em;
+                    }
+                }
+            }
+            .btn-with-link-white {
+                padding-left: 10%;
+                a {
+                    padding: 10px 30px;
+                }
+            }
+        }
+        .video-column {
+            border-bottom: 20px solid $gray;
+            .video-container {
+                margin-bottom: 0px;
+            }
+        }
+    }
+    .home-gray-section {
+        padding: 0px;
+        .page-section-content {
+            padding: 5% 0;
+        }
+        .column_container {
+            div {
+                h2 {
+                    text-align: left;
+                }
+            }
+        }
+        .splash-gray-column-bottom {
+            div {
+                @media screen and (max-width: 768px) {
+                    text-align: left;
+                }
+                p {
+                    color: $black;
+                    font-family: $h-font;
+                }
+                a {
+                    color: $white;
+                    padding: 10px 40px;
+                    border: 3px solid $blue;
+                    &:hover {
+                        color: $blue;
+                        background: $white !important;
+                        border: 3px solid $blue;
+                    }
+                    &:focus {
+                        color: $white;
+                    }
+                }
+            }
         }
     }
 }
