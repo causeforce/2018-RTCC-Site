@@ -1794,3 +1794,60 @@ display: inline-block;
     margin-top: 75px;
     margin-bottom: 75px
 }
+//=== FAQS PAGE STYLING ===//
+.page-template-template-faqs {
+    counter-reset: faqs-counter;
+    .master-holder h2 {
+        color: $black;
+    }
+    .faqs-accordion {
+        .vc_tta-panels-container{
+            margin-bottom: 50px;
+        }
+        .vc_tta-panel-heading {
+            pointer-events: auto;
+            counter-increment: faqs-counter;
+            h4 {
+                a {
+                    &:before {
+                        content: counter(faqs-counter, decimal-leading-zero) " ";
+                        margin-right: 20px;
+                        color: $blue;
+                    }
+                    i {
+                        position: absolute;
+                        right: 0;
+                    }
+                    i.fa-plus {
+                        &:before {
+                            color: $blue;
+                        }
+                    }
+                    i.fa-minus{
+                        &:before {
+                            color: $gray-dark;
+                        }
+                    }
+                    span {
+                        color: $black;
+                        &:hover {
+                            color: $blue;
+                        }
+                        @media screen and (max-width: 768px) {
+                            &:after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .vc_tta-panel-body {
+            div {
+                p {
+                    padding-left: 15%;
+                }
+            }
+        }
+    }
+}
