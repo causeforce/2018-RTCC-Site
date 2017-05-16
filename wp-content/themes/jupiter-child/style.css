@@ -141,7 +141,7 @@ li.mk-tabs-tab {
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
 }
 /* ============== Link Hover Effect ============== */
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3), .mk-tabs-tab > a, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a, .rider-hub-program-link {
+.hover-link-default, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3), .mk-tabs-tab > a, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a, .rider-hub-program-link {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -153,7 +153,7 @@ li.mk-tabs-tab {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):before, .mk-tabs-tab > a:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:before, .rider-hub-program-link:before {
+.hover-link-default:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):before, .mk-tabs-tab > a:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:before, .rider-hub-program-link:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -173,11 +173,16 @@ li.mk-tabs-tab {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):hover:before, .mk-tabs-tab > a:hover:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:hover:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:hover:before, .rider-hub-program-link:hover:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):focus:before, .mk-tabs-tab > a:focus:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:focus:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:focus:before, .rider-hub-program-link:focus:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):active:before, .mk-tabs-tab > a:active:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:active:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:active:before, .rider-hub-program-link:active:before {
+.hover-link-default:hover:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):hover:before, .mk-tabs-tab > a:hover:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:hover:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:hover:before, .rider-hub-program-link:hover:before, .hover-link-default:focus:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):focus:before, .mk-tabs-tab > a:focus:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:focus:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:focus:before, .rider-hub-program-link:focus:before, .hover-link-default:active:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):active:before, .mk-tabs-tab > a:active:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:active:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:active:before, .rider-hub-program-link:active:before {
   -webkit-transform: scaleY(0.5);
   transform: scaleY(0.5);
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+.hover-link-default {
+  font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 /* ============== Active Menu List  ============== */
 .menu-hover-style-2 .main-navigation-ul li.current-page-ancestor a {

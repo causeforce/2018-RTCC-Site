@@ -252,6 +252,12 @@ li.mk-tabs-tab {
     }
 }
 
+.hover-link-default {
+    @extend %link-hover-effect;
+    font-family: $h-font;
+    padding-left:5px;
+    padding-right:5px;
+}
 /* ============== Active Menu List  ============== */
 
 .menu-hover-style-2 .main-navigation-ul {
