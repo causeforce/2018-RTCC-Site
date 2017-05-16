@@ -87,25 +87,32 @@
   background: #000 !important;
   color: #fff !important;
 }
-.btn-outline-black > button, .btn-with-link-black > a, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom:nth-child(n+4) > a {
+.btn-outline-black > button, .btn-with-link-black > a, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom:nth-child(-n+2) > a {
   border: 3px solid #000 !important;
   color: #000 !important;
   transition: all 0.2s ease-in !important;
   background-color: #fff !important;
 }
-.btn-outline-black > button:hover, .btn-with-link-black > a:hover, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom:nth-child(n+4) > a:hover {
+.btn-outline-black > button:hover, .btn-with-link-black > a:hover, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom:nth-child(-n+2) > a:hover {
   background: #000 !important;
   color: #fff !important;
 }
-.btn-outline-black > button:active, .btn-with-link-black > a:active, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom:nth-child(n+4) > a:active {
+.btn-outline-black > button:active, .btn-with-link-black > a:active, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom:nth-child(-n+2) > a:active {
   background: #fff !important;
   color: #000 !important;
 }
-.btn-regular-blue, #menu-main_menu li.menu-item.no-mega-menu:nth-child(4), .btn-regular-with-link-blue > a {
+.btn-regular-blue, #menu-main_menu li.menu-item.no-mega-menu:nth-child(4), .btn-regular-with-link-blue > a, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom:nth-child(3) > a {
   background: #0075c9 !important;
+  border: 3px solid #0075c9;
+  color: #fff;
+  transition: all 0.2s ease-in;
 }
-.btn-regular-blue:active, #menu-main_menu li.menu-item.no-mega-menu:nth-child(4):active, .btn-regular-with-link-blue > a:active {
+.btn-regular-blue:active, #menu-main_menu li.menu-item.no-mega-menu:nth-child(4):active, .btn-regular-with-link-blue > a:active, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom:nth-child(3) > a:active {
   background: #004e86;
+}
+.btn-regular-with-link-blue:hover a, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom:nth-child(3):hover a {
+  color: #0075c9 !important;
+  background: #fff !important;
 }
 .btn-regular-black {
   background: #000;
@@ -127,7 +134,7 @@ li.mk-tabs-tab {
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
 }
 /* ============== Link Hover Effect ============== */
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3), .mk-tabs-tab > a, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a, .rider-hub-program-link {
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3), .mk-tabs-tab > a, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a, .rider-hub-program-link {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -139,7 +146,7 @@ li.mk-tabs-tab {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):before, .mk-tabs-tab > a:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:before, .rider-hub-program-link:before {
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):before, .mk-tabs-tab > a:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:before, .rider-hub-program-link:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -159,7 +166,7 @@ li.mk-tabs-tab {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):hover:before, .mk-tabs-tab > a:hover:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:hover:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:hover:before, .rider-hub-program-link:hover:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):focus:before, .mk-tabs-tab > a:focus:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:focus:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:focus:before, .rider-hub-program-link:focus:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):active:before, .mk-tabs-tab > a:active:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:active:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:active:before, .rider-hub-program-link:active:before {
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):hover:before, .mk-tabs-tab > a:hover:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:hover:before, .rider-hub-program-link:hover:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):focus:before, .mk-tabs-tab > a:focus:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:focus:before, .rider-hub-program-link:focus:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):active:before, .mk-tabs-tab > a:active:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:active:before, .rider-hub-program-link:active:before {
   -webkit-transform: scaleY(0.5);
   transform: scaleY(0.5);
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
@@ -1083,9 +1090,16 @@ span.vc_tta-title-text.display-none-accordion:after {
 @media screen and (max-width: 1140px) {
   .mk-responsive-wrap {
     overflow-y: hidden;
+    width: 75%;
+    right: 0;
+    max-width: 400px;
+    min-height: 500px;
   }
   .mk-header-inner.add-header-height {
     border-bottom: none;
+  }
+  nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom:nth-child(3) a {
+    color: #fff !important;
   }
   nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom a {
     border-top: none;
@@ -1098,7 +1112,8 @@ span.vc_tta-title-text.display-none-accordion:after {
     color: #000 !important;
     font-size: 16px;
     font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
-    margin-left: 17%;
+    width: 140px;
+    margin: 0 auto;
   }
   nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu {
     border-top: none;
@@ -1106,15 +1121,24 @@ span.vc_tta-title-text.display-none-accordion:after {
   nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a {
     font-family: "Futura LT Pro Body", Helvetica, sans-serif;
     font-size: 14px;
-    width: auto;
-    margin-left: 20%;
+    width: 100px;
+    margin: 0 auto;
     padding: 10px 5px;
+    transition: 0.3s all ease-in;
   }
   nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:hover {
+    color: #0075c9 !important;
     background: none;
+    font-weight: 700;
   }
   nav.menu-main_menu-container ul.mk-responsive-nav li {
     border: none;
+  }
+  nav.menu-main_menu-container ul.mk-responsive-nav li a:hover {
+    background: none;
+  }
+  nav.menu-main_menu-container ul.mk-responsive-nav li span.mk-nav-arrow svg {
+    fill: #0075c9;
   }
   form.responsive-searchform {
     display: none;
@@ -1249,6 +1273,22 @@ span.vc_tta-title-text.display-none-accordion:after {
 .page-template-template-splash .splash-location-row div a:hover {
   color: #000;
   font-weight: 700;
+}
+.page-template-template-splash .overlapping-box {
+  position: absolute;
+}
+.page-template-template-splash .overlapping-box .empty-box {
+  position: absolute;
+  bottom: 35px;
+  height: 40px;
+  width: 33vw;
+  background: black;
+  z-index: 99;
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-splash .overlapping-box .empty-box {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
   .page-template-template-splash .odd-bg-row {

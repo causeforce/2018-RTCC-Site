@@ -81,4 +81,23 @@ $(document).ready(function () {
     .on('sticky_kit:unbottom', function(e) {
     $(this).parent().css('position', 'relative');
     });
+    
+    var mobileButtons = $('.menu-item-object-custom').not('.no-mega-menu');
+    // === Mobile Menu Scripts === //
+    if (windowSize > 1140) {
+
+    } else {
+        $('.header-logo>a>img').addClass('.mobile-img');
+        $('ul.mk-responsive-nav').prepend(mobileButtons);
+        // === Click Function to Change Logo into Mobile on Hamburger click === //
+        $('.mk-nav-responsive-link').click(function(){
+            $('.header-logo>a>img').toggleClass('.mobile-img');
+            if ($('.header-logo>a>img').hasClass('.mobile-img')){
+                $('.header-logo>a>img').attr('src', '/wp-content/uploads/2017/05/ride_logo.png');
+            }else {
+                $('.header-logo>a>img').attr('src', '/wp-content/uploads/2017/05/ride-icon_mobile.png');
+                $('.header-logo>a>img').css('width', 'auto');
+            }
+        });
+    }
 });

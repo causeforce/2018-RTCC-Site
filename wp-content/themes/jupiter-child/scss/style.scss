@@ -163,11 +163,23 @@ $h3-body: 27px; //20pts
 
 .btn-regular-blue,
 .btn-regular-with-link-blue > a{
-  @extend %btn-regular;
-  background: $blue !important;
+    @extend %btn-regular;
+    background: $blue !important;
+    border: 3px solid $blue;
+    color: $white;
+    transition: all 0.2s ease-in;
   &:active {
     background: $blue-dark;
   }
+}
+
+.btn-regular-with-link-blue {
+    &:hover {
+        a {
+            color: $blue !important;
+            background: $white !important;
+        }
+    }
 }
 
 .btn-regular-black {
@@ -1381,15 +1393,30 @@ display: inline-block;
 @media screen and (max-width: 1140px) {
     .mk-responsive-wrap{
         overflow-y: hidden;
+        width: 75%;
+        right: 0;
+        max-width: 400px;
+        min-height: 500px;
     }
+//    header.mk-header{
+//        width: 80%;
+//        float: right;
+//        max-width: 400px;
+//    }
     .mk-header-inner.add-header-height{
         border-bottom: none;
     }
     nav.menu-main_menu-container{
         ul.mk-responsive-nav {
             li.menu-item-object-custom {
-                &:nth-child(n+4) {
+                &:nth-child(-n+2) {
                     @extend .btn-with-link-black;
+                }
+                &:nth-child(3) {
+                    @extend .btn-regular-with-link-blue;
+                    a {
+                        color: $white !important;
+                    }
                 }
                 a {
                     border-top: none;
@@ -1404,25 +1431,38 @@ display: inline-block;
                     color: $black !important;
                     font-size: 16px;
                     font-family: $h-font;
-                    margin-left: 17%;
+                    width: 140px;
+                    margin: 0 auto;
                 }
                 ul.sub-menu {
                     border-top: none;
                     a {
                         font-family: $p-font;
                         font-size: 14px;
-                        width: auto;
-                        margin-left: 20%;
+                        width: 100px;
+                        margin: 0 auto;
                         padding: 10px 5px;
-                        @extend %link-hover-effect;
+                        transition: 0.3s all ease-in;
                         &:hover {
+                            color: $blue !important;
                             background: none;
+                            font-weight: 700;
                         }
                     }
                 }
             }
             li {
                 border: none;
+                a {
+                    &:hover {
+                        background: none;
+                    }
+                }
+                span.mk-nav-arrow {
+                    svg {
+                        fill: $blue;
+                    }
+                }
             }
         }
     }
@@ -1574,6 +1614,20 @@ display: inline-block;
                     color: $black;
                     font-weight: 700;
                 }
+            }
+        }
+    }
+    .overlapping-box {
+        position: absolute;
+        .empty-box {
+            position: absolute;
+            bottom: 35px;
+            height: 40px;
+            width: 33vw;
+            background: black;
+            z-index: 99;
+            @media screen and (max-width: 768px) {
+                display: none;
             }
         }
     }
