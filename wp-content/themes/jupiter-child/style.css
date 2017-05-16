@@ -127,7 +127,7 @@ li.mk-tabs-tab {
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
 }
 /* ============== Link Hover Effect ============== */
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3), .mk-tabs-tab > a, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a {
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3), .mk-tabs-tab > a, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a, .rider-hub-program-link {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -139,7 +139,7 @@ li.mk-tabs-tab {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):before, .mk-tabs-tab > a:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:before {
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):before, .mk-tabs-tab > a:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:before, .rider-hub-program-link:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -159,7 +159,7 @@ li.mk-tabs-tab {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):hover:before, .mk-tabs-tab > a:hover:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:hover:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:hover:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):focus:before, .mk-tabs-tab > a:focus:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:focus:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:focus:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):active:before, .mk-tabs-tab > a:active:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:active:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:active:before {
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):hover:before, .mk-tabs-tab > a:hover:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:hover:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:hover:before, .rider-hub-program-link:hover:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):focus:before, .mk-tabs-tab > a:focus:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:focus:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:focus:before, .rider-hub-program-link:focus:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):active:before, .mk-tabs-tab > a:active:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:active:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:active:before, .rider-hub-program-link:active:before {
   -webkit-transform: scaleY(0.5);
   transform: scaleY(0.5);
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
@@ -242,7 +242,7 @@ li.mk-tabs-tab {
   }
 }
 .pg-indent {
-  padding: 0px 50px;
+  padding-left: 100px;
 }
 @media screen and (max-width: 782px) {
   .pg-indent {
@@ -582,6 +582,16 @@ ul#menu-main_menu li ul.sub-menu li a {
   div.p-block {
     margin-top: 50px !important;
     margin-bottom: 50px !important;
+  }
+}
+.main-text-block-row {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+@media screen and (min-width: 862px) {
+  .main-text-block-row {
+    margin-top: 115px;
+    margin-bottom: 115px;
   }
 }
 .mk-tabs.default-style.vertical-style .mk-tabs-panes {
@@ -1128,7 +1138,7 @@ span.vc_tta-title-text.display-none-accordion:after {
 .pic-text-row .mini-text-container p {
   color: #fff;
 }
-@media screen and (min-width: 692px) {
+@media screen and (min-width: 768px) {
   .pic-text-row .mini-text-container {
     margin: 80px auto !important;
     padding-top: 0;
@@ -1137,9 +1147,95 @@ span.vc_tta-title-text.display-none-accordion:after {
 }
 @media screen and (min-width: 1120px) {
   .pic-text-row .mini-text-container p {
-    margin-left: 25px;
+    margin-left: 50px;
   }
   .pic-text-row .mini-text-container .vc_btn3-container a {
-    margin-left: 25px;
+    margin-left: 50px;
   }
+}
+.blurb-column {
+  margin-bottom: 90px;
+}
+.blurb-column p {
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .blurb-column {
+    margin-bottom: 0;
+  }
+}
+.important-announce-header {
+  margin-top: 70px;
+}
+.important-announce-header h1 {
+  font-size: 24px;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .important-announce-header {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  .important-announce-header h1 {
+    font-size: 36px !important;
+  }
+}
+.announcement-text-row.vc_inner.vc_row {
+  background: black;
+}
+.announcement-text-row.vc_inner.vc_row .important-announce-text-cont {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.announcement-text-row.vc_inner.vc_row p, .announcement-text-row.vc_inner.vc_row h3 {
+  color: #fff;
+}
+.announcement-text-row.vc_inner.vc_row p {
+  font-size: 16px;
+}
+@media screen and (min-width: 968px) {
+  .announcement-text-row.vc_inner.vc_row {
+    padding: 40px 15px;
+    margin-top: -75px;
+    margin-left: 40px !important;
+    margin-right: -15px !important;
+  }
+  .announcement-text-row.vc_inner.vc_row .important-announce-text-cont {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .announcement-text-row.vc_inner.vc_row .important-announce-img {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .announcement-text-row.vc_inner.vc_row p {
+    font-size: 14px;
+    padding-left: 15px;
+  }
+}
+.wpb_single_image.wpb_content_element.vc_align_left.important-announce-img {
+  text-align: center;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 968px) {
+  .wpb_single_image.wpb_content_element.vc_align_left.important-announce-img {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+}
+.rider-hub-program-link {
+  color: white;
+  font-size: 18px;
+  font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
+  margin-bottom: 18px;
+  padding: 0 5px;
+}
+@media screen and (min-width: 768px) {
+  .offset-img-text-row {
+    margin-bottom: 175px;
+  }
+}
+.rider-hub-events {
+  margin-top: 75px;
+  margin-bottom: 75px;
 }
