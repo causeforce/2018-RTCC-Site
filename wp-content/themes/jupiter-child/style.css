@@ -19,7 +19,7 @@
   src: url(scss/fonts/FuturaLTPro-Bold.otf);
 }
 /* ============== Button Styles ==============  */
-.btn-outline-blue > button, .btn-with-link-blue > a, .btn-outline-white > button, .btn-with-link-white > a, .btn-outline-white-trans > button, .btn-outline-black > button, .btn-with-link-black > a {
+.btn-outline-blue > button, .btn-with-link-blue > a, .btn-outline-white > button, .btn-with-link-white > a, .btn-with-link-trans > a, .btn-outline-white-trans > button, .btn-outline-black > button, .btn-with-link-black > a {
   padding: 15px;
   background: #fff;
   font-size: 14px;
@@ -61,6 +61,20 @@
   color: #fff !important;
 }
 .btn-outline-white > button:active, .btn-with-link-white > a:active, .page-template-template-splash .splash-page-header-text div p:nth-child(3) > a:active {
+  background: #000 !important;
+  color: #fff !important;
+}
+.btn-with-link-trans > a {
+  border: 3px solid #fff !important;
+  color: #fff !important;
+  transition: all 0.2s ease-in;
+  background-color: transparent !important;
+}
+.btn-with-link-trans > a:hover {
+  background: #fff !important;
+  color: #000 !important;
+}
+.btn-with-link-trans > a:active {
   background: #000 !important;
   color: #fff !important;
 }
@@ -1157,17 +1171,6 @@ span.vc_tta-title-text.display-none-accordion:after {
     margin-left: 50px;
   }
 }
-.blurb-column {
-  margin-bottom: 90px;
-}
-.blurb-column p {
-  color: #fff;
-}
-@media screen and (min-width: 768px) {
-  .blurb-column {
-    margin-bottom: 0;
-  }
-}
 .icon-next, .icon-prev {
   height: 30px !important;
   width: 30px !important;
@@ -1392,6 +1395,17 @@ span.vc_tta-title-text.display-none-accordion:after {
 .page-template-template-splash .home-gray-section .splash-gray-column-bottom div a:focus, .page-template-template-splash .home-gray-icon-section .splash-gray-column-bottom div a:focus, .page-template-template-splash .photos-gray-section .splash-gray-column-bottom div a:focus {
   color: #fff;
 }
+.blurb-column {
+  margin-bottom: 90px;
+}
+.blurb-column p {
+  color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .blurb-column {
+    margin-bottom: 0;
+  }
+}
 .important-announce-header {
   margin-top: 70px;
 }
@@ -1460,10 +1474,20 @@ span.vc_tta-title-text.display-none-accordion:after {
 }
 @media screen and (min-width: 768px) {
   .offset-img-text-row {
-    margin-bottom: 175px;
+    margin-bottom: 175px !important;
   }
 }
 .rider-hub-events {
   margin-top: 75px;
   margin-bottom: 75px;
+}
+.offset-img-text-column {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media screen and (min-width: 768px) {
+  .offset-img-text-column {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
