@@ -1491,3 +1491,45 @@ span.vc_tta-title-text.display-none-accordion:after {
     padding-right: 15px;
   }
 }
+.page-template-template-faqs {
+  counter-reset: faqs-counter;
+}
+.page-template-template-faqs .master-holder h2 {
+  color: #000;
+}
+.page-template-template-faqs .faqs-accordion .vc_tta-panels-container {
+  margin-bottom: 50px;
+}
+.page-template-template-faqs .faqs-accordion .vc_tta-panel-heading {
+  pointer-events: auto;
+  counter-increment: faqs-counter;
+}
+.page-template-template-faqs .faqs-accordion .vc_tta-panel-heading h4 a:before {
+  content: counter(faqs-counter,decimal-leading-zero) " ";
+  margin-right: 20px;
+  color: #0075c9;
+}
+.page-template-template-faqs .faqs-accordion .vc_tta-panel-heading h4 a i {
+  position: absolute;
+  right: 0;
+}
+.page-template-template-faqs .faqs-accordion .vc_tta-panel-heading h4 a i.fa-plus:before {
+  color: #0075c9;
+}
+.page-template-template-faqs .faqs-accordion .vc_tta-panel-heading h4 a i.fa-minus:before {
+  color: #5d5d5d;
+}
+.page-template-template-faqs .faqs-accordion .vc_tta-panel-heading h4 a span {
+  color: #000;
+}
+.page-template-template-faqs .faqs-accordion .vc_tta-panel-heading h4 a span:hover {
+  color: #0075c9;
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-faqs .faqs-accordion .vc_tta-panel-heading h4 a span:after {
+    display: none;
+  }
+}
+.page-template-template-faqs .faqs-accordion .vc_tta-panel-body div p {
+  padding-left: 15%;
+}

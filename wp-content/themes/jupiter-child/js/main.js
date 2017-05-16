@@ -14,6 +14,18 @@ $(document).ready(function () {
     // toggle class for mobile tab accordion
     // $('.mobile-nav-tab-container-header').toggleClass('vc_active');
     
+    // Accordion to change into minus on click //
+    $('.vc_tta-panel-heading').click(function(){
+       var collapsed=$(this).find('i').hasClass('fa-plus');
+
+        $('.vc_tta-icon').removeClass('fa-minus');
+
+        $('.vc_tta-icon').addClass('fa-plus');
+        if(collapsed){
+            $('.vc_tta-icon',this).toggleClass('fa-plus fa-minus');
+        }
+    });
+    
     if (windowSize > 782) {
         $('.safety-accordion-section, .outfitters-accordion-section').addClass('vc_active');
         // === ON SCROLL HIDE LOGO === //
