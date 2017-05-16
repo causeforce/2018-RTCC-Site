@@ -322,7 +322,7 @@ li.mk-tabs-tab {
 }
 
 .pg-indent {
-    padding: 0px 50px;
+    padding-left: 100px;
     @media screen and (max-width: 782px){
         padding: 0px;
     }
@@ -746,6 +746,14 @@ div.p-block {
     @media screen and (max-width: 782px){
         margin-top: 50px !important;
         margin-bottom: 50px !important;
+    }
+}
+.main-text-block-row {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    @media screen and (min-width: 862px){
+        margin-top: 115px;
+        margin-bottom: 115px;
     }
 }
 // ===  TAB STYLES === //
@@ -1444,18 +1452,18 @@ display: inline-block;
         p {
             color: $white;
         }
-        @media screen and (min-width: 692px) {
+        @media screen and (min-width: 768px) {
             margin: 80px auto !important;
             padding-top: 0;
             padding-bottom: 0;                    
         }        
         @media screen and (min-width:1120px) {
             p {
-                margin-left: 25px;
+                margin-left: 50px;
             }
             .vc_btn3-container {
                 a {
-                    margin-left: 25px;
+                    margin-left: 50px;
                 }
             }
         }
@@ -1702,4 +1710,87 @@ display: inline-block;
             }
         }
     }
+}
+
+// === Blurb Column Styling === //
+.blurb-column {
+    margin-bottom: 90px;
+
+    p {
+        color: $white;
+    }
+    @media screen and (min-width:768px) {
+        margin-bottom: 0;
+    }
+}
+// RIDER HUB STYLING //
+.important-announce-header {
+    h1 {
+        font-size: 24px;
+        text-align: left;
+    }    
+    margin-top: 70px;    
+    @media screen and (min-width:768px) {
+        h1 {
+            font-size: 36px !important;
+        }
+        margin-top: 100px;
+        margin-bottom: 50px; 
+    }
+}
+.announcement-text-row.vc_inner.vc_row {
+    .important-announce-text-cont {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    background: black;
+    p, h3 {
+        color: $white;
+    }
+    p {
+        font-size: 16px;
+    }
+    @media screen and (min-width:968px) {
+        .important-announce-text-cont {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        .important-announce-img {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 14px;
+            padding-left: 15px;
+        }
+        padding: 40px 15px;
+        margin-top: -75px;
+        margin-left: 40px !important;
+        margin-right: -15px !important;
+    }
+}
+.wpb_single_image.wpb_content_element.vc_align_left.important-announce-img {
+    text-align: center;
+    margin-bottom: 0;
+    @media screen and (min-width:968px) {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+}
+.rider-hub-program-link {
+    @extend %link-hover-effect;
+    color: white;
+    font-size: 18px;
+    font-family: $h-font;
+    margin-bottom: 18px;
+    padding: 0 5px;
+}
+.offset-img-text-row {
+    @media screen and (min-width:768px) {
+        margin-bottom: 175px;
+    }
+}
+.rider-hub-events {
+    margin-top: 75px;
+    margin-bottom: 75px
 }
