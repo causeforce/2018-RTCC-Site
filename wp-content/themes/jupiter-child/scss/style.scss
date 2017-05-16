@@ -115,7 +115,21 @@ $h3-body: 27px; //20pts
     color: $white !important;
   }
 }
-
+.btn-with-link-trans > a {
+  @extend %btn-outline;
+  border: 3px solid $white !important;
+  color: $white !important;
+  transition: all 0.2s ease-in;
+    background-color: transparent !important;
+  &:hover {
+    background: $white !important;
+    color: $black !important;
+  }
+  &:active {
+    background: $black !important;
+    color: $white !important;
+  }
+}
 
 .btn-outline-white-trans > button {
   @extend %btn-outline;
@@ -250,6 +264,12 @@ li.mk-tabs-tab {
     }
 }
 
+.hover-link-default {
+    @extend %link-hover-effect;
+    font-family: $h-font;
+    padding-left:5px;
+    padding-right:5px;
+}
 /* ============== Active Menu List  ============== */
 
 .menu-hover-style-2 .main-navigation-ul {
@@ -1841,13 +1861,22 @@ display: inline-block;
 }
 .offset-img-text-row {
     @media screen and (min-width:768px) {
-        margin-bottom: 175px;
+        margin-bottom: 175px !important;
     }
 }
 .rider-hub-events {
     margin-top: 75px;
     margin-bottom: 75px
 }
+.offset-img-text-column {
+    padding-left:0;
+    padding-right:0;
+    @media screen and (min-width:768px) {
+        padding-left:15px;
+        padding-right:15px;
+    }
+}
+
 //=== FAQS PAGE STYLING ===//
 .page-template-template-faqs {
     counter-reset: faqs-counter;

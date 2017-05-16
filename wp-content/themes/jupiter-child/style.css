@@ -19,7 +19,7 @@
   src: url(scss/fonts/FuturaLTPro-Bold.otf);
 }
 /* ============== Button Styles ==============  */
-.btn-outline-blue > button, .btn-with-link-blue > a, .btn-outline-white > button, .btn-with-link-white > a, .btn-outline-white-trans > button, .btn-outline-black > button, .btn-with-link-black > a {
+.btn-outline-blue > button, .btn-with-link-blue > a, .btn-outline-white > button, .btn-with-link-white > a, .btn-with-link-trans > a, .btn-outline-white-trans > button, .btn-outline-black > button, .btn-with-link-black > a {
   padding: 15px;
   background: #fff;
   font-size: 14px;
@@ -61,6 +61,20 @@
   color: #fff !important;
 }
 .btn-outline-white > button:active, .btn-with-link-white > a:active, .page-template-template-splash .splash-page-header-text div p:nth-child(3) > a:active {
+  background: #000 !important;
+  color: #fff !important;
+}
+.btn-with-link-trans > a {
+  border: 3px solid #fff !important;
+  color: #fff !important;
+  transition: all 0.2s ease-in;
+  background-color: transparent !important;
+}
+.btn-with-link-trans > a:hover {
+  background: #fff !important;
+  color: #000 !important;
+}
+.btn-with-link-trans > a:active {
   background: #000 !important;
   color: #fff !important;
 }
@@ -134,7 +148,8 @@ li.mk-tabs-tab {
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
 }
 /* ============== Link Hover Effect ============== */
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3), .mk-tabs-tab > a, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a, .rider-hub-program-link {
+
+.hover-link-default, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3), .mk-tabs-tab > a, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a, .rider-hub-program-link {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -146,7 +161,7 @@ li.mk-tabs-tab {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):before, .mk-tabs-tab > a:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:before, .rider-hub-program-link:before {
+.hover-link-default:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):before, .mk-tabs-tab > a:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:before, .rider-hub-program-link:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -166,11 +181,16 @@ li.mk-tabs-tab {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):hover:before, .mk-tabs-tab > a:hover:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:hover:before, .rider-hub-program-link:hover:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):focus:before, .mk-tabs-tab > a:focus:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:focus:before, .rider-hub-program-link:focus:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):active:before, .mk-tabs-tab > a:active:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:active:before, .rider-hub-program-link:active:before {
+.hover-link-default:hover:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):hover:before, .mk-tabs-tab > a:hover:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:hover:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:hover:before, .rider-hub-program-link:hover:before, .hover-link-default:focus:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):focus:before, .mk-tabs-tab > a:focus:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:focus:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:focus:before, .rider-hub-program-link:focus:before, .hover-link-default:active:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):active:before, .mk-tabs-tab > a:active:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:active:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:active:before, .rider-hub-program-link:active:before {
   -webkit-transform: scaleY(0.5);
   transform: scaleY(0.5);
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+.hover-link-default {
+  font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 /* ============== Active Menu List  ============== */
 .menu-hover-style-2 .main-navigation-ul li.current-page-ancestor a {
@@ -1500,12 +1520,22 @@ span.vc_tta-title-text.display-none-accordion:after {
 }
 @media screen and (min-width: 768px) {
   .offset-img-text-row {
-    margin-bottom: 175px;
+    margin-bottom: 175px !important;
   }
 }
 .rider-hub-events {
   margin-top: 75px;
   margin-bottom: 75px;
+}
+.offset-img-text-column {
+  padding-left: 0;
+  padding-right: 0;
+}
+@media screen and (min-width: 768px) {
+  .offset-img-text-column {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 .page-template-template-faqs {
   counter-reset: faqs-counter;
