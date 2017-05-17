@@ -9,6 +9,8 @@ $(document).ready(function () {
     function shortStringOther(string) {
         return '#menu-' + string + '_footer_menu>li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children';
     }
+    // Footer Social Icons
+    $('#sub-footer>.mk-grid').prepend('<span class="footer-social"><a href="#">&#xf09a;</a> <a href="#">&#xf16d;</a><a href="#">&#xf099;</a></span>');
 
     $('.outfitters-accordion-section').removeClass('vc_active');
     // toggle class for mobile tab accordion
@@ -72,9 +74,9 @@ $(document).ready(function () {
     });// === END Footer Resize === //
     
     // === Sticky Side Nav Area === //
-    $("ul.mk-tabs-tabs").stick_in_parent({offset_top: 150});
+    $("ul.mk-tabs-tabs, .programs-tabs-link-column").stick_in_parent({offset_top: 150});
     
-    $('ul.mk-tabs-tabs')
+    $('ul.mk-tabs-tabs, .programs-tabs-link-column')
     .on('sticky_kit:bottom', function(e) {
     $(this).parent().css('position', 'static');
     }) 

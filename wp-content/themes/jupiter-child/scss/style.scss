@@ -755,6 +755,27 @@ ul#menu-main_menu {
 
 #sub-footer {
     background: $black;
+    .mk-grid {
+        .footer-social {
+            font-family: $a-font;
+            font-size: 3em;
+            display: inline-block;
+            @media screen and (max-width: 768px) {
+                display: block;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            a {
+                color: $gold;
+                margin-right: 15px;
+            }
+        }
+        .mk-footer-copyright{
+            width: 80%;
+            float: none;
+            display: inline-block;
+        }
+    }
 }
 
 .footer-column {
@@ -1357,7 +1378,7 @@ display: inline-block;
 }
 
 
-// === PROGRAMS FRONT-PAGE STYLINE === //
+// === PROGRAMS FRONT-PAGE STYLING === //
 
 .programs-front-row {
     margin-top: 125px;
@@ -1369,6 +1390,7 @@ display: inline-block;
             h4 {
                 margin-bottom: 20px;
                 a {
+                    @extend %link-hover-effect;
                     color: $black;
                 }
             }
@@ -1412,7 +1434,6 @@ display: inline-block;
 
 @media screen and (max-width: 1140px) {
     .mk-responsive-wrap{
-        overflow-y: hidden;
         width: 75%;
         right: 0;
         max-width: 400px;
@@ -1429,10 +1450,10 @@ display: inline-block;
     nav.menu-main_menu-container{
         ul.mk-responsive-nav {
             li.menu-item-object-custom {
-                &:nth-child(-n+2) {
+                &:nth-child(-n+3) {
                     @extend .btn-with-link-black;
                 }
-                &:nth-child(3) {
+                &:nth-child(4) {
                     @extend .btn-regular-with-link-blue;
                     a {
                         color: $white !important;
@@ -1453,6 +1474,7 @@ display: inline-block;
                     font-family: $h-font;
                     width: 140px;
                     margin: 0 auto;
+                    display: block;
                 }
                 ul.sub-menu {
                     border-top: none;
@@ -1593,7 +1615,7 @@ display: inline-block;
                 font-size: 15vw;
                 color: $white;
                 @media screen and (max-width: 768px) {
-                    font-size: 6em;
+                    font-size: 5em;
                 }
             }
             p {
@@ -1781,6 +1803,17 @@ display: inline-block;
                         color: $white;
                     }
                 }
+            }
+        }
+    }
+    .background-layer-holder {
+        div {
+             @media screen and (max-width: 768px) {
+                background-attachment: scroll !important;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
             }
         }
     }

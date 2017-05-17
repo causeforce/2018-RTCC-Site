@@ -101,30 +101,30 @@
   background: #000 !important;
   color: #fff !important;
 }
-.btn-outline-black > button, .btn-with-link-black > a, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom:nth-child(-n+2) > a {
+.btn-outline-black > button, .btn-with-link-black > a, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom:nth-child(-n+3) > a {
   border: 3px solid #000 !important;
   color: #000 !important;
   transition: all 0.2s ease-in !important;
   background-color: #fff !important;
 }
-.btn-outline-black > button:hover, .btn-with-link-black > a:hover, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom:nth-child(-n+2) > a:hover {
+.btn-outline-black > button:hover, .btn-with-link-black > a:hover, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom:nth-child(-n+3) > a:hover {
   background: #000 !important;
   color: #fff !important;
 }
-.btn-outline-black > button:active, .btn-with-link-black > a:active, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom:nth-child(-n+2) > a:active {
+.btn-outline-black > button:active, .btn-with-link-black > a:active, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom:nth-child(-n+3) > a:active {
   background: #fff !important;
   color: #000 !important;
 }
-.btn-regular-blue, #menu-main_menu li.menu-item.no-mega-menu:nth-child(4), .btn-regular-with-link-blue > a, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom:nth-child(3) > a {
+.btn-regular-blue, #menu-main_menu li.menu-item.no-mega-menu:nth-child(4), .btn-regular-with-link-blue > a, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom:nth-child(4) > a {
   background: #0075c9 !important;
   border: 3px solid #0075c9;
   color: #fff;
   transition: all 0.2s ease-in;
 }
-.btn-regular-blue:active, #menu-main_menu li.menu-item.no-mega-menu:nth-child(4):active, .btn-regular-with-link-blue > a:active, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom:nth-child(3) > a:active {
+.btn-regular-blue:active, #menu-main_menu li.menu-item.no-mega-menu:nth-child(4):active, .btn-regular-with-link-blue > a:active, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom:nth-child(4) > a:active {
   background: #004e86;
 }
-.btn-regular-with-link-blue:hover a, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom:nth-child(3):hover a {
+.btn-regular-with-link-blue:hover a, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom:nth-child(4):hover a {
   color: #0075c9 !important;
   background: #fff !important;
 }
@@ -148,8 +148,7 @@ li.mk-tabs-tab {
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
 }
 /* ============== Link Hover Effect ============== */
-
-.hover-link-default, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3), .mk-tabs-tab > a, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a, .rider-hub-program-link {
+.hover-link-default, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3), .mk-tabs-tab > a, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a, .programs-front-row .programs-tabs-link-column div h4 a, .rider-hub-program-link {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -161,7 +160,7 @@ li.mk-tabs-tab {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-.hover-link-default:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):before, .mk-tabs-tab > a:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:before, .rider-hub-program-link:before {
+.hover-link-default:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):before, .mk-tabs-tab > a:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:before, .programs-front-row .programs-tabs-link-column div h4 a:before, .rider-hub-program-link:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -181,7 +180,7 @@ li.mk-tabs-tab {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hover-link-default:hover:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):hover:before, .mk-tabs-tab > a:hover:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:hover:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:hover:before, .rider-hub-program-link:hover:before, .hover-link-default:focus:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):focus:before, .mk-tabs-tab > a:focus:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:focus:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:focus:before, .rider-hub-program-link:focus:before, .hover-link-default:active:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):active:before, .mk-tabs-tab > a:active:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:active:before, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:active:before, .rider-hub-program-link:active:before {
+.hover-link-default:hover:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):hover:before, .mk-tabs-tab > a:hover:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:hover:before, .programs-front-row .programs-tabs-link-column div h4 a:hover:before, .rider-hub-program-link:hover:before, .hover-link-default:focus:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):focus:before, .mk-tabs-tab > a:focus:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:focus:before, .programs-front-row .programs-tabs-link-column div h4 a:focus:before, .rider-hub-program-link:focus:before, .hover-link-default:active:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):active:before, .mk-tabs-tab > a:active:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:active:before, .programs-front-row .programs-tabs-link-column div h4 a:active:before, .rider-hub-program-link:active:before {
   -webkit-transform: scaleY(0.5);
   transform: scaleY(0.5);
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
@@ -595,6 +594,27 @@ ul#menu-main_menu li ul.sub-menu li a {
 }
 #sub-footer {
   background: #000;
+}
+#sub-footer .mk-grid .footer-social {
+  font-family: FontAwesome;
+  font-size: 3em;
+  display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  #sub-footer .mk-grid .footer-social {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+#sub-footer .mk-grid .footer-social a {
+  color: #ffcd00;
+  margin-right: 15px;
+}
+#sub-footer .mk-grid .mk-footer-copyright {
+  width: 80%;
+  float: none;
+  display: inline-block;
 }
 .footer-column .footer-text-gold {
   color: #ffcd00 !important;
@@ -1109,7 +1129,6 @@ span.vc_tta-title-text.display-none-accordion:after {
 }
 @media screen and (max-width: 1140px) {
   .mk-responsive-wrap {
-    overflow-y: hidden;
     width: 75%;
     right: 0;
     max-width: 400px;
@@ -1118,7 +1137,7 @@ span.vc_tta-title-text.display-none-accordion:after {
   .mk-header-inner.add-header-height {
     border-bottom: none;
   }
-  nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom:nth-child(3) a {
+  nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom:nth-child(4) a {
     color: #fff !important;
   }
   nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom a {
@@ -1134,6 +1153,7 @@ span.vc_tta-title-text.display-none-accordion:after {
     font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
     width: 140px;
     margin: 0 auto;
+    display: block;
   }
   nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu {
     border-top: none;
@@ -1257,7 +1277,7 @@ span.vc_tta-title-text.display-none-accordion:after {
 }
 @media screen and (max-width: 768px) {
   .page-template-template-splash .splash-page-header-text div h1 {
-    font-size: 6em;
+    font-size: 5em;
   }
 }
 .page-template-template-splash .splash-page-header-text div p {
@@ -1440,6 +1460,15 @@ span.vc_tta-title-text.display-none-accordion:after {
 }
 .page-template-template-splash .home-gray-section .splash-gray-column-bottom div a:focus, .page-template-template-splash .home-gray-icon-section .splash-gray-column-bottom div a:focus, .page-template-template-splash .photos-gray-section .splash-gray-column-bottom div a:focus {
   color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-splash .background-layer-holder div {
+    background-attachment: scroll !important;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 }
 .blurb-column {
   margin-bottom: 90px;
