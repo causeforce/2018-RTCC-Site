@@ -774,6 +774,9 @@ ul#menu-main_menu {
             width: 80%;
             float: none;
             display: inline-block;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
         }
     }
 }

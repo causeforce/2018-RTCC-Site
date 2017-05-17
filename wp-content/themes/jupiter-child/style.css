@@ -616,6 +616,11 @@ ul#menu-main_menu li ul.sub-menu li a {
   float: none;
   display: inline-block;
 }
+@media screen and (max-width: 768px) {
+  #sub-footer .mk-grid .mk-footer-copyright {
+    width: 100%;
+  }
+}
 .footer-column .footer-text-gold {
   color: #ffcd00 !important;
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
