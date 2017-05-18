@@ -568,11 +568,18 @@ ul#menu-main_menu li ul.sub-menu li a {
 }
 #mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a {
   display: block;
-  text-align: center;
+  text-align: left;
   color: #fff !important;
   text-transform: uppercase;
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
   font-size: 16px;
+  max-width: 100px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+  #mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a {
+    text-align: center;
+  }
 }
 #mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu {
   display: block;
@@ -588,6 +595,12 @@ ul#menu-main_menu li ul.sub-menu li a {
   font-family: "Futura LT Pro Body", Helvetica, sans-serif;
   font-size: 14px;
   text-transform: capitalize;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  #mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a {
+    text-align: center;
+  }
 }
 #mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a .mk-svg-icon, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a .mk-svg-icon, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a .mk-svg-icon {
   display: none;
@@ -618,7 +631,7 @@ ul#menu-main_menu li ul.sub-menu li a {
 }
 @media screen and (max-width: 768px) {
   #sub-footer .mk-grid .mk-footer-copyright {
-    width: 100%;
+    width: 90%;
   }
 }
 .footer-column .footer-text-gold {
@@ -1187,6 +1200,17 @@ span.vc_tta-title-text.display-none-accordion:after {
   }
   form.responsive-searchform {
     display: none;
+  }
+  .mobile-overlay {
+    display: none;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 99;
+    animation: fade 1500ms;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
   }
 }
 .pic-text-row .pic-column {

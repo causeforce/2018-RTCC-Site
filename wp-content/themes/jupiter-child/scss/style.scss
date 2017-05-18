@@ -723,11 +723,16 @@ ul#menu-main_menu {
                     }
                     a {
                         display: block;
-                        text-align: center;
+                        text-align: left;
                         color: $white !important;
                         text-transform: uppercase;
                         font-family: $h-font;
                         font-size: 16px;
+                        max-width: 100px;
+                        margin: 0 auto;
+                        @media screen and (max-width: 768px) {
+                            text-align: center;
+                        }
                     }
                     .sub-menu {
                         display: block;
@@ -741,6 +746,10 @@ ul#menu-main_menu {
                                 font-family: $p-font;
                                 font-size: 14px;
                                 text-transform: capitalize;
+                                text-align: left;
+                                @media screen and (max-width: 768px) {
+                                    text-align: center;
+                                }
                                 .mk-svg-icon {
                                     display: none;
                                 }
@@ -775,7 +784,7 @@ ul#menu-main_menu {
             float: none;
             display: inline-block;
             @media screen and (max-width: 768px) {
-                width: 100%;
+                width: 90%;
             }
         }
     }
@@ -1513,6 +1522,17 @@ display: inline-block;
     }
     form.responsive-searchform{
         display: none;
+    }
+    .mobile-overlay {
+        display: none;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 99;
+        animation: fade 1500ms;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
     }
 }
 

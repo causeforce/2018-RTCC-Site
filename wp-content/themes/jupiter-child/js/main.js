@@ -89,6 +89,10 @@ $(document).ready(function () {
     if (windowSize > 1140) {
 
     } else {
+        // === Add Overlay to page body elements === //
+        $('#mk-theme-container').prepend('<div class="mobile-overlay"></div>');
+        
+        // === Add Mobile Image Class === //
         $('.header-logo>a>img').addClass('.mobile-img');
         $('ul.mk-responsive-nav').prepend(mobileButtons);
         // === Click Function to Change Logo into Mobile on Hamburger click === //
@@ -100,6 +104,7 @@ $(document).ready(function () {
                 $('.header-logo>a>img').attr('src', '/wp-content/uploads/2017/05/ride-icon_mobile.png');
                 $('.header-logo>a>img').css('width', 'auto');
             }
+            $('.mobile-overlay').fadeToggle('slow');
         });
     }
 });
