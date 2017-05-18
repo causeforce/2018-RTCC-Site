@@ -639,27 +639,27 @@ ul#menu-main_menu {
                 line-height: 35px !important;
                 color: $blue;
                 &:hover {
-                    color: $white !important;
+                    color: $white;
                 }
             }
         &:hover {
             background: $blue;
             a {
-                color: $white !important;
+                color: $white;
             }
-            }
+        }
         }
         &:nth-child(4){
             @extend .btn-regular-blue;
             a{
                 color: $white;
             }
-        &:hover {
-            background: $white;
-            border: 3px solid $blue;
-            a {
-                color: $blue !important;
-            }
+            &:hover {
+                background: $white !important;
+                border: 3px solid $blue;
+                a {
+                    color: $blue;
+                }
             }
         }
     }
@@ -689,7 +689,11 @@ ul#menu-main_menu {
 #mk-footer{
     background-color: $black !important;
     .footer-wrapper{
-        max-width: 1250px;
+        max-width: 1650px;
+        border-bottom: 1px solid #444444;
+        @media screen and (max-width: 768px) {
+            border-bottom: none;
+        }
         .mk-padding-wrapper {
             div {
                 section {
