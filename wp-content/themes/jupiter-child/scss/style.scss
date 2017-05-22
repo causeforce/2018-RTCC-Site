@@ -780,6 +780,8 @@ ul#menu-main_menu {
                 text-align: center;
                 margin-bottom: 20px;
                 font-size: 3em;
+                width: 100%;
+                margin-top: 30px;
             }
             a {
                 color: $gold;
@@ -1840,11 +1842,9 @@ display: inline-block;
     .background-layer-holder {
         div {
              @media screen and (max-width: 768px) {
-                background-attachment: scroll !important;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
+                background-attachment: fixed;
+                background-position: center center;
+                background-repeat: no-repeat;
             }
         }
     }
