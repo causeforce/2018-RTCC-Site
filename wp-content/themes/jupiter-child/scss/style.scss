@@ -2067,3 +2067,57 @@ display: inline-block;
         color: $white;
     }
 }
+
+// generic desktop accordion
+
+.desktop-accordion {
+    .vc_tta-panels-container{
+        margin-bottom: 50px;
+    }
+    .vc_tta-panel-heading {
+        pointer-events: auto;
+        h4 {
+            a {
+                &:before {
+                    margin-right: 20px;
+                    color: $blue;
+                }
+                i {
+                    position: absolute;
+                    right: 0;
+                }
+                i.fa-plus {
+                    &:before {
+                        color: $blue;
+                    }
+                }
+                i.fa-minus{
+                    &:before {
+                        color: $gray-dark;
+                    }
+                }
+                span {
+                    color: $black;
+                    &:hover {
+                        color: $blue;
+                    }
+                    @media screen and (max-width: 768px) {
+                        &:after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .vc_tta-panel-body {
+        div {
+            p {
+                padding-left: 15%;
+            }
+        }
+    }
+}
+.wpb-js-composer .vc_tta-color-white.vc_tta-style-flat.desktop-accordion .vc_tta-panel .vc_tta-panel-heading {
+    background-color: #f4f4f4 !important;
+}

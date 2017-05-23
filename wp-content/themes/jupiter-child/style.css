@@ -1702,3 +1702,37 @@ span.vc_tta-title-text.display-none-accordion:after {
 .blue-page-section h2 {
   color: #fff;
 }
+.desktop-accordion .vc_tta-panels-container {
+  margin-bottom: 50px;
+}
+.desktop-accordion .vc_tta-panel-heading {
+  pointer-events: auto;
+}
+.desktop-accordion .vc_tta-panel-heading h4 a:before {
+  margin-right: 20px;
+  color: #0075c9;
+}
+.desktop-accordion .vc_tta-panel-heading h4 a i {
+  position: absolute;
+  right: 0;
+}
+.desktop-accordion .vc_tta-panel-heading h4 a i.fa-plus:before {
+  color: #0075c9;
+}
+.desktop-accordion .vc_tta-panel-heading h4 a i.fa-minus:before {
+  color: #5d5d5d;
+}
+.desktop-accordion .vc_tta-panel-heading h4 a span {
+  color: #000;
+}
+.desktop-accordion .vc_tta-panel-heading h4 a span:hover {
+  color: #0075c9;
+}
+@media screen and (max-width: 768px) {
+  .desktop-accordion .vc_tta-panel-heading h4 a span:after {
+    display: none;
+  }
+}
+.desktop-accordion .vc_tta-panel-body div p {
+  padding-left: 15%;
+}
