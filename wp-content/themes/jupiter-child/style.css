@@ -143,9 +143,18 @@ p {
 }
 h1, h2, h3, h4 {
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
+  color: #000;
 }
 li.mk-tabs-tab {
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
+}
+@media screen and (max-width: 939px) {
+  .vc_col-sm-8, .vc_col-sm-6, .vc_col-sm-4, .vc_col-sm-3, .vc_col-sm-2 {
+    width: 100% !important;
+  }
+  .vc_row {
+    height: auto !important;
+  }
 }
 /* ============== Link Hover Effect ============== */
 .hover-link-default, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3), .mk-tabs-tab > a, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a, .programs-front-row .programs-tabs-link-column div h4 a, .rider-hub-program-link {
@@ -287,7 +296,7 @@ li.mk-tabs-tab {
 .bw-column, .home-bw-column {
   background: #000;
   padding: 10px;
-  border-bottom: 20px solid white;
+  border-bottom: 20px solid #fff;
 }
 @media screen and (max-width: 768px) {
   .bw-column, .home-bw-column {
@@ -304,7 +313,6 @@ li.mk-tabs-tab {
 }
 .bw-column div h2, .home-bw-column div h2 {
   color: #fff;
-  padding: 15% 20px 0px;
   font-size: 2.2vw;
 }
 @media screen and (max-width: 949px) {
@@ -375,6 +383,12 @@ li.mk-tabs-tab {
   .safety-accordion-section .vc_tta-panel-body div p, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-body div p, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-body div p {
     padding: 0px;
   }
+}
+.safety-accordion-section .vc_tta-panel-body div ul li, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-body div ul li, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-body div ul li {
+  color: #000;
+  list-style: square;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 .safety-accordion-section .vc_tta-panel-heading h4, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-heading h4, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-heading h4 {
   color: #000;
@@ -792,6 +806,11 @@ ul#menu-main_menu li ul.sub-menu li a {
 .home-gray-icon-section {
   padding-top: 145px;
 }
+@media screen and (max-width: 768px) {
+  .home-gray-icon-section {
+    padding-top: 10%;
+  }
+}
 .home-gray-icon-section h2, .home-gray-icon-section p {
   padding-top: 0px;
 }
@@ -802,6 +821,13 @@ ul#menu-main_menu li ul.sub-menu li a {
 }
 .home-bw-column {
   border-bottom: 35px solid #fff;
+  padding-top: 4% !important;
+}
+@media screen and (max-width: 939px) {
+  .home-bw-column {
+    border-bottom: 0px;
+    padding-bottom: 30px !important;
+  }
 }
 .home-bw-column div button {
   margin-left: 70px;
@@ -820,6 +846,9 @@ ul#menu-main_menu li ul.sub-menu li a {
 }
 .home-bw-column .home-bw-column-text {
   padding: 0px 50px;
+}
+.home-bw-column .home-bw-column-text p {
+  font-size: 1.9vw;
 }
 @media screen and (max-width: 768px) {
   .home-bw-column .home-bw-column-text {
@@ -843,14 +872,11 @@ ul#menu-main_menu li ul.sub-menu li a {
     border-bottom: none;
   }
 }
-.home .mk-padding-wrapper {
-  padding: 0px;
-}
-.home .btn-column {
+.home-donate-button-row .btn-column {
   display: block;
   text-align: center;
 }
-.home .btn-column button {
+.home-donate-button-row .btn-column div button {
   padding: 10px 40px;
   font-size: 18px;
   font-weight: 800;
@@ -898,7 +924,7 @@ span.vc_tta-title-text.display-none-accordion:after {
   }
 }
 .about-white-pg-section .column_container div p {
-  padding: 2% 0 2% 15%;
+  padding-left: 10%;
 }
 @media screen and (max-width: 768px) {
   .about-white-pg-section .column_container div p {

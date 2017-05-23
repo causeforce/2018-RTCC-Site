@@ -216,10 +216,24 @@ p {
 
 h1,h2,h3,h4 {
     font-family: $h-font;
+    color: $black;
 }
 
 li.mk-tabs-tab {
     font-family: $h-font;
+}
+// === BREAK POINT FOR TABLET === //
+@media screen and (max-width: 939px) {
+    .vc_col-sm-8,
+    .vc_col-sm-6,
+    .vc_col-sm-4,
+    .vc_col-sm-3,
+    .vc_col-sm-2{
+        width: 100% !important;
+    }
+    .vc_row {
+        height: auto !important;
+    }
 }
 /* ============== Link Hover Effect ============== */
 
@@ -373,7 +387,7 @@ li.mk-tabs-tab {
 .bw-column {
     background: $black;
     padding: 10px;
-    border-bottom: 20px solid white;
+    border-bottom: 20px solid $white;
     @media screen and (max-width: 768px) {
         margin-top: -20px;
     }
@@ -386,7 +400,6 @@ li.mk-tabs-tab {
         }
         h2{ 
             color: $white;
-            padding: 15% 20px 0px;
             font-size: 2.2vw;
             @media screen and (max-width: 949px){
             padding: 3% 20px 0px;
@@ -466,6 +479,14 @@ li.mk-tabs-tab {
                 padding: 0px 40px;
                 @media screen and (max-width: 768px) {
                     padding: 0px;
+                }
+            }
+            ul {
+                li {
+                    color: $black;
+                    list-style: square;
+                    font-size: 16px;
+                    margin-bottom: 10px;
                 }
             }
         }
@@ -978,6 +999,9 @@ div.p-block {
 .home-gray-icon-section {
     @extend .home-gray-section;
     padding-top: 145px;
+    @media screen and (max-width: 768px) {
+        padding-top: 10%;
+    }
     h2,p {
         padding-top: 0px;
         @media screen and (max-width: 768px) {
@@ -989,6 +1013,11 @@ div.p-block {
 .home-bw-column {
     @extend .bw-column;
     border-bottom: 35px solid $white;
+    padding: 6% 0 0 3% !important;
+    @media screen and (max-width: 939px) {
+        border-bottom: 0px;
+        padding-bottom: 30px !important;
+    }
     div {
         button {
             margin-left: 70px;
@@ -1007,10 +1036,14 @@ div.p-block {
     .home-bw-column-text {
         @extend .bw-column-text;
         padding: 0px 50px;
+        p {
+            font-size: 1.55vw;
+        }
         @media screen and (max-width: 768px) {
             padding: 10px 30px;
             p {
                 padding: 0px;
+                font-size: 1.2em;
             }
         }
     }
@@ -1026,17 +1059,16 @@ div.p-block {
     }
 }
 
-.home {
-    .mk-padding-wrapper {
-        padding: 0px;
-    }
+.home-donate-button-row {
     .btn-column{
         display: block;
         text-align: center;
-        button {
-            padding: 10px 40px;
-            font-size: 18px;
-            font-weight: 800;
+        div {
+            button {
+                padding: 10px 40px;
+                font-size: 18px;
+                font-weight: 800;
+            }
         }
     }
 }
@@ -1113,7 +1145,7 @@ span.vc_tta-title-text.display-none-accordion{
     .column_container {
         div {
             p {
-                padding: 2% 0 2% 15%;
+                padding-left: 10%;
                 @media screen and (max-width: 768px) {
                     padding: 2% 0;
                 }
