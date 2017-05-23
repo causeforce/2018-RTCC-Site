@@ -208,6 +208,14 @@ li.mk-tabs-tab {
   background-image: -webkit-linear-gradient(bottom, #ffcd00 50%, transparent 50%);
   background-image: -ms-linear-gradient(bottom, #ffcd00 50%, transparent 50%);
 }
+ul.main-navigation-ul li.menu-item.menu-item-type-post_type.menu-item-object-page.current-menu-item.page_item.current_page_item.menu-item-has-children.no-mega-menu a.menu-item-link.js-smooth-scroll {
+  background-image: linear-gradient(bottom, #ffcd00 50%, transparent 50%);
+  background-image: -o-linear-gradient(bottom, #ffcd00 50%, transparent 50%);
+  background-image: -moz-linear-gradient(bottom, #ffcd00 50%, transparent 50%);
+  background-image: -webkit-linear-gradient(bottom, #ffcd00 50%, transparent 50%);
+  background-image: -ms-linear-gradient(bottom, #ffcd00 50%, transparent 50%);
+  color: #000;
+}
 /* ============== Custom Classes ============== */
 .header-pg-row {
   z-index: 100 !important;
@@ -1687,4 +1695,10 @@ span.vc_tta-title-text.display-none-accordion:after {
 }
 .mk-fullscreen-search-overlay .mk-fullscreen-search-wrapper .fullscreen-search-icon svg {
   fill: #fff;
+}
+.blue-page-section {
+  background: #0075c9;
+}
+.blue-page-section h2 {
+  color: #fff;
 }
