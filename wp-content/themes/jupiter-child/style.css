@@ -821,7 +821,7 @@ ul#menu-main_menu li ul.sub-menu li a {
 }
 .home-bw-column {
   border-bottom: 35px solid #fff;
-  padding-top: 4% !important;
+  padding: 6% 0 0 3% !important;
 }
 @media screen and (max-width: 939px) {
   .home-bw-column {
@@ -848,7 +848,7 @@ ul#menu-main_menu li ul.sub-menu li a {
   padding: 0px 50px;
 }
 .home-bw-column .home-bw-column-text p {
-  font-size: 1.9vw;
+  font-size: 1.55vw;
 }
 @media screen and (max-width: 768px) {
   .home-bw-column .home-bw-column-text {
@@ -856,6 +856,7 @@ ul#menu-main_menu li ul.sub-menu li a {
   }
   .home-bw-column .home-bw-column-text p {
     padding: 0px;
+    font-size: 1.2em;
   }
 }
 .home-bw-column .btn-outline-white {
@@ -1390,7 +1391,7 @@ span.vc_tta-title-text.display-none-accordion:after {
   position: absolute;
   bottom: 35px;
   height: 40px;
-  width: 33vw;
+  width: 33.35vw;
   background: black;
   z-index: 99;
 }
