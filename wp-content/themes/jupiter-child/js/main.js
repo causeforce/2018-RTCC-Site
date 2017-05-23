@@ -54,18 +54,18 @@ $(document).ready(function () {
             $('.title-mobile').not(this).addClass('display-none');   
             $('.title-mobile').toggleClass('display-none');
         });
-        $('.mobile-nav-tab-container').append(jQuery('#mk-tabs-tabs-4, .programs-tabs-link-column'));
+        $('.mobile-nav-tab-container').append(jQuery('.mk-tabs-tabs, .programs-tabs-link-column'));
     }
     // === Footer Resize Area === //
     $(window).resize(function () {
 
         if ($(this).width() < 782) {
-            $('.mobile-nav-tab-container').append(jQuery('#mk-tabs-tabs-4, .programs-tabs-link-column'));
+            $('.mobile-nav-tab-container').append(jQuery('.mk-tabs-tabs, .programs-tabs-link-column'));
 
             $(shortStringOther('about, rider-hub, impact')).removeClass("toggle-active");
             $('.safety-accordion-section, .outfitters-accordion-section').removeClass('vc_active');
         } else {
-            $('.tab-content-container').prepend(jQuery('#mk-tabs-tabs-4, .programs-tabs-link-column'));
+            $('.tab-content-container').prepend(jQuery('.mk-tabs-tabs, .programs-tabs-link-column'));
 
             $(shortString('about, rider-hub, impact')).show();
             $(shortStringOther('about, rider-hub, impact')).addClass("toggle-active");
@@ -107,4 +107,14 @@ $(document).ready(function () {
             $('.mobile-overlay').fadeToggle('slow');
         });
     }
+
+    // nav tab drop downs
+    // (function () {
+    //     if (windowSize < 762) {
+    //         $('.mobile-nav-tab-container').append(jQuery('.mk-tabs-tabs, .programs-tabs-link-column'));
+    //     }
+
+    // })();
+
+
 });
