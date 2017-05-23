@@ -9,6 +9,15 @@ $(document).ready(function () {
     function shortStringOther(string) {
         return '#menu-' + string + '_footer_menu>li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children';
     }
+
+    // nav tab drop downs
+    // (function () {
+    //     if (windowSize < 782) {
+    //         $('.mobile-nav-tab-container').append(jQuery('.mk-tabs-tabs, .programs-tabs-link-column'));
+    //     }
+
+    // })();
+
     // Footer Social Icons
     $('#sub-footer>.mk-grid').prepend('<span class="footer-social"><a href="#">&#xf09a;</a> <a href="#">&#xf16d;</a><a href="#">&#xf099;</a></span>');
 
@@ -108,13 +117,7 @@ $(document).ready(function () {
         });
     }
 
-    // nav tab drop downs
-    // (function () {
-    //     if (windowSize < 762) {
-    //         $('.mobile-nav-tab-container').append(jQuery('.mk-tabs-tabs, .programs-tabs-link-column'));
-    //     }
 
-    // })();
 
 
 });
