@@ -1297,7 +1297,7 @@ span.vc_tta-title-text.display-none-accordion{
     @media screen and (min-width: 692px) {
         padding: 125px 0;
         .pg-indent {
-            padding-left: 175px;
+            padding-left: 10%;
         }            
     }
 }
@@ -2120,4 +2120,16 @@ display: inline-block;
 }
 .wpb-js-composer .vc_tta-color-white.vc_tta-style-flat.desktop-accordion .vc_tta-panel .vc_tta-panel-heading {
     background-color: #f4f4f4 !important;
+}
+
+.about-right-tire-marks {
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 70vw;
+    float: right;
+}
+.about-left-tire-marks {
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 50vw;
 }
