@@ -17,6 +17,28 @@ $(document).ready(function () {
     //     }
 
     // })();
+    
+    // On click Scroll to Element
+    $(".ambassador-scroll").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#ambassador-section").offset().top
+        }, 500);
+    });
+    $(".women-scroll").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#women-on-wheels-section").offset().top
+        }, 500);
+    });
+    $(".industry-scroll").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#industry-challenge-section").offset().top
+        }, 500);
+    });
+    $(".community-scroll").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#community-challenge-section").offset().top
+        }, 500);
+    });
 
     // Footer Social Icons
     $('#sub-footer>.mk-grid').prepend('<span class="footer-social"><a href="#">&#xf09a;</a> <a href="#">&#xf16d;</a><a href="#">&#xf099;</a></span>');
@@ -48,7 +70,7 @@ $(document).ready(function () {
            } 
         });
     } else {
-        // Click function for accordion toggle only if window is below 782px //
+        // Click function for accordion toggle only if window is below 782px 
         $('.vc_tta-panel-heading').click(function () {
             $('.vc_tta-panel-body').not(this).slideUp('slow');
             $(this).next('.vc_tta-panel-body').slideToggle('slow');
@@ -65,7 +87,7 @@ $(document).ready(function () {
         });
         $('.mobile-nav-tab-container').append(jQuery('.mk-tabs-tabs, .programs-tabs-link-column'));
     }
-    // === Footer Resize Area === //
+    // Window Resize Section
     $(window).resize(function () {
 
         if ($(this).width() < 782) {
@@ -80,9 +102,9 @@ $(document).ready(function () {
             $(shortStringOther('about, rider-hub, impact')).addClass("toggle-active");
             $('.safety-accordion-section, .outfitters-accordion-section').addClass('vc_active');
         }
-    });// === END Footer Resize === //
+    });
     
-    // === Sticky Side Nav Area === //
+    // Sticky Side Nav Area 
     $("ul.mk-tabs-tabs, .programs-tabs-link-column").stick_in_parent({offset_top: 150});
     
     $('ul.mk-tabs-tabs, .programs-tabs-link-column')
@@ -94,17 +116,17 @@ $(document).ready(function () {
     });
     
     var mobileButtons = $('.menu-item-object-custom').not('.no-mega-menu');
-    // === Mobile Menu Scripts === //
+    // Mobile Menu Scripts 
     if (windowSize > 1140) {
 
     } else {
-        // === Add Overlay to page body elements === //
+        // Add Overlay to page body elements
         $('#mk-theme-container').prepend('<div class="mobile-overlay"></div>');
         
-        // === Add Mobile Image Class === //
+        // Add Mobile Image Class
         $('.header-logo>a>img').addClass('.mobile-img');
         $('ul.mk-responsive-nav').prepend(mobileButtons);
-        // === Click Function to Change Logo into Mobile on Hamburger click === //
+        // Click Function to Change Logo into Mobile on Hamburger click 
         $('.mk-nav-responsive-link').click(function(){
             $('.header-logo>a>img').toggleClass('.mobile-img');
             if ($('.header-logo>a>img').hasClass('.mobile-img')){
