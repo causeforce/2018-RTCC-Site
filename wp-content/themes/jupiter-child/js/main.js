@@ -61,7 +61,7 @@ $(document).ready(function () {
     
     if (windowSize > 782) {
         $('.safety-accordion-section, .outfitters-accordion-section').addClass('vc_active');
-        // === ON SCROLL HIDE LOGO === //
+        // ON SCROLL HIDE LOGO ON SPLASH PAGE
         $(window).scroll(function() {
            if ($(this).scrollTop() > 100 ) {
                $('.page-template-template-splash>div>div>header>div>div>div>div>a>.mk-desktop-logo.dark-logo').fadeOut('slow');
@@ -138,8 +138,5 @@ $(document).ready(function () {
             $('.mobile-overlay').fadeToggle('slow');
         });
     }
-
-
-
 
 });
