@@ -837,6 +837,14 @@ ul#menu-main_menu li ul.sub-menu li a {
     padding-bottom: 30px !important;
   }
 }
+.home-bw-column div a {
+  margin-left: 70px;
+}
+@media screen and (max-width: 768px) {
+  .home-bw-column div a {
+    margin-left: 30px;
+  }
+}
 .home-bw-column div button {
   margin-left: 70px;
   padding: 5% 10%;
