@@ -1064,7 +1064,7 @@ span.vc_tta-title-text.display-none-accordion:after {
     padding: 125px 0;
   }
   .about-text-block .pg-indent, .about-text-block-black .pg-indent {
-    padding-left: 175px;
+    padding-left: 10%;
   }
 }
 .about-text-block-black {
@@ -1201,6 +1201,9 @@ span.vc_tta-title-text.display-none-accordion:after {
   .programs-zebra-row .about-zebra-border-column div figure div img {
     left: -85px;
   }
+}
+.ambassador-scroll, .women-scroll, .community-scroll, .industry-scroll {
+  cursor: pointer;
 }
 @media screen and (max-width: 1140px) {
   .mk-responsive-wrap {
@@ -1582,6 +1585,7 @@ span.vc_tta-title-text.display-none-accordion:after {
   }
 }
 .announcement-text-row.vc_inner.vc_row {
+  min-height: 320px;
   background: black;
 }
 .announcement-text-row.vc_inner.vc_row .important-announce-text-cont {
@@ -1743,4 +1747,18 @@ span.vc_tta-title-text.display-none-accordion:after {
 }
 .desktop-accordion .vc_tta-panel-body div p {
   padding-left: 15%;
+}
+.wpb-js-composer .vc_tta-color-white.vc_tta-style-flat.desktop-accordion .vc_tta-panel .vc_tta-panel-heading {
+  background-color: #f4f4f4 !important;
+}
+.about-right-tire-marks {
+  background-position: right;
+  background-repeat: no-repeat;
+  width: 70vw;
+  float: right;
+}
+.about-left-tire-marks {
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 50vw;
 }

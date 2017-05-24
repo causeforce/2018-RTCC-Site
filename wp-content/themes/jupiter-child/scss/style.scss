@@ -800,7 +800,6 @@ ul#menu-main_menu {
     background: $black;
     .mk-grid {
         border-top: 1px solid #444444;
-        padding: 0 5%;
         @media screen and (max-width: 768px) {
             padding: 0;
         }
@@ -1735,7 +1734,7 @@ display: inline-block;
         display: none;
     }
     .splash-location-row {
-        padding: 5% 0;
+        padding-top: 30px;
         div {
             p {
                 text-transform: uppercase;
@@ -1769,7 +1768,7 @@ display: inline-block;
             top: 0;
         }
         .bw-column {
-            min-height: 500px;
+            min-height: auto;
             border-bottom: none;
             padding: 2% 5% 0;
             z-index: 99;
@@ -1799,7 +1798,7 @@ display: inline-block;
             }
         }
         .odd-column-right {
-            padding: 8% 5% 0;
+            padding: 8% 5%;
         }
         .zebra-top-left {
             position: absolute;
@@ -1823,7 +1822,7 @@ display: inline-block;
     }
     .splash-video-row {
         .bw-column {
-            padding: 2% 5% 0;
+            padding: 5% 5% 0;
             border-color: $gray;
             @media screen and (max-width: 768px) {
                 padding: 10% 5% 5%;
