@@ -21,22 +21,22 @@ $(document).ready(function () {
     // On click Scroll to Element
     $(".ambassador-scroll").click(function() {
         $('html, body').animate({
-            scrollTop: $("#ambassador-section").offset().top
+            scrollTop: $("#ambassador-section").offset().top - 150
         }, 500);
     });
     $(".women-scroll").click(function() {
         $('html, body').animate({
-            scrollTop: $("#women-on-wheels-section").offset().top
+            scrollTop: $("#women-on-wheels-section").offset().top - 150
         }, 500);
     });
     $(".industry-scroll").click(function() {
         $('html, body').animate({
-            scrollTop: $("#industry-challenge-section").offset().top
+            scrollTop: $("#industry-challenge-section").offset().top - 150
         }, 500);
     });
     $(".community-scroll").click(function() {
         $('html, body').animate({
-            scrollTop: $("#community-challenge-section").offset().top
+            scrollTop: $("#community-challenge-section").offset().top - 150
         }, 500);
     });
 
