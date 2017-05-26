@@ -140,3 +140,7 @@ $(document).ready(function () {
     }
 
 });
+// Preloader on load to fadeout
+$(window).on("load",function(){
+   $('div#ride-preloader').fadeOut('slow');
+});
