@@ -294,6 +294,7 @@ li.mk-tabs-tab {
             background-image: -moz-linear-gradient(bottom, $gold 50%, transparent 50%);
             background-image: -webkit-linear-gradient(bottom, $gold 50%, transparent 50%);
             background-image: -ms-linear-gradient(bottom, $gold 50%, transparent 50%);
+            color: $black !important;
         }
     }
 }
@@ -483,8 +484,8 @@ ul.main-navigation-ul {
     }
 }
 
-/* ============== Accordion Styling  ============== */
 
+/* ============== SAFETY PAGE STYLING ============== */
 .safety-accordion-section{
     .vc_tta-panel-body{
         div {
@@ -501,6 +502,16 @@ ul.main-navigation-ul {
                     font-size: 16px;
                     margin-bottom: 10px;
                 }
+            }
+        }
+        .btn-outline-blue {
+            margin-left: 40px;
+            button {
+                font-weight: 700;
+                padding: 10px 30px;
+            }
+            @media screen and (max-width: 768px) {
+                margin-left: auto;
             }
         }
     }
@@ -522,7 +533,7 @@ ul.main-navigation-ul {
         }
     }
 }
-
+/* ============== Accordion Styling  ============== */
 .wpb-js-composer .vc_tta-color-white.vc_tta-style-flat .vc_tta-panel .vc_tta-panel-heading {
     background-color: $white !important;
 }
@@ -822,12 +833,13 @@ ul#menu-main_menu {
             }
         }
         .mk-footer-copyright{
-            width: 70%;
+            width: 84%;
             float: none;
             display: inline-block;
             padding-left: 0 !important;
             @media screen and (max-width: 768px) {
-                width: 90%;
+                width: auto;
+                padding: 15px !important;
             }
         }
     }
@@ -1098,8 +1110,11 @@ div.p-block {
         h4 {
             a {
                 span {
+                    color: $black;
+                    font-size: 1.4em;
                     @media screen and (max-width: 768px) {
                         color: $blue;
+                        font-size: 1.2em;
                     }
                 }
             }
@@ -1601,6 +1616,11 @@ display: inline-block;
         bottom: 0;
         left: 0;
     }
+    .mk-nav-sub-opened {
+        svg {
+            transform: rotate(180deg);
+        }
+    }
 }
 
 // === 3/ 4 text and picture row === //
@@ -1791,7 +1811,6 @@ display: inline-block;
                 }
             }
             .btn-with-link-white{
-                padding-left: 10%;
                 a {
                     padding: 10px 30px;
                 }
