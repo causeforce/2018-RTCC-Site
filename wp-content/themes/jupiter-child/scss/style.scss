@@ -2186,15 +2186,15 @@ display: inline-block;
 }
 
 // ===== FUNDRAISING PAGE STYLING ===== //
-.fundraising-tabs {
+.fundraising-tabs{
     @extend .about-cancer-tabs;
-    .mk-tabs-tabs {
+    .mk-tabs-tabs{
+        background: none !important;
         padding: 20px 0px;
         li {
-            width: auto;
-            max-width: 265px;
-            margin: 0 auto;
+            background: none !important;
             a {
+                background: none !important;
                 top: auto !important;
                 left: 3% !important;
                 transform: translate(0, -5%) !important;
@@ -2203,11 +2203,16 @@ display: inline-block;
         }
     }
     .mk-tabs-panes {
-        .mk-text-block {
+        padding-right: 0px;
+        .mk-text-block,
+        .tab-pg-text{
             h3 {
                 @media screen and (max-width: 768px) {
                     display: none;
                 }
+            }
+            p {
+                padding: 3% 0 0 7%;
             }
         }
         .btn-with-link-blue {
@@ -2222,6 +2227,10 @@ display: inline-block;
             }
         }
     }
+}
+
+.fundraising-tabs ul li.mk-tabs-tab a, .mk-tabs.default-style.vertical-style.fundraising-tabs ul li.mk-tabs-tab a {
+    background-color: transparent !important;
 }
 
 .fundraising-white-pg-section {
