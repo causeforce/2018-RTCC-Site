@@ -207,7 +207,7 @@ $h3-body: 27px; //20pts
 /* ============== Global Page Element Style ============== */
 
 body {
-    font-family: $p-font;
+    font-family: $p-font !important;
 }
 
 p {
@@ -284,6 +284,7 @@ li.mk-tabs-tab {
     padding-left:5px;
     padding-right:5px;
 }
+
 /* ============== Active Menu List  ============== */
 
 .menu-hover-style-2 .main-navigation-ul {
@@ -881,8 +882,14 @@ div.p-block {
 .mk-tabs.default-style.vertical-style .mk-tabs-panes {
     border: none;
 }
-.mk-tabs-tab > a {
-    @extend %link-hover-effect;
+.mk-tabs-tab {
+//    @extend %link-hover-effect;
+    a {
+        transition: all 0.3s ease-in;
+        &:hover {
+            color: $blue !important;
+        }
+    }
 }
 .mk-tabs.default-style.vertical-style .mk-tabs-tabs li.is-active a {
     border-bottom: 0 !important;
@@ -2182,7 +2189,11 @@ display: inline-block;
 .fundraising-tabs {
     @extend .about-cancer-tabs;
     .mk-tabs-tabs {
+        padding: 20px 0px;
         li {
+            width: auto;
+            max-width: 265px;
+            margin: 0 auto;
             a {
                 top: auto !important;
                 left: 3% !important;
@@ -2213,6 +2224,41 @@ display: inline-block;
     }
 }
 
+.fundraising-white-pg-section {
+    @extend .about-white-pg-section;
+    padding: 3% 5%;
+    @media screen and (max-width: 768px) {
+        padding: 3% 10%;
+        margin-top: 30px;
+    }
+    .column_container {
+        div {
+            p {
+               padding-left: 0; 
+            }
+        }
+    }
+}
+
+.fundraising-gray-section {
+    @extend .photos-gray-section;
+    padding: 3% 5%;
+    @media screen and (max-width: 768px) {
+        padding: 5% 10%;
+    }
+    .mk-text-block {
+        p {
+            margin-bottom: 5px;
+        }
+        h2 {
+            padding-top: 5px;
+            @media screen and (max-width: 768px) {
+                font-size: 1.93em;
+            }
+        }
+    }
+}
+
 // ===== WORKPLACE GIVING STYLING ==== //
 .workplace-giving-pg-section {
     @extend .about-white-pg-section;
@@ -2228,5 +2274,40 @@ display: inline-block;
                 }
             }
         }
+    }
+}
+
+// ===== PARTNERS PAGE STYLING ===== //
+.page-template-template-partners {
+    .photos-gray-section {
+        padding: 1% 0;
+        .wpb_wrapper {
+            &:hover {
+                .vc_icon_element-icon {
+                    color: $blue;
+                }
+            }
+        }
+        .mk-text-block {
+            h2 {
+                @media screen and (max-width: 768px) {
+                    text-align: center !important;
+                    font-size: 1.8em;
+                }
+            }
+        }
+    }
+    .btn-with-link-black {
+        a {
+            font-family: $h-font !important;
+        }
+    }
+    .wpb_column.vc_column_container.vc_col-sm-4{
+        width: 33.33% !important;
+        display: inline-block;
+    }
+    .wpb_column.vc_column_container.vc_col-sm-6{
+        width: 50% !important;
+        display: inline-block;
     }
 }

@@ -136,7 +136,7 @@
 }
 /* ============== Global Page Element Style ============== */
 body {
-  font-family: "Futura LT Pro Body", Helvetica, sans-serif;
+  font-family: "Futura LT Pro Body", Helvetica, sans-serif !important;
 }
 p {
   color: #000;
@@ -157,7 +157,7 @@ li.mk-tabs-tab {
   }
 }
 /* ============== Link Hover Effect ============== */
-.hover-link-default, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3), .mk-tabs-tab > a, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a, .programs-front-row .programs-tabs-link-column div h4 a, .rider-hub-program-link {
+.hover-link-default, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3), .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a, .programs-front-row .programs-tabs-link-column div h4 a, .rider-hub-program-link {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -169,7 +169,7 @@ li.mk-tabs-tab {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-.hover-link-default:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):before, .mk-tabs-tab > a:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:before, .programs-front-row .programs-tabs-link-column div h4 a:before, .rider-hub-program-link:before {
+.hover-link-default:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:before, .programs-front-row .programs-tabs-link-column div h4 a:before, .rider-hub-program-link:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -189,7 +189,7 @@ li.mk-tabs-tab {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hover-link-default:hover:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):hover:before, .mk-tabs-tab > a:hover:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:hover:before, .programs-front-row .programs-tabs-link-column div h4 a:hover:before, .rider-hub-program-link:hover:before, .hover-link-default:focus:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):focus:before, .mk-tabs-tab > a:focus:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:focus:before, .programs-front-row .programs-tabs-link-column div h4 a:focus:before, .rider-hub-program-link:focus:before, .hover-link-default:active:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):active:before, .mk-tabs-tab > a:active:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:active:before, .programs-front-row .programs-tabs-link-column div h4 a:active:before, .rider-hub-program-link:active:before {
+.hover-link-default:hover:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):hover:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:hover:before, .programs-front-row .programs-tabs-link-column div h4 a:hover:before, .rider-hub-program-link:hover:before, .hover-link-default:focus:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):focus:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:focus:before, .programs-front-row .programs-tabs-link-column div h4 a:focus:before, .rider-hub-program-link:focus:before, .hover-link-default:active:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):active:before, .programs-mobile-tab-menu div .vc_tta-container .mobile-nav-tab-container-header div .mobile-nav-tab-container div div h4 a:active:before, .programs-front-row .programs-tabs-link-column div h4 a:active:before, .rider-hub-program-link:active:before {
   -webkit-transform: scaleY(0.5);
   transform: scaleY(0.5);
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
@@ -716,6 +716,12 @@ ul#menu-main_menu li ul.sub-menu li a {
 .mk-tabs.default-style.vertical-style .mk-tabs-panes {
   border: none;
 }
+.mk-tabs-tab a {
+  transition: all 0.3s ease-in;
+}
+.mk-tabs-tab a:hover {
+  color: #0075c9 !important;
+}
 .mk-tabs.default-style.vertical-style .mk-tabs-tabs li.is-active a {
   border-bottom: 0 !important;
   padding-bottom: 0 !important;
@@ -733,19 +739,19 @@ ul#menu-main_menu li ul.sub-menu li a {
   border: 0px !important;
   background-color: #fff;
 }
-.tab-content-container .tab-img-header img, .about-cancer-tabs .tab-img-header img {
+.tab-content-container .tab-img-header img, .about-cancer-tabs .tab-img-header img, .fundraising-tabs .tab-img-header img {
   margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
-  .tab-content-container .tab-img-header img, .about-cancer-tabs .tab-img-header img {
+  .tab-content-container .tab-img-header img, .about-cancer-tabs .tab-img-header img, .fundraising-tabs .tab-img-header img {
     margin-bottom: 40px;
   }
 }
-.tab-content-container .tab-copy p, .about-cancer-tabs .tab-copy p {
+.tab-content-container .tab-copy p, .about-cancer-tabs .tab-copy p, .fundraising-tabs .tab-copy p {
   padding-left: 20px;
 }
 @media screen and (min-width: 768px) {
-  .tab-content-container .tab-copy p, .about-cancer-tabs .tab-copy p {
+  .tab-content-container .tab-copy p, .about-cancer-tabs .tab-copy p, .fundraising-tabs .tab-copy p {
     padding-left: 75px;
   }
 }
@@ -783,20 +789,20 @@ ul#menu-main_menu li ul.sub-menu li a {
 .mobile-nav-tab-container-header .vc_tta-panel-heading {
   border-bottom: 1px solid black;
 }
-.bw-page-section, .home-gray-section, .home-gray-icon-section, .photos-gray-section {
+.bw-page-section, .home-gray-section, .home-gray-icon-section, .photos-gray-section, .fundraising-gray-section {
   background: #000;
 }
-.bw-page-section h2, .home-gray-section h2, .home-gray-icon-section h2, .photos-gray-section h2 {
+.bw-page-section h2, .home-gray-section h2, .home-gray-icon-section h2, .photos-gray-section h2, .fundraising-gray-section h2 {
   color: #fff;
   padding-top: 30px;
 }
 @media screen and (max-width: 768px) {
-  .bw-page-section h2, .home-gray-section h2, .home-gray-icon-section h2, .photos-gray-section h2 {
+  .bw-page-section h2, .home-gray-section h2, .home-gray-icon-section h2, .photos-gray-section h2, .fundraising-gray-section h2 {
     text-align: left;
     font-size: 20px;
   }
 }
-.bw-page-section p, .home-gray-section p, .home-gray-icon-section p, .photos-gray-section p {
+.bw-page-section p, .home-gray-section p, .home-gray-icon-section p, .photos-gray-section p, .fundraising-gray-section p {
   color: #fff;
 }
 @media screen and (max-width: 768px) {
@@ -815,14 +821,14 @@ ul#menu-main_menu li ul.sub-menu li a {
 .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section div p, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section div p {
   padding: 0px !important;
 }
-.home-gray-section, .home-gray-icon-section, .photos-gray-section {
+.home-gray-section, .home-gray-icon-section, .photos-gray-section, .fundraising-gray-section {
   background: #f4f4f4;
   padding: 6% 0;
 }
-.home-gray-section h2, .home-gray-icon-section h2, .photos-gray-section h2, .home-gray-section p, .home-gray-icon-section p, .photos-gray-section p {
+.home-gray-section h2, .home-gray-icon-section h2, .photos-gray-section h2, .fundraising-gray-section h2, .home-gray-section p, .home-gray-icon-section p, .photos-gray-section p, .fundraising-gray-section p {
   color: #000;
 }
-.home-gray-section h2, .home-gray-icon-section h2, .photos-gray-section h2 {
+.home-gray-section h2, .home-gray-icon-section h2, .photos-gray-section h2, .fundraising-gray-section h2 {
   text-align: center;
 }
 .home-gray-icon-section {
@@ -955,23 +961,23 @@ span.vc_tta-title-text.display-none-accordion:after {
   display: none;
 }
 @media screen and (max-width: 768px) {
-  .about-white-pg-section {
+  .about-white-pg-section, .fundraising-white-pg-section, .workplace-giving-pg-section {
     margin-top: 70px;
   }
 }
-.about-white-pg-section .column_container div p {
+.about-white-pg-section .column_container div p, .fundraising-white-pg-section .column_container div p, .workplace-giving-pg-section .column_container div p {
   padding-left: 10%;
 }
 @media screen and (max-width: 768px) {
-  .about-white-pg-section .column_container div p {
+  .about-white-pg-section .column_container div p, .fundraising-white-pg-section .column_container div p, .workplace-giving-pg-section .column_container div p {
     padding: 2% 0;
   }
 }
-.about-white-pg-section .column_container div h2 {
+.about-white-pg-section .column_container div h2, .fundraising-white-pg-section .column_container div h2, .workplace-giving-pg-section .column_container div h2 {
   color: #000;
 }
 @media screen and (max-width: 768px) {
-  .about-white-pg-section .column_container div h2 {
+  .about-white-pg-section .column_container div h2, .fundraising-white-pg-section .column_container div h2, .workplace-giving-pg-section .column_container div h2 {
     font-size: 5.5vw;
   }
 }
@@ -984,10 +990,10 @@ span.vc_tta-title-text.display-none-accordion:after {
   bottom: 0;
   max-height: 30px;
 }
-.about-cancer-tabs {
+.about-cancer-tabs, .fundraising-tabs {
   margin-bottom: 0px !important;
 }
-.about-cancer-tabs div.page-bg-color div .title-mobile {
+.about-cancer-tabs div.page-bg-color div .title-mobile, .fundraising-tabs div.page-bg-color div .title-mobile {
   color: #000;
   text-transform: uppercase;
   border-bottom: none;
@@ -996,60 +1002,60 @@ span.vc_tta-title-text.display-none-accordion:after {
   cursor: pointer;
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
 }
-.about-cancer-tabs div.page-bg-color div .title-mobile:after {
+.about-cancer-tabs div.page-bg-color div .title-mobile:after, .fundraising-tabs div.page-bg-color div .title-mobile:after {
   content: "+";
   color: #0075c9;
   float: right;
   font-size: 24px;
 }
-.about-cancer-tabs div.page-bg-color div .title-mobile:before {
+.about-cancer-tabs div.page-bg-color div .title-mobile:before, .fundraising-tabs div.page-bg-color div .title-mobile:before {
   content: "-";
   color: #5d5d5d;
   float: right;
   display: none;
   font-size: 24px;
 }
-.about-cancer-tabs div.page-bg-color div .title-mobile:first-child {
+.about-cancer-tabs div.page-bg-color div .title-mobile:first-child, .fundraising-tabs div.page-bg-color div .title-mobile:first-child {
   padding-top: 20px;
 }
-.about-cancer-tabs div.page-bg-color div .title-mobile.display-none:before {
+.about-cancer-tabs div.page-bg-color div .title-mobile.display-none:before, .fundraising-tabs div.page-bg-color div .title-mobile.display-none:before {
   display: block;
 }
-.about-cancer-tabs div.page-bg-color div .title-mobile.display-none:after {
+.about-cancer-tabs div.page-bg-color div .title-mobile.display-none:after, .fundraising-tabs div.page-bg-color div .title-mobile.display-none:after {
   display: none;
 }
 @media screen and (max-width: 767px) {
-  .about-cancer-tabs div.page-bg-color .mk-tabs-pane {
+  .about-cancer-tabs div.page-bg-color .mk-tabs-pane, .fundraising-tabs div.page-bg-color .mk-tabs-pane {
     margin-bottom: 0px !important;
   }
 }
-.about-cancer-tabs div.page-bg-color .mk-tabs-pane-content {
+.about-cancer-tabs div.page-bg-color .mk-tabs-pane-content, .fundraising-tabs div.page-bg-color .mk-tabs-pane-content {
   display: block;
 }
 @media screen and (max-width: 768px) {
-  .about-cancer-tabs div.page-bg-color .mk-tabs-pane-content {
+  .about-cancer-tabs div.page-bg-color .mk-tabs-pane-content, .fundraising-tabs div.page-bg-color .mk-tabs-pane-content {
     display: none;
   }
 }
-.about-cancer-tabs div.page-bg-color div div h3 {
+.about-cancer-tabs div.page-bg-color div div h3, .fundraising-tabs div.page-bg-color div div h3 {
   color: #0075c9;
   padding-left: 3%;
 }
-.about-cancer-tabs div.page-bg-color div div p {
+.about-cancer-tabs div.page-bg-color div div p, .fundraising-tabs div.page-bg-color div div p {
   padding: 3% 7% 0;
 }
 @media screen and (max-width: 768px) {
-  .about-cancer-tabs div.page-bg-color {
+  .about-cancer-tabs div.page-bg-color, .fundraising-tabs div.page-bg-color {
     background: #f4f4f4 !important;
   }
 }
-.about-cancer-tabs ul {
+.about-cancer-tabs ul, .fundraising-tabs ul {
   background: #f4f4f4;
 }
-.about-cancer-tabs ul li.mk-tabs-tab {
+.about-cancer-tabs ul li.mk-tabs-tab, .fundraising-tabs ul li.mk-tabs-tab {
   max-height: 150px;
 }
-.about-cancer-tabs ul li.mk-tabs-tab a {
+.about-cancer-tabs ul li.mk-tabs-tab a, .fundraising-tabs ul li.mk-tabs-tab a {
   margin: 20px 0px;
   text-transform: uppercase;
   background-color: #f4f4f4 !important;
@@ -1061,10 +1067,10 @@ span.vc_tta-title-text.display-none-accordion:after {
   color: #000;
   margin: 10px !important;
 }
-.about-cancer-tabs ul li.mk-tabs-tab a:first-child {
+.about-cancer-tabs ul li.mk-tabs-tab a:first-child, .fundraising-tabs ul li.mk-tabs-tab a:first-child {
   margin-top: 20px !important;
 }
-.about-cancer-tabs ul li.is-active {
+.about-cancer-tabs ul li.is-active, .fundraising-tabs ul li.is-active {
   background: #f4f4f4;
 }
 .fixed-postion {
@@ -1538,35 +1544,35 @@ span.vc_tta-title-text.display-none-accordion:after {
 .page-template-template-splash .splash-video-row .video-column .video-container {
   margin-bottom: 0px;
 }
-.page-template-template-splash .home-gray-section, .page-template-template-splash .home-gray-icon-section, .page-template-template-splash .photos-gray-section {
+.page-template-template-splash .home-gray-section, .page-template-template-splash .home-gray-icon-section, .page-template-template-splash .photos-gray-section, .page-template-template-splash .fundraising-gray-section {
   padding: 0px;
 }
-.page-template-template-splash .home-gray-section .page-section-content, .page-template-template-splash .home-gray-icon-section .page-section-content, .page-template-template-splash .photos-gray-section .page-section-content {
+.page-template-template-splash .home-gray-section .page-section-content, .page-template-template-splash .home-gray-icon-section .page-section-content, .page-template-template-splash .photos-gray-section .page-section-content, .page-template-template-splash .fundraising-gray-section .page-section-content {
   padding: 5% 0;
 }
-.page-template-template-splash .home-gray-section .column_container div h2, .page-template-template-splash .home-gray-icon-section .column_container div h2, .page-template-template-splash .photos-gray-section .column_container div h2 {
+.page-template-template-splash .home-gray-section .column_container div h2, .page-template-template-splash .home-gray-icon-section .column_container div h2, .page-template-template-splash .photos-gray-section .column_container div h2, .page-template-template-splash .fundraising-gray-section .column_container div h2 {
   text-align: left;
 }
 @media screen and (max-width: 768px) {
-  .page-template-template-splash .home-gray-section .splash-gray-column-bottom div, .page-template-template-splash .home-gray-icon-section .splash-gray-column-bottom div, .page-template-template-splash .photos-gray-section .splash-gray-column-bottom div {
+  .page-template-template-splash .home-gray-section .splash-gray-column-bottom div, .page-template-template-splash .home-gray-icon-section .splash-gray-column-bottom div, .page-template-template-splash .photos-gray-section .splash-gray-column-bottom div, .page-template-template-splash .fundraising-gray-section .splash-gray-column-bottom div {
     text-align: left;
   }
 }
-.page-template-template-splash .home-gray-section .splash-gray-column-bottom div p, .page-template-template-splash .home-gray-icon-section .splash-gray-column-bottom div p, .page-template-template-splash .photos-gray-section .splash-gray-column-bottom div p {
+.page-template-template-splash .home-gray-section .splash-gray-column-bottom div p, .page-template-template-splash .home-gray-icon-section .splash-gray-column-bottom div p, .page-template-template-splash .photos-gray-section .splash-gray-column-bottom div p, .page-template-template-splash .fundraising-gray-section .splash-gray-column-bottom div p {
   color: #000;
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
 }
-.page-template-template-splash .home-gray-section .splash-gray-column-bottom div a, .page-template-template-splash .home-gray-icon-section .splash-gray-column-bottom div a, .page-template-template-splash .photos-gray-section .splash-gray-column-bottom div a {
+.page-template-template-splash .home-gray-section .splash-gray-column-bottom div a, .page-template-template-splash .home-gray-icon-section .splash-gray-column-bottom div a, .page-template-template-splash .photos-gray-section .splash-gray-column-bottom div a, .page-template-template-splash .fundraising-gray-section .splash-gray-column-bottom div a {
   color: #fff;
   padding: 10px 40px;
   border: 3px solid #0075c9;
 }
-.page-template-template-splash .home-gray-section .splash-gray-column-bottom div a:hover, .page-template-template-splash .home-gray-icon-section .splash-gray-column-bottom div a:hover, .page-template-template-splash .photos-gray-section .splash-gray-column-bottom div a:hover {
+.page-template-template-splash .home-gray-section .splash-gray-column-bottom div a:hover, .page-template-template-splash .home-gray-icon-section .splash-gray-column-bottom div a:hover, .page-template-template-splash .photos-gray-section .splash-gray-column-bottom div a:hover, .page-template-template-splash .fundraising-gray-section .splash-gray-column-bottom div a:hover {
   color: #0075c9;
   background: #fff !important;
   border: 3px solid #0075c9;
 }
-.page-template-template-splash .home-gray-section .splash-gray-column-bottom div a:focus, .page-template-template-splash .home-gray-icon-section .splash-gray-column-bottom div a:focus, .page-template-template-splash .photos-gray-section .splash-gray-column-bottom div a:focus {
+.page-template-template-splash .home-gray-section .splash-gray-column-bottom div a:focus, .page-template-template-splash .home-gray-icon-section .splash-gray-column-bottom div a:focus, .page-template-template-splash .photos-gray-section .splash-gray-column-bottom div a:focus, .page-template-template-splash .fundraising-gray-section .splash-gray-column-bottom div a:focus {
   color: #fff;
 }
 @media screen and (max-width: 768px) {
@@ -1790,4 +1796,91 @@ span.vc_tta-title-text.display-none-accordion:after {
   height: 100%;
   overflow: visible;
   background: #f5f5f5 url('http://staging.causeforce.com/wp-content/uploads/2017/05/ring-alt.gif') no-repeat center center;
+}
+.fundraising-tabs .mk-tabs-tabs li a {
+  top: auto !important;
+  left: 3% !important;
+  transform: translate(0, -5%) !important;
+  margin-left: 20px !important;
+}
+@media screen and (max-width: 768px) {
+  .fundraising-tabs .mk-tabs-panes .mk-text-block h3 {
+    display: none;
+  }
+}
+.fundraising-tabs .mk-tabs-panes .btn-with-link-blue {
+  margin-left: 7%;
+}
+@media screen and (max-width: 768px) {
+  .fundraising-tabs .mk-tabs-panes .btn-with-link-blue a {
+    background-color: transparent !important;
+  }
+  .fundraising-tabs .mk-tabs-panes .btn-with-link-blue a:hover {
+    background-color: #0075c9 !important;
+  }
+}
+.fundraising-white-pg-section {
+  padding: 3% 5%;
+}
+@media screen and (max-width: 768px) {
+  .fundraising-white-pg-section {
+    padding: 3% 10%;
+    margin-top: 30px;
+  }
+}
+.fundraising-white-pg-section .column_container div p {
+  padding-left: 0;
+}
+.fundraising-gray-section {
+  padding: 3% 5%;
+}
+@media screen and (max-width: 768px) {
+  .fundraising-gray-section {
+    padding: 5% 10%;
+  }
+}
+.fundraising-gray-section .mk-text-block p {
+  margin-bottom: 5px;
+}
+.fundraising-gray-section .mk-text-block h2 {
+  padding-top: 5px;
+}
+@media screen and (max-width: 768px) {
+  .fundraising-gray-section .mk-text-block h2 {
+    font-size: 1.93em;
+  }
+}
+.workplace-giving-pg-section .column_container div p {
+  padding-left: 5% !important;
+}
+.workplace-giving-pg-section .column_container div ol {
+  padding-left: 6%;
+}
+@media screen and (max-width: 768px) {
+  .workplace-giving-pg-section .column_container div ol {
+    padding-left: 0;
+  }
+}
+.page-template-template-partners .photos-gray-section, .page-template-template-partners .fundraising-gray-section {
+  padding: 1% 0;
+}
+.page-template-template-partners .photos-gray-section .wpb_wrapper:hover .vc_icon_element-icon, .page-template-template-partners .fundraising-gray-section .wpb_wrapper:hover .vc_icon_element-icon {
+  color: #0075c9;
+}
+@media screen and (max-width: 768px) {
+  .page-template-template-partners .photos-gray-section .mk-text-block h2, .page-template-template-partners .fundraising-gray-section .mk-text-block h2 {
+    text-align: center !important;
+    font-size: 1.8em;
+  }
+}
+.page-template-template-partners .btn-with-link-black a, .page-template-template-partners nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-custom:nth-child(-n+3) a, nav.menu-main_menu-container ul.mk-responsive-nav .page-template-template-partners li.menu-item-object-custom:nth-child(-n+3) a {
+  font-family: "Futura LT Pro Heading", Helvetica, sans-serif !important;
+}
+.page-template-template-partners .wpb_column.vc_column_container.vc_col-sm-4 {
+  width: 33.33% !important;
+  display: inline-block;
+}
+.page-template-template-partners .wpb_column.vc_column_container.vc_col-sm-6 {
+  width: 50% !important;
+  display: inline-block;
 }
