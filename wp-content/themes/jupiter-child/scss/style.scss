@@ -1782,7 +1782,7 @@ display: inline-block;
             position: absolute;
             bottom: 35px;
             height: 40px;
-            width: 33.35vw;
+            width: 33.05vw;
             background: black;
             z-index: 99;
             @media screen and (max-width: 768px) {
@@ -2318,5 +2318,28 @@ display: inline-block;
     .wpb_column.vc_column_container.vc_col-sm-6{
         width: 50% !important;
         display: inline-block;
+    }
+}
+
+// ===== TEAMRAISER STYLING ===== //
+#top-teams {
+    margin-left: 0px;
+    li {
+        list-style: none;
+        margin-left: 0px;
+        font-weight: bold;
+        margin-bottom: 10px;
+         &:nth-child(even) {
+            font-weight: initial;
+        }
+    }
+}
+.more {
+    color: $blue;
+    cursor: pointer;
+}
+.teamraiser-header {
+    h3 {
+        color: $blue !important;
     }
 }

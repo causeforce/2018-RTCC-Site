@@ -138,9 +138,42 @@ $(document).ready(function () {
             $('.mobile-overlay').fadeToggle('slow');
         });
     }
+    
+    // Top Teams JSON Script
+    $.getJSON('/../../../wp-content/themes/jupiter-child/js/raiser_data.json', function(data){
+        var topTeamsData = data.getTopTeamsDataResponse.teamraiserData;
+        $(topTeamsData).each(function (index, value){
+            $('#top-teams').append("<li>" + value.name + "</li>" + "<li>" + value.total + "</li>");
+       }); 
+    });
 
 });
 // Preloader on load to fadeout
 $(window).on("load",function(){
    $('div#ride-preloader').fadeOut('slow');
+    
+    // View More or Less Function
+    $('ul#top-teams').each(function(){
+  
+      var liFind = $(this).find('li').length;
+
+      if( liFind > 10){    
+        $('li', this).eq(9).nextAll().hide().addClass('toggleable');
+        $(this).append('<li class="more">More...</li>');    
+      }
+
+    });
+
+
+    $('ul#top-teams').on('click','.more', function(){
+
+      if( $(this).hasClass('less') ){    
+        $(this).text('More...').removeClass('less');    
+      }else{
+        $(this).text('Less...').addClass('less'); 
+      }
+
+      $(this).siblings('li.toggleable').slideToggle();
+
+    }); 
 });
