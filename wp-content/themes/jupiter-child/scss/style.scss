@@ -1719,7 +1719,7 @@ display: inline-block;
     .splash-page-header-text {
         div {
             position: relative;
-            top: 26vh;
+            top: 15em;
             @media screen and (max-width: 768px) {
                 top: 200px;
             }
@@ -1729,8 +1729,11 @@ display: inline-block;
                 }
             }
             h1 {
-                font-size: 15vw;
+                font-size: 14em;
                 color: $white;
+                @media screen and (max-width: 1212px) {
+                    font-size: 9em;
+                }
                 @media screen and (max-width: 768px) {
                     font-size: 5em;
                 }
@@ -2324,6 +2327,9 @@ display: inline-block;
 // ===== TEAMRAISER STYLING ===== //
 #top-teams {
     margin-left: 0px;
+    @media screen and (max-width: 939px) {
+        text-align: center;
+    }
     li {
         list-style: none;
         margin-left: 0px;
@@ -2341,5 +2347,19 @@ display: inline-block;
 .teamraiser-header {
     h3 {
         color: $blue !important;
+        @media screen and (max-width: 939px) {
+            text-align: center;
+        }
+    }
+}
+
+.hr-line {
+    position: relative;
+    top: 90px;
+    hr {
+        border: 2px solid $black;
+         @media screen and (max-width: 939px) {
+            display: none;
+        }
     }
 }
