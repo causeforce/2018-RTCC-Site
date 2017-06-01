@@ -1584,6 +1584,11 @@ display: inline-block;
 // === MOBILE MENU STYLING === //
 
 @media screen and (max-width: 1140px) {
+    .menu-item-object-custom{
+        &:nth-child(-n+2) {
+            display: none;
+        }
+    }
     .mk-responsive-wrap{
         width: 75%;
         right: 0;
@@ -1601,10 +1606,10 @@ display: inline-block;
     nav.menu-main_menu-container{
         ul.mk-responsive-nav {
             li.menu-item-object-custom {
-                &:nth-child(-n+3) {
+                &:nth-child(-n+5) {
                     @extend .btn-with-link-black;
                 }
-                &:nth-child(4) {
+                &:nth-child(6) {
                     @extend .btn-regular-with-link-blue;
                     a {
                         color: $white !important;
@@ -2113,6 +2118,15 @@ display: inline-block;
     }
 }
 
+// === RIDE AS A TEAM STYLING === //
+.ride-team-text-container {
+    @extend .mini-text-container;
+    h2, 
+    p{
+        color: $black !important;
+    }
+}
+
 //=== FAQS PAGE STYLING ===//
 .page-template-template-faqs {
     counter-reset: faqs-counter;
@@ -2195,9 +2209,41 @@ display: inline-block;
     }
 }
 .daw-page-section {
+    .page-section-content{
+        padding-left: 6% !important;
+        @media screen and (max-width: 768px) {
+            padding-left: 10px !important;
+        }
+    }
     .mk-text-block{
         p {
             padding-left: 2.5%;
+            strong {
+                text-transform: uppercase;
+            }
+        }
+        ul {
+            margin-left: 2em;
+            li {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.daw-margaret-section {
+    @media screen and (max-width: 768px) {
+        font-size: 1.6em;
+    }
+}
+
+.daw-gray-section {
+    @extend .photos-gray-section;
+    padding: 3% 0;
+    @media screen and (max-width: 768px) {
+        padding: 10%;
+        h4 {
+            font-size: 14px;
         }
     }
 }
