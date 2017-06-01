@@ -105,7 +105,7 @@ $(document).ready(function () {
     });
     
     // Sticky Side Nav Area 
-    $("ul.mk-tabs-tabs, .programs-tabs-link-column").stick_in_parent({offset_top: 150});
+    $("ul.mk-tabs-tabs, .e-tab-container>nav").stick_in_parent({offset_top: 150});
     
     $('ul.mk-tabs-tabs, .programs-tabs-link-column')
     .on('sticky_kit:bottom', function(e) {
