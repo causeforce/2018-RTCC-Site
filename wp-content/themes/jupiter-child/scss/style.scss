@@ -48,22 +48,24 @@ $h3-body: 27px; //20pts
 /* ============== Button Styles ==============  */
 
 %btn-outline {
-  padding: 15px;
-  background: #fff;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 600;
-  cursor: pointer;
+    padding: 15px;
+    background: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: $h-font !important;
 }
 
 %btn-regular {
-  padding: 17px;
-  color: $white;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 600;
-  border: 1px solid #9c9c9c;
-  cursor: pointer;
+    padding: 17px;
+    color: $white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid #9c9c9c;
+    cursor: pointer;
+    font-family: $h-font !important;
 }
 
 %link-yellow-hover{
@@ -85,10 +87,11 @@ $h3-body: 27px; //20pts
 .btn-outline-blue > button,
 .btn-with-link-blue > a {
   @extend %btn-outline;
-  border: 3px solid $blue !important;
+  border: 2px solid $blue !important;
   color: $blue !important;
   transition: all 0.2s ease-in !important;
     background-color: #fff !important;
+    font-family: $h-font !important;
   &:hover {
     background: $blue !important;
     color: $white !important;
@@ -102,13 +105,13 @@ $h3-body: 27px; //20pts
 .btn-outline-white > button,
 .btn-with-link-white > a {
   @extend %btn-outline;
-  border: 3px solid $white !important;
+  border: 2px solid $white !important;
   color: $white !important;
   transition: all 0.2s ease-in;
     background-color: #000 !important;
   &:hover {
-    background: $blue !important;
-    color: $white !important;
+    background: $white !important;
+    color: $black !important;
   }
   &:active {
     background: $black !important;
@@ -117,10 +120,11 @@ $h3-body: 27px; //20pts
 }
 .btn-with-link-trans > a {
   @extend %btn-outline;
-  border: 3px solid $white !important;
+  border: 2px solid $white !important;
   color: $white !important;
   transition: all 0.2s ease-in;
     background-color: transparent !important;
+    font-family: $h-font !important;
   &:hover {
     background: $white !important;
     color: $black !important;
@@ -135,11 +139,12 @@ $h3-body: 27px; //20pts
   @extend %btn-outline;
   padding: 10px 25px;
   text-transform: uppercase;
+    font-family: $h-font !important;
   a{
       color: #fff;
       font-family: $h-font;
   }
-  border: 3px solid $white !important;
+  border: 2px solid $white !important;
   color: $white !important;
   transition: all 0.2s ease-in;
   background-color: transparent !important;
@@ -161,10 +166,11 @@ $h3-body: 27px; //20pts
 .btn-with-link-black > a{
 
   @extend %btn-outline;
-  border: 3px solid $black !important;
+  border: 2px solid $black !important;
   color: $black !important;
   transition: all 0.2s ease-in !important;
     background-color: #fff !important;
+    font-family: $h-font !important;
   &:hover {
     background: $black !important;
     color: $white !important;
@@ -179,15 +185,17 @@ $h3-body: 27px; //20pts
 .btn-regular-with-link-blue > a{
     @extend %btn-regular;
     background: $blue !important;
-    border: 3px solid $blue;
+    border: 2px solid $blue;
     color: $white;
     transition: all 0.2s ease-in;
+    font-family: $h-font !important;
   &:active {
     background: $blue-dark;
   }
 }
 
 .btn-regular-with-link-blue {
+    font-family: $h-font !important;
     &:hover {
         a {
             color: $blue !important;
@@ -196,12 +204,15 @@ $h3-body: 27px; //20pts
     }
 }
 
-.btn-regular-black {
-  @extend %btn-regular;
-  background: $black;
-  &:active {
-    background: $gray-dark;
-  }
+.btn-regular-black,
+.btn-regular-with-link-black > a{
+    @extend %btn-regular;
+    background: $black !important;
+    border: 2px solid $black !important;
+    &:hover {
+        color: $black !important;
+        border: 2px solid $white !important;
+    }
 }
 
 /* ============== Global Page Element Style ============== */
@@ -209,17 +220,31 @@ $h3-body: 27px; //20pts
 body {
     font-family: $p-font !important;
 }
-
+a {
+    color: $blue;
+}
 p {
     color: $black;
 }
-
+sup {
+    vertical-align: inherit;
+}
 h1,h2,h3,h4 {
     font-family: $h-font;
     color: $black;
 }
-
 li.mk-tabs-tab {
+    font-family: $h-font;
+}
+li.mk-tabs-tab.is-active{
+    a {
+        color: $blue;
+    }
+}
+.mk-tabs-pane {
+    padding-top: 0px !important;
+}
+button {
     font-family: $h-font;
 }
 // === BREAK POINT FOR TABLET === //
@@ -673,7 +698,7 @@ ul#menu-main_menu {
             width: 140px;
             top: 35px;
             position: relative;
-            border: 3px solid $blue;
+            border: 2px solid $blue;
             margin-right: 10px;
             transition: all 0.3s ease-in;
             margin-top: 0px !important;
@@ -702,7 +727,7 @@ ul#menu-main_menu {
             }
             &:hover {
                 background: $white !important;
-                border: 3px solid $blue;
+                border: 2px solid $blue;
                 a {
                     color: $blue;
                 }
@@ -1110,6 +1135,19 @@ div.p-block {
     }
 }
 
+.homepage-partners {
+    .mk-text-block {
+        h4 {
+            color: #c5c5c5;
+        }
+    }
+}
+
+.leaderboard-section {
+    @extend .photos-gray-section;
+    padding: 3% 0;
+}
+
 // === PHOTOS PAGE STYLING === //
 
 #photos-accordion {
@@ -1148,7 +1186,7 @@ div.p-block {
     @media screen and (max-width: 768px) {
         &:after {
             font-family: FontAwesome;
-            content: "\f062";
+            content: "\f067";
             color: $blue;
             float: right;
             font-size: 18px;
@@ -1158,12 +1196,10 @@ div.p-block {
         }
     } 
 }
-.down{
+.minus{
     &:after {
-        -ms-transform:rotate(180deg);
-        -moz-transform:rotate(180deg);
-        -webkit-transform:rotate(180deg);
-        transform:rotate(180deg);
+        content: "\f068";
+        color: $gray-dark;
     }
 }
 
@@ -1313,16 +1349,33 @@ span.vc_tta-title-text.display-none-accordion{
     top: 140px;
 }
 
+#about-cancer-header {
+    @media screen and (max-width: 768px) {
+        min-height: 300px !important;
+        .pg-title {
+            top: 244px;
+            p {
+                font-size: 9vw;
+                text-align: center;
+                background-image: linear-gradient(bottom, #000 60%, transparent 60%);
+                background-image: -o-linear-gradient(bottom, #000 60%, transparent 60%);
+                background-image: -moz-linear-gradient(bottom, #000 60%, transparent 60%);
+                background-image: -webkit-linear-gradient(bottom, #000 60%, transparent 60%);
+                background-image: -ms-linear-gradient(bottom, #000 60%, transparent 60%);
+            }
+        }
+    }
+}
 
 // ABOUT PAGE STYLES 
 
 %about-text-container {
-    padding: 75px 0;
+    padding: 30px 0;
     .pg-indent {
         padding-left: 0px;
     }    
     @media screen and (min-width: 692px) {
-        padding: 125px 0;
+        padding: 60px 0;
         .pg-indent {
             padding-left: 10%;
         }            
@@ -1376,6 +1429,9 @@ display: inline-block;
 // === PROGRAMS/AMBASSADOR PAGE STYLING === //
 
 .programs-tabs-column {
+    .mk-tabs-pane {
+        padding-top: 0px !important;
+    }
     .mk-tabs-pane-content {
         div {
             p {
@@ -1480,6 +1536,7 @@ display: inline-block;
         margin-top: 10px;
     }
     .programs-tabs-link-column {
+        cursor: pointer;
         div {
             h4 {
                 margin-bottom: 20px;
@@ -1522,13 +1579,6 @@ display: inline-block;
             }
         }
     }
-}
-
-.ambassador-scroll,
-.women-scroll,
-.community-scroll,
-.industry-scroll {
-    cursor: pointer;
 }
 
 // === MOBILE MENU STYLING === //
@@ -1635,7 +1685,7 @@ display: inline-block;
     .pic-column {
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: center top;
         height: 269px;
         @media screen and (min-width:768px) {
             height: inherit;
@@ -1741,13 +1791,6 @@ display: inline-block;
             p {
                 display: inline;
                 margin-right: 6vw;
-                &:nth-child(3) {
-                    @extend .btn-with-link-white;
-                    a {
-                        background: transparent !important;
-                        padding: 10px 25px;
-                    }
-                }
                 a {
                     color: $white;
                     text-transform: uppercase;
@@ -1800,7 +1843,7 @@ display: inline-block;
         .bw-column {
             min-height: auto;
             border-bottom: none;
-            padding: 2% 5% 0;
+            padding: 5% 5% 0;
             z-index: 99;
             @media screen and (max-width: 768px){
                 border-top: none;
@@ -1811,6 +1854,8 @@ display: inline-block;
                 h2 {
                     padding: 0;
                     font-size: 2.0vw;
+                    margin-bottom: 0px;
+                    line-height: 35px;
                     @media screen and (max-width: 768px) {
                         font-size: 1.2em;
                     }
@@ -1910,17 +1955,7 @@ display: inline-block;
                     font-family: $h-font;
                 }
                 a {
-                    color: $white;
                     padding: 10px 40px;
-                    border: 3px solid $blue;
-                    &:hover {
-                        color: $blue;
-                        background: $white !important;
-                        border: 3px solid $blue;
-                    }
-                    &:focus {
-                        color: $white;
-                    }
                 }
             }
         }
@@ -1932,6 +1967,14 @@ display: inline-block;
                 background-position: center center;
                 background-repeat: no-repeat;
             }
+        }
+    }
+    #mk-footer {
+        display: none;
+    }
+    .select-city-btn {
+        a {
+            font-family: $h-font;
         }
     }
 }
@@ -1948,6 +1991,24 @@ display: inline-block;
     }
 }
 // RIDER HUB STYLING //
+.rider-hub-header-v2 {
+    .mk-text-block   {
+        h1 {
+            color: $white;
+        }
+    }
+}
+.rider-hub-icon-row {
+    a {
+        color: $black !important;
+        &:hover{
+            color: $blue !important;
+        } 
+    }
+}
+.rider-hub-info-section {
+    background: $gray;
+}
 .important-announce-header {
     h1 {
         font-size: 24px;
@@ -1958,8 +2019,8 @@ display: inline-block;
         h1 {
             font-size: 36px !important;
         }
-        margin-top: 100px;
-        margin-bottom: 50px; 
+        margin-top: 40px;
+        margin-bottom: 25px; 
     }
 }
 .announcement-text-row.vc_inner.vc_row {
@@ -2016,8 +2077,8 @@ display: inline-block;
     }
 }
 .rider-hub-events {
-    margin-top: 75px;
-    margin-bottom: 75px
+    margin-top: 35px;
+    margin-bottom: 35px
 }
 .offset-img-text-column {
     padding-left:0;
@@ -2025,6 +2086,30 @@ display: inline-block;
     @media screen and (min-width:768px) {
         padding-left:15px;
         padding-right:15px;
+    }
+}
+
+.icon-column-container {
+    width: 33%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+    img {
+        margin-bottom: 15px;
+    }
+    h2 {
+        a {
+            color: $black !important;
+            &:hover {
+                color: $blue !important;
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        width: 49%;
+        h2 {
+            font-size: 18px !important;
+        }
     }
 }
 
@@ -2107,6 +2192,13 @@ display: inline-block;
     background: $blue;
     h2 {
         color: $white;
+    }
+}
+.daw-page-section {
+    .mk-text-block{
+        p {
+            padding-left: 2.5%;
+        }
     }
 }
 
@@ -2207,6 +2299,10 @@ display: inline-block;
     }
     .mk-tabs-panes {
         padding-right: 0px;
+        padding-top: 10px;
+        .mk-tabs-pane-content {
+            padding-top: 25px;
+        }
         .mk-text-block,
         .tab-pg-text{
             h3 {
@@ -2343,9 +2439,11 @@ display: inline-block;
 .more {
     color: $blue;
     cursor: pointer;
+    font-family: $h-font;
+    text-transform: uppercase;
 }
 .teamraiser-header {
-    h3 {
+    h4 {
         color: $blue !important;
         @media screen and (max-width: 939px) {
             text-align: center;
@@ -2360,6 +2458,64 @@ display: inline-block;
         border: 2px solid $black;
          @media screen and (max-width: 939px) {
             display: none;
+        }
+    }
+}
+
+// ===== HEADER STYLING ===== //
+.ride-as-team-header,
+.rider-stories-header,
+.media-header,
+.impact-header,
+.about-header,
+.partners-header,
+#dollars-at-work-header,
+#training-header,
+#programs-header,
+#workplace-giving-header,
+#fundraising-header,
+#outfitters-header,
+#support-header{
+    @extend #about-cancer-header;
+}
+.ride-as-team-header {
+    @media screen and (max-width: 768px){
+        .pg-title {
+            top: 249px;
+            p {
+                font-size: 8.0vw;
+            }
+        }
+    }
+}
+#training-header {
+    @media screen and (max-width: 768px){
+        .pg-title {
+            top: 252px;
+            p {
+                font-size: 7.4vw;
+            }
+        }
+    }
+}
+#dollars-at-work-header,
+#workplace-giving-header{
+    @media screen and (max-width: 768px){
+        .pg-title {
+            top: 254px;
+            p {
+                font-size: 7vw;
+            }
+        }
+    }
+}
+#support-header {
+    @media screen and (max-width: 768px){
+        .pg-title {
+            top: 261px;
+            p{
+                font-size: 5.63vw;
+            }
         }
     }
 }

@@ -19,24 +19,24 @@ $(document).ready(function () {
     // })();
     
     // On click Scroll to Element
-    $(".ambassador-scroll").click(function() {
+    $(".1st-scroll").click(function() {
         $('html, body').animate({
-            scrollTop: $("#ambassador-section").offset().top - 150
+            scrollTop: $("#1st-section").offset().top - 150
         }, 500);
     });
-    $(".women-scroll").click(function() {
+    $(".2nd-scroll").click(function() {
         $('html, body').animate({
-            scrollTop: $("#women-on-wheels-section").offset().top - 150
+            scrollTop: $("#2nd-section").offset().top - 150
         }, 500);
     });
-    $(".industry-scroll").click(function() {
+    $(".3rd-scroll").click(function() {
         $('html, body').animate({
-            scrollTop: $("#industry-challenge-section").offset().top - 150
+            scrollTop: $("#3rd-section").offset().top - 150
         }, 500);
     });
-    $(".community-scroll").click(function() {
+    $(".4th-scroll").click(function() {
         $('html, body').animate({
-            scrollTop: $("#community-challenge-section").offset().top - 150
+            scrollTop: $("#4th-scroll").offset().top - 150
         }, 500);
     });
 
@@ -74,8 +74,8 @@ $(document).ready(function () {
         $('.vc_tta-panel-heading').click(function () {
             $('.vc_tta-panel-body').not(this).slideUp('slow');
             $(this).next('.vc_tta-panel-body').slideToggle('slow');
-            $('span.vc_tta-title-text').not(this).removeClass('down');
-            $('span.vc_tta-title-text', this).toggleClass('down');
+            $('span.vc_tta-title-text').not(this).removeClass('minus');
+            $('span.vc_tta-title-text', this).toggleClass('minus');
         });
         $('.mobile-nav-tab-container-header>div>div>div>.vc_tta-panel-body').hide();
         // Click function for Tab into Accordion to toggle content //
@@ -126,17 +126,6 @@ $(document).ready(function () {
         // Add Mobile Image Class
         $('.header-logo>a>img').addClass('.mobile-img');
         $('ul.mk-responsive-nav').prepend(mobileButtons);
-        // Click Function to Change Logo into Mobile on Hamburger click 
-        $('.mk-nav-responsive-link').click(function(){
-            $('.header-logo>a>img').toggleClass('.mobile-img');
-            if ($('.header-logo>a>img').hasClass('.mobile-img')){
-                $('.header-logo>a>img').attr('src', '/wp-content/uploads/2017/05/ride_logo.png');
-            }else {
-                $('.header-logo>a>img').attr('src', '/wp-content/uploads/2017/05/ride-icon_mobile.png');
-                $('.header-logo>a>img').css('width', 'auto');
-            }
-            $('.mobile-overlay').fadeToggle('slow');
-        });
     }
     
     // Top Teams JSON Script
