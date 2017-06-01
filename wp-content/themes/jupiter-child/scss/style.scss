@@ -2363,3 +2363,30 @@ display: inline-block;
         }
     }
 }
+
+// ELEGANT TABS CUSTOM CSS
+.elegant-tabs-container {
+    nav {
+        li {
+            a {
+                font-size: 18px;
+                text-align: left;
+                font-family: $h-font;
+                border:0 !important;
+            }
+        }
+    select.et-mobile-tabs {
+        font-size: 18px !important;
+        height: 60px !important;
+        border: 2px solid black !important;
+        text-shadow: none !important;
+        font-family: $h-font !important;
+        line-height: 24px !important;        
+      }        
+    }
+    @media screen and (min-width:721px){
+     select.et-mobile-tabs {
+        display: none !important;
+      } 
+    }
+}
