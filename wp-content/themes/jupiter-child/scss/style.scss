@@ -2232,9 +2232,13 @@ display: inline-block;
 }
 
 .daw-margaret-section {
-    @media screen and (max-width: 768px) {
-        font-size: 1.6em;
-    }
+    .mk-text-block {
+        h2 {
+            @media screen and (max-width: 768px) {
+                font-size: 1.6em;
+            }
+        }
+    } 
 }
 
 .daw-gray-section {
