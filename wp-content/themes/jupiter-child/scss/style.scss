@@ -241,6 +241,9 @@ li.mk-tabs-tab.is-active{
         color: $blue;
     }
 }
+strong {
+    font-family: $h-font;
+}
 .mk-tabs-pane {
     padding-top: 0px !important;
 }
@@ -346,16 +349,16 @@ ul.main-navigation-ul {
         height: 100%;
         padding: 0px;
         .mk-padding-wrapper{
-            height: 100%;
+            height: 100% !important;
             .header-title-column {
                 .wpb_row{
-                    height: 100%;
+                    height: 100% !important;
                     .pg-title-bg {
-                        height: 100%;
+                        height: 100% !important;
                         .vc_column-inner {
-                            height: 100%;
+                            height: 100% !important;
                             .wpb_wrapper{
-                                height: 100%;
+                                height: 100% !important;
                             }
                         }
                     }
@@ -372,15 +375,22 @@ ul.main-navigation-ul {
 
 .pg-title {
     position: relative;
-    top: 485px;
+    top: 495px;
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
     display: block;
-    @media screen and (max-width: 482px){
-            top: 500px;
-            text-align: center !important;
-        }
+    @media screen and (max-width: 768px){
+        top: auto !important;
+        position: relative;
+        bottom: -274px;
+        right: auto;
+        text-align: center !important;
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+        max-width: 420px;
+    }
     p {
         background-image: linear-gradient(bottom, #000 50%, transparent 50%);
         background-image: -o-linear-gradient(bottom, #000 50%, transparent 50%);
@@ -394,10 +404,8 @@ ul.main-navigation-ul {
         padding: 0 15px;
         height: auto;
         display: inline-block;    
-        @media screen and (max-width: 782px){
-            font-size: 6.5vw;
-        }
-        @media screen and (max-width: 482px){
+        @media screen and (max-width: 768px){
+            font-size: 24px;
             background-image: linear-gradient(bottom, #000 60%, transparent 60%);
             background-image: -o-linear-gradient(bottom, #000 60%, transparent 60%);
             background-image: -moz-linear-gradient(bottom, #000 60%, transparent 60%);
@@ -845,7 +853,7 @@ ul#menu-main_menu {
             font-size: calc(1em + 1.5vw);
             display: inline-block;
             width: 15%;
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 939px) {
                 display: block;
                 text-align: center;
                 margin-bottom: 20px;
@@ -853,9 +861,16 @@ ul#menu-main_menu {
                 width: 100%;
                 margin-top: 30px;
             }
-            a {
-                color: $gold;
-                margin-right: 15px;
+            .social-icon-container {
+                width: 23%;
+                display: inline-block;
+                padding: 0 5px;
+                a {
+                    color: $gold;
+                    text-align: center;
+                    display: block;
+                    width: 100%;
+                }
             }
         }
         .mk-footer-copyright{
@@ -863,7 +878,7 @@ ul#menu-main_menu {
             float: none;
             display: inline-block;
             padding-left: 0 !important;
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 939px) {
                 width: auto;
                 padding: 15px !important;
             }
@@ -1137,8 +1152,9 @@ div.p-block {
 
 .homepage-partners {
     .mk-text-block {
-        h4 {
+        p {
             color: #c5c5c5;
+            text-transform: uppercase;
         }
     }
 }
@@ -1352,18 +1368,6 @@ span.vc_tta-title-text.display-none-accordion{
 #about-cancer-header {
     @media screen and (max-width: 768px) {
         min-height: 300px !important;
-        .pg-title {
-            top: 244px;
-            p {
-                font-size: 9vw;
-                text-align: center;
-                background-image: linear-gradient(bottom, #000 60%, transparent 60%);
-                background-image: -o-linear-gradient(bottom, #000 60%, transparent 60%);
-                background-image: -moz-linear-gradient(bottom, #000 60%, transparent 60%);
-                background-image: -webkit-linear-gradient(bottom, #000 60%, transparent 60%);
-                background-image: -ms-linear-gradient(bottom, #000 60%, transparent 60%);
-            }
-        }
     }
 }
 
@@ -1391,6 +1395,25 @@ span.vc_tta-title-text.display-none-accordion{
     color: #fff;
     h2, p {
         color: #fff;
+    }
+}
+.about-video-section {
+    background: $black;
+}
+
+.about-routes-tab {
+    padding: 30px;
+    ul {
+        background: #f5f5f5;
+        li {
+            background: #f5f5f5 !important;
+            a::after {
+                background: #f5f5f5 !important;
+            }
+        }
+    }
+    section {
+        background: #f5f5f5;
     }
 }
 // image hover style
@@ -1428,105 +1451,101 @@ display: inline-block;
 
 // === PROGRAMS/AMBASSADOR PAGE STYLING === //
 
-.programs-tabs-column {
-    .mk-tabs-pane {
-        padding-top: 0px !important;
-    }
-    .mk-tabs-pane-content {
-        div {
-            p {
-                margin-left: 50px;
-                @media screen and (max-width: 768px) {
-                    margin-left: 20px;
+#section-refer-and-raise{
+    .refer-and-raise-inner-row {
+        .vc_col-sm-4 {
+            border-right: 2px solid #dadada;
+            &:last-child {
+                border-right: none;
+            }
+            @media screen and (max-width: 768px){
+                border-right: none;
+                border-bottom: 2px solid #dadada;
+                &:last-child {
+                    border-bottom: none;
                 }
             }
-            h2 {
-                color: $black;
-                @media screen and (max-width: 768px) {
-                    font-size: 5.5vw;
-                }
-            }
-            figure {
-                div {
-                    img {
-                        margin-left: 50px;
-                        @media screen and (max-width: 768px) {
-                            margin-left: 0;
-                        }
+            .vc_column-inner {
+                padding: 25px;
+                .mk-text-block {
+                    p {
+                        margin-bottom: 0px;
                     }
                 }
             }
         }
     }
-    div {
-        #mk-tabs-tabs-4{
-            li {
-                a {
-                    text-transform: uppercase;
-                    color: $black;
-                }
-            }
+    .small-text{
+        p {
+            font-size: 12px;
         }
     }
 }
-.programs-mobile-tab-menu {
-    margin-top: 50px;
-    div {
-        .vc_tta-container {
-            .mobile-nav-tab-container-header {
-                border: none;
-                div {
-                    div {
-                        .vc_tta-panel-heading,
-                        .vc_tta-panel-body{
-                            border-color: $black !important;
-                        }
-                        .vc_tta-panel-heading {
-                            h4 {
-                                a {
-                                    span {
-                                        font-size: 3.5vw;
-                                        color: $black;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    .mobile-nav-tab-container {
-                        ul {
-                            li {
-                                a {
-                                    text-transform: uppercase;
-                                    color: $black;
-                                    &:hover {
-                                        color: $black;
-                                    }
-                                }
-                            }
-                        }
-                        div {
-                            div {
-                                h4 {
-                                    a {
-                                        @extend %link-hover-effect; 
-                                        color: $black;
-                                        &:hover {
-                                            color: $black;
-                                        }
-                                        @media screen and (max-width: 768px) {
-                                            font-size: calc(1.5vw + 0.5em);
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+.ambassador-levels-column {
+    .vc_column-inner {
+        padding: 0 5px;
+        .wpb_wrapper{
+            &:first-child {
+                background: none;
             }
+            svg {
+                width: 100px;
+                display: block;
+                margin: 0 auto;
+            }
+            .ribbionst0 {
+                fill: $gold !important;
+            }
+        }
+    }
+    .ambassador-bronze,
+    .ambassador-silver,
+    .ambassador-gold,
+    .ambassador-platinum {
+        background: $gray;
+        h4 {
+            padding: 5px;
+            color: $white;
+        }
+        p {
+            font-size: 12px;
+            margin-bottom: 10px;
+            strong {
+                font-size: 16px;
+            }
+        }
+    }
+    .ambassador-bronze {
+        h4 {
+            background: #b86101;
+        }
+    }
+    .ambassador-silver {
+        h4 {
+            background: #959595;
+        }
+    }
+    .ambassador-gold {
+        h4 {
+            background: $gold;
+        }
+    }
+    .ambassador-platinum {
+        h4 {
+            background: #5c6f7d;
         }
     }
 }
 
+.levels-header {
+    background: $blue;
+    padding: 10px 0;
+    margin-bottom: 20px !important;
+    h2 {
+        color: $white;
+        margin-bottom: 0px;
+    }
+}
 
 // === PROGRAMS FRONT-PAGE STYLING === //
 
@@ -1584,32 +1603,22 @@ display: inline-block;
 // === MOBILE MENU STYLING === //
 
 @media screen and (max-width: 1140px) {
-    .menu-item-object-custom{
-        &:nth-child(-n+2) {
-            display: none;
-        }
-    }
     .mk-responsive-wrap{
         width: 75%;
         right: 0;
         max-width: 400px;
         min-height: 500px;
     }
-//    header.mk-header{
-//        width: 80%;
-//        float: right;
-//        max-width: 400px;
-//    }
     .mk-header-inner.add-header-height{
         border-bottom: none;
     }
     nav.menu-main_menu-container{
         ul.mk-responsive-nav {
-            li.menu-item-object-custom {
-                &:nth-child(-n+5) {
+            li.menu-button-links{
+                &:nth-child(-n+3) {
                     @extend .btn-with-link-black;
                 }
-                &:nth-child(6) {
+                &:nth-child(4) {
                     @extend .btn-regular-with-link-blue;
                     a {
                         color: $white !important;
@@ -1661,6 +1670,9 @@ display: inline-block;
                         fill: $blue;
                     }
                 }
+            }
+            .menu-item-has-children:last-child ul{
+                padding-bottom: 45px;
             }
         }
     }
@@ -1733,24 +1745,34 @@ display: inline-block;
     width: 30px !important;
     font-size: 40px !important;
     color: $white;
+    display: none !important;
 }
-.icon-next:before {
-    content: "\f0a9" !important;
-    font-family: $a-font;
-}
-.icon-prev:before {
-    content: "\f0a8" !important;
-    font-family: $a-font;
-}
+//.icon-next:before {
+//    content: "\f0a9" !important;
+//    font-family: $a-font;
+//}
+//.icon-prev:before {
+//    content: "\f0a8" !important;
+//    font-family: $a-font;
+//}
 
 .vc_images_carousel {
     .vc_carousel-indicators {
         bottom: -10px !important;
+        @media screen and (max-width: 768px) {
+            bottom: -35px !important;
+        }
         li.vc_active {
             background-color: $blue !important;
+            width: 15px !important;
+            height: 15px !important;
+            border: none !important;
         }
         li {
-            background-color: $white !important;
+            background-color: $gray !important;
+            width: 15px !important;
+            height: 15px !important;
+            border: none !important;
         }
     }
 }
@@ -1987,7 +2009,6 @@ display: inline-block;
 // === Blurb Column Styling === //
 .blurb-column {
     margin-bottom: 90px;
-
     p {
         color: $white;
     }
@@ -2021,11 +2042,24 @@ display: inline-block;
     }    
     margin-top: 70px;    
     @media screen and (min-width:768px) {
+        margin-top: 40px;
+        margin-bottom: 25px; 
         h1 {
             font-size: 36px !important;
         }
-        margin-top: 40px;
-        margin-bottom: 25px; 
+    }
+    @media screen and (max-width: 768px){
+        .vc_col-sm-12{
+            padding: 0px !important;
+            .vc_column-inner {
+                padding: 0px !important;
+            }
+        }
+    }
+    .icon-full-column-container{
+        .vc_column-inner {
+            padding: 0px;
+        }
     }
 }
 .announcement-text-row.vc_inner.vc_row {
@@ -2101,6 +2135,9 @@ display: inline-block;
     margin-bottom: 20px;
     img {
         margin-bottom: 15px;
+        @media screen and (max-width: 768px) {
+            max-width: 80%;
+        }
     }
     h2 {
         a {
@@ -2124,6 +2161,14 @@ display: inline-block;
     h2, 
     p{
         color: $black !important;
+    }
+}
+
+.ride-as-team-tab-container {
+    .mk-text-block {
+        li {
+            font-size: 16px;
+        }
     }
 }
 
@@ -2244,6 +2289,10 @@ display: inline-block;
 .daw-gray-section {
     @extend .photos-gray-section;
     padding: 3% 0;
+    .vc_col-sm-12 {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
     @media screen and (max-width: 768px) {
         padding: 10%;
         h4 {
@@ -2252,6 +2301,12 @@ display: inline-block;
     }
 }
 
+.daw-text-column {
+    margin-top: 8%;
+    @media screen and (max-width: 768px) {
+        margin: 10% 0;
+    }
+}
 // generic desktop accordion
 
 .desktop-accordion {
@@ -2327,59 +2382,20 @@ display: inline-block;
     width: 100%; 
     height: 100%; 
     overflow: visible; 
-    background: #f5f5f5 url('http://staging.causeforce.com/wp-content/uploads/2017/05/ring-alt.gif') no-repeat center center; 
+    background: #f5f5f5 url('http://ride.conquercancer.ca/wp-content/themes/jupiter-child/img/rolling.svg') no-repeat center center; 
 }
 
 // ===== FUNDRAISING PAGE STYLING ===== //
-.fundraising-tabs{
-    @extend .about-cancer-tabs;
-    .mk-tabs-tabs{
-        background: none !important;
-        padding: 20px 0px;
-        li {
-            background: none !important;
-            a {
-                background: none !important;
-                top: auto !important;
-                left: 3% !important;
-                transform: translate(0, -5%) !important;
-                margin-left: 20px !important;
-            }
-        }
-    }
-    .mk-tabs-panes {
-        padding-right: 0px;
-        padding-top: 10px;
-        .mk-tabs-pane-content {
-            padding-top: 25px;
-        }
-        .mk-text-block,
-        .tab-pg-text{
-            h3 {
-                @media screen and (max-width: 768px) {
-                    display: none;
-                }
-            }
-            p {
-                padding: 3% 0 0 7%;
-            }
-        }
-        .btn-with-link-blue {
-            margin-left: 7%;
-            a {
-                @media screen and (max-width: 768px) {
-                    background-color: transparent !important;
-                    &:hover {
-                        background-color: $blue !important;
-                    }
-                }
-            }
-        }
-    }
-}
 
-.fundraising-tabs ul li.mk-tabs-tab a, .mk-tabs.default-style.vertical-style.fundraising-tabs ul li.mk-tabs-tab a {
-    background-color: transparent !important;
+.fundraising-tabs {
+    .et-content-wrap {
+        section {
+            padding-left: 10%;
+            @media screen and (max-width: 768px) {
+                padding-left: initial;
+            }
+        }
+    }
 }
 
 .fundraising-white-pg-section {
@@ -2427,6 +2443,9 @@ display: inline-block;
             }
             ol {
                 padding-left: 6%;
+                li {
+                    font-size: 16px;
+                }
                 @media screen and (max-width: 768px) {
                     padding-left: 0;
                 }
@@ -2554,44 +2573,76 @@ display: inline-block;
 #support-header{
     @extend #about-cancer-header;
 }
-.ride-as-team-header {
-    @media screen and (max-width: 768px){
-        .pg-title {
-            top: 249px;
-            p {
-                font-size: 8.0vw;
-            }
-        }
-    }
-}
-#training-header {
-    @media screen and (max-width: 768px){
-        .pg-title {
-            top: 252px;
-            p {
-                font-size: 7.4vw;
-            }
-        }
-    }
-}
-#dollars-at-work-header,
-#workplace-giving-header{
-    @media screen and (max-width: 768px){
-        .pg-title {
-            top: 254px;
-            p {
-                font-size: 7vw;
-            }
-        }
-    }
-}
 #support-header {
+    @media screen and (max-width: 782px){
+        .pg-title {
+            p{
+                font-size: 50px;
+                padding: 0 5px;
+            }
+        }
+    }
     @media screen and (max-width: 768px){
         .pg-title {
-            top: 261px;
-            p{
-                font-size: 5.63vw;
+            p {
+                font-size: 24px;
             }
+        }
+    }
+}
+
+#dollars-at-work-header,
+#support-header,
+#training-header,
+#workplace-giving-header,
+#programs-header,
+#about-cancer-header,
+.rider-stories-header,
+.ride-as-team-header{
+    .pg-title {
+        top: 486px;
+    }
+}
+
+.media-header,
+.about-header,
+.partners-header,
+.impact-header,
+#fundraising-header{
+    @media screen and (max-width: 768px) {
+        .pg-title {
+            bottom: -262px;
+            p {
+                font-size: 42px;
+            }
+        }
+    }
+}
+// ET TABS STYLING
+.et-tabs {
+    nav {
+        a {
+            padding-left:0;
+            padding-right:0;
+            text-transform: uppercase;
+            overflow: initial !important;
+            text-overflow: initial !important;
+            white-space: initial !important;
+            line-height: 1.0 !important;
+            &:first-child {
+                padding-top: 0px !important;
+            }
+        }
+        li {
+            margin-bottom: 15px !important;
+        }
+        select {
+            padding-right: 50px !important;
+        }
+    }
+    .et-content-wrap{
+        section {
+            padding-top: 0px;
         }
     }
 }

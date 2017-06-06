@@ -9,6 +9,17 @@ $(document).ready(function () {
     function shortStringOther(string) {
         return '#menu-' + string + '_footer_menu>li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children';
     }
+    
+    // Sticky Side Nav Area 
+    $("ul.mk-tabs-tabs, .e-tab-container>nav").stick_in_parent({offset_top: 150});
+    
+    $('ul.mk-tabs-tabs, .programs-tabs-link-column')
+    .on('sticky_kit:bottom', function(e) {
+    $(this).parent().css('position', 'static');
+    }) 
+    .on('sticky_kit:unbottom', function(e) {
+    $(this).parent().css('position', 'relative');
+    });
 
     // nav tab drop downs
     // (function () {
@@ -41,7 +52,7 @@ $(document).ready(function () {
     });
 
     // Footer Social Icons
-    $('#sub-footer>.mk-grid').prepend('<span class="footer-social"><a href="#">&#xf09a;</a> <a href="#">&#xf16d;</a><a href="#">&#xf099;</a></span>');
+    $('#sub-footer>.mk-grid').prepend('<div class="footer-social"><div class="social-icon-container"><a href="https://www.facebook.com/OntarioRide">&#xf09a;</a></div> <div class="social-icon-container"><a href="http://instagram.com/ontarioride">&#xf16d;</a></div> <div class="social-icon-container"><a href="http://www.twitter.com/TheOntarioRide">&#xf099;</a></div></div>');
 
     $('.outfitters-accordion-section').removeClass('vc_active');
     // toggle class for mobile tab accordion
@@ -86,6 +97,8 @@ $(document).ready(function () {
             $('.title-mobile').toggleClass('display-none');
         });
         $('.mobile-nav-tab-container').append(jQuery('.mk-tabs-tabs, .programs-tabs-link-column'));
+        // Sticky Nav 
+        $(".e-tab-container>nav>select").trigger("sticky_kit:detach");
     }
     // Window Resize Section
     $(window).resize(function () {
@@ -95,6 +108,8 @@ $(document).ready(function () {
 
             $(shortStringOther('about, rider-hub, impact')).removeClass("toggle-active");
             $('.safety-accordion-section, .outfitters-accordion-section').removeClass('vc_active');
+            // Sticky Nav Area
+            $(".e-tab-container>nav>select").trigger("sticky_kit:detach");
         } else {
             $('.tab-content-container').prepend(jQuery('.mk-tabs-tabs, .programs-tabs-link-column'));
 
@@ -104,28 +119,26 @@ $(document).ready(function () {
         }
     });
     
-    // Sticky Side Nav Area 
-    $("ul.mk-tabs-tabs, .e-tab-container>nav").stick_in_parent({offset_top: 150});
-    
-    $('ul.mk-tabs-tabs, .programs-tabs-link-column')
-    .on('sticky_kit:bottom', function(e) {
-    $(this).parent().css('position', 'static');
-    }) 
-    .on('sticky_kit:unbottom', function(e) {
-    $(this).parent().css('position', 'relative');
-    });
-    
-    var mobileButtons = $('.menu-item-object-custom').not('.no-mega-menu');
     // Mobile Menu Scripts 
     if (windowSize > 1140) {
-
+        // Area for future scripts if window size is greater than 1140px
     } else {
         // Add Overlay to page body elements
         $('#mk-theme-container').prepend('<div class="mobile-overlay"></div>');
         
         // Add Mobile Image Class
+        var mobileButtons = $('.menu-button-links').not('.no-mega-menu');
         $('.header-logo>a>img').addClass('.mobile-img');
         $('ul.mk-responsive-nav').prepend(mobileButtons);
+        
+        // Mobile Menu Overlay Function
+        $('.mk-css-icon-menu').on('click', function(){
+           if ( $('.mk-nav-responsive-link').hasClass('is-active') ) {
+                $('.mobile-overlay').fadeOut('slow');
+            } else {
+                $('.mobile-overlay').fadeIn('slow');
+            } 
+        });
     }
     
     // Top Teams JSON Script
