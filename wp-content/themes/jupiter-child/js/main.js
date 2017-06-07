@@ -134,9 +134,9 @@ $(document).ready(function () {
         // Mobile Menu Overlay Function
         $('.mk-css-icon-menu').on('click', function(){
            if ( $('.mk-nav-responsive-link').hasClass('is-active') ) {
-                $('.mobile-overlay').fadeOut('slow');
+                $('.mobile-overlay').fadeOut('fast');
             } else {
-                $('.mobile-overlay').fadeIn('slow');
+                $('.mobile-overlay').fadeIn('fast');
             } 
         });
     }

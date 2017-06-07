@@ -390,6 +390,15 @@ ul.main-navigation-ul li.menu-item.menu-item-type-post_type.menu-item-object-pag
   float: none;
   margin: 0 auto;
 }
+.please-select-txt {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .please-select-txt {
+    display: block;
+    text-align: center;
+  }
+}
 /* ============== Pattern Styling  ============== */
 .pattern-row .page-section-content {
   height: 100%;
@@ -623,6 +632,12 @@ ul#menu-main_menu li ul.sub-menu li a {
     margin: 0 auto;
   }
 }
+#mk-footer .footer-wrapper .mk-padding-wrapper .mk-col-1-3 {
+  padding: 0px;
+}
+#mk-footer .footer-wrapper .mk-padding-wrapper .mk-col-2-3 {
+  padding: 0px;
+}
 #mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before {
   display: none;
   top: 1px;
@@ -732,10 +747,14 @@ ul#menu-main_menu li ul.sub-menu li a {
   .footer-column img {
     display: block;
     margin: 0 auto;
+    max-width: 260px !important;
   }
   .footer-column p {
     text-align: center;
   }
+}
+.mk-quick-contact-wrapper {
+  display: none;
 }
 @media screen and (max-width: 782px) {
   div.p-block {
@@ -829,20 +848,20 @@ ul#menu-main_menu li ul.sub-menu li a {
 .mobile-nav-tab-container-header .vc_tta-panel-heading {
   border-bottom: 1px solid black;
 }
-.bw-page-section, .home-gray-section, .home-gray-icon-section, .photos-gray-section, .leaderboard-section, .daw-gray-section, .fundraising-gray-section {
+.bw-page-section, .outfitters-bw-page-section, .home-gray-section, .home-gray-icon-section, .photos-gray-section, .outfitters-gray-section, .leaderboard-section, .daw-gray-section, .fundraising-gray-section {
   background: #000;
 }
-.bw-page-section h2, .home-gray-section h2, .home-gray-icon-section h2, .photos-gray-section h2, .leaderboard-section h2, .daw-gray-section h2, .fundraising-gray-section h2 {
+.bw-page-section h2, .outfitters-bw-page-section h2, .home-gray-section h2, .home-gray-icon-section h2, .photos-gray-section h2, .outfitters-gray-section h2, .leaderboard-section h2, .daw-gray-section h2, .fundraising-gray-section h2 {
   color: #fff;
   padding-top: 30px;
 }
 @media screen and (max-width: 768px) {
-  .bw-page-section h2, .home-gray-section h2, .home-gray-icon-section h2, .photos-gray-section h2, .leaderboard-section h2, .daw-gray-section h2, .fundraising-gray-section h2 {
+  .bw-page-section h2, .outfitters-bw-page-section h2, .home-gray-section h2, .home-gray-icon-section h2, .photos-gray-section h2, .outfitters-gray-section h2, .leaderboard-section h2, .daw-gray-section h2, .fundraising-gray-section h2 {
     text-align: left;
     font-size: 20px;
   }
 }
-.bw-page-section p, .home-gray-section p, .home-gray-icon-section p, .photos-gray-section p, .leaderboard-section p, .daw-gray-section p, .fundraising-gray-section p {
+.bw-page-section p, .outfitters-bw-page-section p, .home-gray-section p, .home-gray-icon-section p, .photos-gray-section p, .outfitters-gray-section p, .leaderboard-section p, .daw-gray-section p, .fundraising-gray-section p {
   color: #fff;
 }
 @media screen and (max-width: 768px) {
@@ -861,14 +880,30 @@ ul#menu-main_menu li ul.sub-menu li a {
 .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section div p, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section div p {
   padding: 0px !important;
 }
-.home-gray-section, .home-gray-icon-section, .photos-gray-section, .leaderboard-section, .daw-gray-section, .fundraising-gray-section {
+.outfitters-gray-section {
+  padding: 2% 0 !important;
+}
+.outfitters-gray-section h2 {
+  font-size: 25px !important;
+  margin-top: 25px;
+}
+.outfitters-bw-page-section {
+  padding: 25px 0;
+}
+.outfitters-bw-page-section h2 {
+  padding-top: 0px;
+}
+.outfitters-bw-page-section .mk-text-block p {
+  margin-bottom: 0px;
+}
+.home-gray-section, .home-gray-icon-section, .photos-gray-section, .outfitters-gray-section, .leaderboard-section, .daw-gray-section, .fundraising-gray-section {
   background: #f4f4f4;
   padding: 6% 0;
 }
-.home-gray-section h2, .home-gray-icon-section h2, .photos-gray-section h2, .leaderboard-section h2, .daw-gray-section h2, .fundraising-gray-section h2, .home-gray-section p, .home-gray-icon-section p, .photos-gray-section p, .leaderboard-section p, .daw-gray-section p, .fundraising-gray-section p {
+.home-gray-section h2, .home-gray-icon-section h2, .photos-gray-section h2, .outfitters-gray-section h2, .leaderboard-section h2, .daw-gray-section h2, .fundraising-gray-section h2, .home-gray-section p, .home-gray-icon-section p, .photos-gray-section p, .outfitters-gray-section p, .leaderboard-section p, .daw-gray-section p, .fundraising-gray-section p {
   color: #000;
 }
-.home-gray-section h2, .home-gray-icon-section h2, .photos-gray-section h2, .leaderboard-section h2, .daw-gray-section h2, .fundraising-gray-section h2 {
+.home-gray-section h2, .home-gray-icon-section h2, .photos-gray-section h2, .outfitters-gray-section h2, .leaderboard-section h2, .daw-gray-section h2, .fundraising-gray-section h2 {
   text-align: center;
 }
 .home-gray-icon-section {
@@ -1004,11 +1039,6 @@ span.vc_tta-title-text.display-none-accordion:before {
 }
 span.vc_tta-title-text.display-none-accordion:after {
   display: none;
-}
-@media screen and (max-width: 768px) {
-  .about-white-pg-section, .fundraising-white-pg-section, .workplace-giving-pg-section {
-    margin-top: 70px;
-  }
 }
 .about-white-pg-section .column_container div p, .fundraising-white-pg-section .column_container div p, .workplace-giving-pg-section .column_container div p {
   padding-left: 10%;
@@ -1385,6 +1415,38 @@ span.vc_tta-title-text.display-none-accordion:after {
   .mk-nav-sub-opened svg {
     transform: rotate(180deg);
   }
+  .mk-nav-responsive-link .mk-css-icon-menu {
+    width: 25px;
+    height: 25px;
+  }
+  .mk-nav-responsive-link .mk-css-icon-menu div {
+    border-radius: 0px;
+    margin-bottom: 5px;
+  }
+  .is-active .mk-css-icon-menu-line-3 {
+    top: -10px;
+  }
+  .dark-logo {
+    width: 110px;
+    top: 30px !important;
+  }
+  .mk-header-holder {
+    height: 60px;
+  }
+  .mk-header-holder .mk-header-inner.add-header-height {
+    height: 60px !important;
+  }
+  .mk-header-holder .mk-header-bg {
+    height: 60px;
+  }
+  .mk-header-holder .mk-responsive-wrap {
+    top: 60px;
+    height: 83vh;
+    max-height: 999px !important;
+  }
+  .mk-header-holder .header-logo.fit-logo-img.add-header-height {
+    height: 60px !important;
+  }
 }
 .pic-text-row .pic-column {
   background-repeat: no-repeat;
@@ -1636,25 +1698,25 @@ span.vc_tta-title-text.display-none-accordion:after {
 .page-template-template-splash .splash-video-row .video-column .video-container {
   margin-bottom: 0px;
 }
-.page-template-template-splash .home-gray-section, .page-template-template-splash .home-gray-icon-section, .page-template-template-splash .photos-gray-section, .page-template-template-splash .leaderboard-section, .page-template-template-splash .daw-gray-section, .page-template-template-splash .fundraising-gray-section {
+.page-template-template-splash .home-gray-section, .page-template-template-splash .home-gray-icon-section, .page-template-template-splash .photos-gray-section, .page-template-template-splash .outfitters-gray-section, .page-template-template-splash .leaderboard-section, .page-template-template-splash .daw-gray-section, .page-template-template-splash .fundraising-gray-section {
   padding: 0px;
 }
-.page-template-template-splash .home-gray-section .page-section-content, .page-template-template-splash .home-gray-icon-section .page-section-content, .page-template-template-splash .photos-gray-section .page-section-content, .page-template-template-splash .leaderboard-section .page-section-content, .page-template-template-splash .daw-gray-section .page-section-content, .page-template-template-splash .fundraising-gray-section .page-section-content {
+.page-template-template-splash .home-gray-section .page-section-content, .page-template-template-splash .home-gray-icon-section .page-section-content, .page-template-template-splash .photos-gray-section .page-section-content, .page-template-template-splash .outfitters-gray-section .page-section-content, .page-template-template-splash .leaderboard-section .page-section-content, .page-template-template-splash .daw-gray-section .page-section-content, .page-template-template-splash .fundraising-gray-section .page-section-content {
   padding: 5% 0;
 }
-.page-template-template-splash .home-gray-section .column_container div h2, .page-template-template-splash .home-gray-icon-section .column_container div h2, .page-template-template-splash .photos-gray-section .column_container div h2, .page-template-template-splash .leaderboard-section .column_container div h2, .page-template-template-splash .daw-gray-section .column_container div h2, .page-template-template-splash .fundraising-gray-section .column_container div h2 {
+.page-template-template-splash .home-gray-section .column_container div h2, .page-template-template-splash .home-gray-icon-section .column_container div h2, .page-template-template-splash .photos-gray-section .column_container div h2, .page-template-template-splash .outfitters-gray-section .column_container div h2, .page-template-template-splash .leaderboard-section .column_container div h2, .page-template-template-splash .daw-gray-section .column_container div h2, .page-template-template-splash .fundraising-gray-section .column_container div h2 {
   text-align: left;
 }
 @media screen and (max-width: 768px) {
-  .page-template-template-splash .home-gray-section .splash-gray-column-bottom div, .page-template-template-splash .home-gray-icon-section .splash-gray-column-bottom div, .page-template-template-splash .photos-gray-section .splash-gray-column-bottom div, .page-template-template-splash .leaderboard-section .splash-gray-column-bottom div, .page-template-template-splash .daw-gray-section .splash-gray-column-bottom div, .page-template-template-splash .fundraising-gray-section .splash-gray-column-bottom div {
+  .page-template-template-splash .home-gray-section .splash-gray-column-bottom div, .page-template-template-splash .home-gray-icon-section .splash-gray-column-bottom div, .page-template-template-splash .photos-gray-section .splash-gray-column-bottom div, .page-template-template-splash .outfitters-gray-section .splash-gray-column-bottom div, .page-template-template-splash .leaderboard-section .splash-gray-column-bottom div, .page-template-template-splash .daw-gray-section .splash-gray-column-bottom div, .page-template-template-splash .fundraising-gray-section .splash-gray-column-bottom div {
     text-align: left;
   }
 }
-.page-template-template-splash .home-gray-section .splash-gray-column-bottom div p, .page-template-template-splash .home-gray-icon-section .splash-gray-column-bottom div p, .page-template-template-splash .photos-gray-section .splash-gray-column-bottom div p, .page-template-template-splash .leaderboard-section .splash-gray-column-bottom div p, .page-template-template-splash .daw-gray-section .splash-gray-column-bottom div p, .page-template-template-splash .fundraising-gray-section .splash-gray-column-bottom div p {
+.page-template-template-splash .home-gray-section .splash-gray-column-bottom div p, .page-template-template-splash .home-gray-icon-section .splash-gray-column-bottom div p, .page-template-template-splash .photos-gray-section .splash-gray-column-bottom div p, .page-template-template-splash .outfitters-gray-section .splash-gray-column-bottom div p, .page-template-template-splash .leaderboard-section .splash-gray-column-bottom div p, .page-template-template-splash .daw-gray-section .splash-gray-column-bottom div p, .page-template-template-splash .fundraising-gray-section .splash-gray-column-bottom div p {
   color: #000;
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
 }
-.page-template-template-splash .home-gray-section .splash-gray-column-bottom div a, .page-template-template-splash .home-gray-icon-section .splash-gray-column-bottom div a, .page-template-template-splash .photos-gray-section .splash-gray-column-bottom div a, .page-template-template-splash .leaderboard-section .splash-gray-column-bottom div a, .page-template-template-splash .daw-gray-section .splash-gray-column-bottom div a, .page-template-template-splash .fundraising-gray-section .splash-gray-column-bottom div a {
+.page-template-template-splash .home-gray-section .splash-gray-column-bottom div a, .page-template-template-splash .home-gray-icon-section .splash-gray-column-bottom div a, .page-template-template-splash .photos-gray-section .splash-gray-column-bottom div a, .page-template-template-splash .outfitters-gray-section .splash-gray-column-bottom div a, .page-template-template-splash .leaderboard-section .splash-gray-column-bottom div a, .page-template-template-splash .daw-gray-section .splash-gray-column-bottom div a, .page-template-template-splash .fundraising-gray-section .splash-gray-column-bottom div a {
   padding: 10px 40px;
 }
 @media screen and (max-width: 768px) {
@@ -1817,6 +1879,10 @@ span.vc_tta-title-text.display-none-accordion:after {
   .icon-column-container h2 {
     font-size: 18px !important;
   }
+}
+.ride-team-text-container {
+  padding-bottom: 0px !important;
+  padding-top: 65px !important;
 }
 .ride-team-text-container h2, .ride-team-text-container p {
   color: #000 !important;
@@ -1990,6 +2056,12 @@ span.vc_tta-title-text.display-none-accordion:after {
   overflow: visible;
   background: #f5f5f5 url('http://ride.conquercancer.ca/wp-content/themes/jupiter-child/img/rolling.svg') no-repeat center center;
 }
+.fundraising-tabs .et-tabs nav ul {
+  padding: 15px 0px;
+}
+.fundraising-tabs .et-content-wrap {
+  padding-top: 10px;
+}
 .fundraising-tabs .et-content-wrap section {
   padding-left: 10%;
 }
@@ -2029,6 +2101,11 @@ span.vc_tta-title-text.display-none-accordion:after {
     font-size: 1.93em;
   }
 }
+@media screen and (max-width: 768px) {
+  .workplace-giving-pg-section {
+    margin-top: auto;
+  }
+}
 .workplace-giving-pg-section .column_container div p {
   padding-left: 5% !important;
 }
@@ -2043,14 +2120,14 @@ span.vc_tta-title-text.display-none-accordion:after {
     padding-left: 0;
   }
 }
-.page-template-template-partners .photos-gray-section, .page-template-template-partners .leaderboard-section, .page-template-template-partners .daw-gray-section, .page-template-template-partners .fundraising-gray-section {
+.page-template-template-partners .photos-gray-section, .page-template-template-partners .outfitters-gray-section, .page-template-template-partners .leaderboard-section, .page-template-template-partners .daw-gray-section, .page-template-template-partners .fundraising-gray-section {
   padding: 1% 0;
 }
-.page-template-template-partners .photos-gray-section .wpb_wrapper:hover .vc_icon_element-icon, .page-template-template-partners .leaderboard-section .wpb_wrapper:hover .vc_icon_element-icon, .page-template-template-partners .daw-gray-section .wpb_wrapper:hover .vc_icon_element-icon, .page-template-template-partners .fundraising-gray-section .wpb_wrapper:hover .vc_icon_element-icon {
+.page-template-template-partners .photos-gray-section .wpb_wrapper:hover .vc_icon_element-icon, .page-template-template-partners .outfitters-gray-section .wpb_wrapper:hover .vc_icon_element-icon, .page-template-template-partners .leaderboard-section .wpb_wrapper:hover .vc_icon_element-icon, .page-template-template-partners .daw-gray-section .wpb_wrapper:hover .vc_icon_element-icon, .page-template-template-partners .fundraising-gray-section .wpb_wrapper:hover .vc_icon_element-icon {
   color: #0075c9;
 }
 @media screen and (max-width: 768px) {
-  .page-template-template-partners .photos-gray-section .mk-text-block h2, .page-template-template-partners .leaderboard-section .mk-text-block h2, .page-template-template-partners .daw-gray-section .mk-text-block h2, .page-template-template-partners .fundraising-gray-section .mk-text-block h2 {
+  .page-template-template-partners .photos-gray-section .mk-text-block h2, .page-template-template-partners .outfitters-gray-section .mk-text-block h2, .page-template-template-partners .leaderboard-section .mk-text-block h2, .page-template-template-partners .daw-gray-section .mk-text-block h2, .page-template-template-partners .fundraising-gray-section .mk-text-block h2 {
     text-align: center !important;
     font-size: 1.8em;
   }
@@ -2123,6 +2200,12 @@ span.vc_tta-title-text.display-none-accordion:after {
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif !important;
   line-height: 24px !important;
 }
+@media screen and (max-width: 768px) {
+  .elegant-tabs-container nav select.et-mobile-tabs {
+    font-size: 70% !important;
+    text-transform: capitalize;
+  }
+}
 @media screen and (min-width: 721px) {
   .elegant-tabs-container select.et-mobile-tabs {
     display: none !important;
@@ -2143,11 +2226,16 @@ span.vc_tta-title-text.display-none-accordion:after {
   top: 486px;
 }
 @media screen and (max-width: 768px) {
-  .media-header .pg-title, .about-header .pg-title, .partners-header .pg-title, .impact-header .pg-title, #fundraising-header .pg-title {
+  .media-header .pg-title, .about-header .pg-title, .partners-header .pg-title, .impact-header .pg-title, .rider-stories-header .pg-title, #fundraising-header .pg-title, #outfitters-header .pg-title, #programs-header .pg-title {
     bottom: -262px;
   }
-  .media-header .pg-title p, .about-header .pg-title p, .partners-header .pg-title p, .impact-header .pg-title p, #fundraising-header .pg-title p {
+  .media-header .pg-title p, .about-header .pg-title p, .partners-header .pg-title p, .impact-header .pg-title p, .rider-stories-header .pg-title p, #fundraising-header .pg-title p, #outfitters-header .pg-title p, #programs-header .pg-title p {
     font-size: 42px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #support-header .pg-title p {
+    font-size: 6vw;
   }
 }
 .et-tabs nav a {

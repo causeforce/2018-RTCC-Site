@@ -487,6 +487,14 @@ ul.main-navigation-ul {
     margin: 0 auto;
 }
 
+.please-select-txt {
+    display: none;
+    @media screen and (max-width: 768px) {
+        display: block;
+        text-align: center;
+    }
+}
+
 /* ============== Pattern Styling  ============== */
 
 .pattern-row {
@@ -782,6 +790,12 @@ ul#menu-main_menu {
                     }
                 }
             }
+            .mk-col-1-3 {
+                padding: 0px;
+            }
+            .mk-col-2-3 {
+                padding: 0px;
+            }
         }
     }
     .widget_nav_menu{
@@ -895,11 +909,16 @@ ul#menu-main_menu {
         img {
             display: block;
             margin: 0 auto;
+            max-width: 260px !important;
         }
         p {
             text-align: center;
         }
     }
+}
+// === Quick Contact Remove === //
+.mk-quick-contact-wrapper {
+    display: none;
 }
 
 // ===  TEXT BLOCK SPACING === //
@@ -1053,6 +1072,27 @@ div.p-block {
     }
 }
 
+.outfitters-gray-section {
+    @extend .photos-gray-section;
+    padding: 2% 0 !important;
+    h2 {
+        font-size: 25px !important;
+        margin-top: 25px;
+    }
+}
+
+.outfitters-bw-page-section {
+    @extend .bw-page-section;
+    padding: 25px 0;
+    h2 {
+        padding-top: 0px;
+    }
+    .mk-text-block {
+        p {
+            margin-bottom: 0px;
+        }
+    }
+}
 // === HOMEPAGE STYLING === //
 
 .home-gray-section {
@@ -1231,9 +1271,6 @@ span.vc_tta-title-text.display-none-accordion{
 // === ABOUT CANCER PAGE STYLING === //
 
 .about-white-pg-section {
-    @media screen and (max-width: 768px) {
-        margin-top: 70px;
-    }
     .column_container {
         div {
             p {
@@ -1606,7 +1643,7 @@ display: inline-block;
     .mk-responsive-wrap{
         width: 75%;
         right: 0;
-        max-width: 400px;
+        max-width: 200px;
         min-height: 500px;
     }
     .mk-header-inner.add-header-height{
@@ -1693,6 +1730,42 @@ display: inline-block;
     .mk-nav-sub-opened {
         svg {
             transform: rotate(180deg);
+        }
+    }
+    .mk-nav-responsive-link {
+        .mk-css-icon-menu {
+            width: 25px;
+            height: 25px;
+            div {
+                border-radius: 0px;
+                margin-bottom: 5px;
+            }
+        } 
+    }
+
+    .is-active .mk-css-icon-menu-line-3 {
+        top: -10px;
+    }
+    
+    .dark-logo {
+        width: 110px;
+        top: 30px !important;
+    }
+    .mk-header-holder {
+        height: 60px;
+        .mk-header-inner.add-header-height {
+            height: 60px !important;
+        }
+        .mk-header-bg  {
+            height: 60px;
+        }
+        .mk-responsive-wrap {
+            top: 60px;
+            height: 83vh;
+            max-height: 999px !important;
+        }
+        .header-logo.fit-logo-img.add-header-height {
+            height: 60px !important;
         }
     }
 }
@@ -2158,6 +2231,8 @@ display: inline-block;
 // === RIDE AS A TEAM STYLING === //
 .ride-team-text-container {
     @extend .mini-text-container;
+    padding-bottom: 0px !important;
+    padding-top: 65px !important;
     h2, 
     p{
         color: $black !important;
@@ -2388,7 +2463,15 @@ display: inline-block;
 // ===== FUNDRAISING PAGE STYLING ===== //
 
 .fundraising-tabs {
+    .et-tabs {
+        nav {
+            ul {
+                padding: 15px 0px;
+            }
+        }
+    }
     .et-content-wrap {
+        padding-top: 10px;
         section {
             padding-left: 10%;
             @media screen and (max-width: 768px) {
@@ -2436,6 +2519,9 @@ display: inline-block;
 // ===== WORKPLACE GIVING STYLING ==== //
 .workplace-giving-pg-section {
     @extend .about-white-pg-section;
+    @media screen and (max-width: 768px) {
+        margin-top: auto;
+    }
     .column_container {
         div {
             p {
@@ -2542,14 +2628,18 @@ display: inline-block;
                 border:0 !important;
             }
         }
-    select.et-mobile-tabs {
-        font-size: 18px !important;
-        height: 60px !important;
-        border: 2px solid black !important;
-        text-shadow: none !important;
-        font-family: $h-font !important;
-        line-height: 24px !important;        
-      }        
+        select.et-mobile-tabs {
+            font-size: 18px !important;
+            height: 60px !important;
+            border: 2px solid black !important;
+            text-shadow: none !important;
+            font-family: $h-font !important;
+            line-height: 24px !important; 
+            @media screen and (max-width: 768px) {
+                font-size: 70% !important;
+                text-transform: capitalize;
+            }
+        }        
     }
     @media screen and (min-width:721px){
      select.et-mobile-tabs {
@@ -2608,12 +2698,25 @@ display: inline-block;
 .about-header,
 .partners-header,
 .impact-header,
-#fundraising-header{
+.rider-stories-header,
+#fundraising-header,
+#outfitters-header,
+#programs-header{
     @media screen and (max-width: 768px) {
         .pg-title {
             bottom: -262px;
             p {
                 font-size: 42px;
+            }
+        }
+    }
+}
+
+#support-header {
+    @media screen and (max-width: 400px) {
+        .pg-title {
+            p {
+                font-size: 6vw;
             }
         }
     }
