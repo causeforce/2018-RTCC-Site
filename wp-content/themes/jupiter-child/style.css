@@ -1346,7 +1346,7 @@ span.vc_tta-title-text.display-none-accordion:after {
   .mk-responsive-wrap {
     width: 75%;
     right: 0;
-    max-width: 400px;
+    max-width: 200px;
     min-height: 500px;
   }
   .mk-header-inner.add-header-height {
@@ -2231,6 +2231,22 @@ span.vc_tta-title-text.display-none-accordion:after {
   }
   .media-header .pg-title p, .about-header .pg-title p, .partners-header .pg-title p, .impact-header .pg-title p, .rider-stories-header .pg-title p, #fundraising-header .pg-title p, #outfitters-header .pg-title p, #programs-header .pg-title p {
     font-size: 42px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .ride-as-team-header .pg-title {
+    bottom: -268px;
+  }
+  .ride-as-team-header .pg-title p {
+    font-size: 33px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .ride-as-team-header .pg-title {
+    bottom: -268px;
+  }
+  .ride-as-team-header .pg-title p {
+    font-size: 8.2vw;
   }
 }
 @media screen and (max-width: 400px) {

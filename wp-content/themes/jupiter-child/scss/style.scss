@@ -2576,7 +2576,8 @@ display: inline-block;
 }
 
 // ===== TEAMRAISER STYLING ===== //
-#top-teams {
+#top-teams,
+#top-fundraising{
     margin-left: 0px;
     @media screen and (max-width: 939px) {
         text-align: center;
@@ -2687,13 +2688,11 @@ display: inline-block;
 #workplace-giving-header,
 #programs-header,
 #about-cancer-header,
-.rider-stories-header,
-.ride-as-team-header{
+.rider-stories-header{
     .pg-title {
         top: 486px;
     }
 }
-
 .media-header,
 .about-header,
 .partners-header,
@@ -2707,6 +2706,25 @@ display: inline-block;
             bottom: -262px;
             p {
                 font-size: 42px;
+            }
+        }
+    }
+}
+
+.ride-as-team-header {
+    @media screen and (max-width: 768px) {
+        .pg-title {
+            bottom: -268px;
+            p {
+                font-size: 33px;
+            }
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .pg-title {
+            bottom: -268px;
+            p {
+                font-size: 8.2vw;
             }
         }
     }
