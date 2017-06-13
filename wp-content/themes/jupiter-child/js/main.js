@@ -12,7 +12,7 @@ $(document).ready(function () {
     });
 
     // Footer Social Icons
-    $('#sub-footer>.mk-grid').prepend('<div class="footer-social"><div class="social-icon-container"><a href="https://www.facebook.com/OntarioRide">&#xf09a;</a></div> <div class="social-icon-container"><a href="http://instagram.com/ontarioride">&#xf16d;</a></div> <div class="social-icon-container"><a href="http://www.twitter.com/TheOntarioRide">&#xf099;</a></div></div>');
+    $('#sub-footer>.mk-grid').prepend('<div class="footer-social"><div class="social-icon-container"><a  target="_blank" href="https://www.facebook.com/OntarioRide">&#xf09a;</a></div> <div class="social-icon-container"><a target="_blank" href="http://instagram.com/ontarioride">&#xf16d;</a></div> <div class="social-icon-container"><a target="_blank" href="http://www.twitter.com/TheOntarioRide">&#xf099;</a></div></div>');
     
     // Open Accordion on Outfitters Page
     $('.outfitters-accordion-section').removeClass('vc_active');
@@ -30,7 +30,9 @@ $(document).ready(function () {
     });
     
     // Top Teams JSON Script
-    $.getJSON('https://secure2.convio.net/cfrca/site/CRTeamraiserAPI?method=getTopTeamsData&api_key=cfrca&v=1.0&fr_id=1581&response_format=json', function(data){
+    var topTeamsURL = 'https://secure2.convio.net/cfrca/site/CRTeamraiserAPI?method=getTopTeamsData&api_key=cfrca&v=1.0&fr_id=1581&response_format=json';
+    
+    $.getJSON(topTeamsURL, function(data){
         var topTeamsData = data.getTopTeamsDataResponse.teamraiserData;
         $(topTeamsData).each(function (index, value){
             $('#top-teams').append("<li>" + value.name + "</li>" + "<li>" + value.total + "</li>");
@@ -38,15 +40,33 @@ $(document).ready(function () {
     });
     
     // Top Fundraising JSON Script
-    $.getJSON('https://secure2.convio.net/cfrca/site/CRTeamraiserAPI?method=getTopParticipantsData&api_key=cfrca&v=1.0&fr_id=1581&response_format=json', function(data){
-        var topTeamsData = data.getTopParticipantsDataResponse.teamraiserData;
-        $(topTeamsData).each(function (index, value){
+    var fundRaisingURL = 'https://secure2.convio.net/cfrca/site/CRTeamraiserAPI?method=getTopParticipantsData&api_key=cfrca&v=1.0&fr_id=1581&response_format=json';
+    
+    $.getJSON(fundRaisingURL, function(data){
+        var topFundraisingData = data.getTopParticipantsDataResponse.teamraiserData;
+        $(topFundraisingData).each(function (index, value){
             $('#top-fundraising').append("<li>" + value.name + "</li>" + "<li>" + value.total + "</li>");
        }); 
     });
     
-    // View More or View Less for Top List
-    $('ul#top-teams, ul#top-fundraising').on('click','.more', function(){
+    // Top Crews List
+    var topCrewsURL = 'https://crossorigin.me/http://to17.conquercancer.ca/top_ten_lists/cfrca.top_ten_crew_Toronto17.html';
+    
+    $.get(topCrewsURL, function(data) {
+       $('#top-crews').append(data);
+    });
+    
+    // Top Ambassadors List
+    var topAmbassadorsURL = 'https://crossorigin.me/http://to17.conquercancer.ca/top_ten_lists/cfrca.Toronto17_Ambassadors_List_hide.html';
+    
+    $.get(topAmbassadorsURL, function(data) {
+       
+        $('#top-ambassadors').html(data);
+//       $('#top-ambassadors').append(data);
+    });
+    
+    // View More or View Less for Top List and Text
+    $('ul#top-teams, ul#top-fundraising, #top-ambassadors').on('click','.more', function(){
 
       if( $(this).hasClass('less') ){    
         $(this).text('More...').removeClass('less');    
@@ -57,7 +77,7 @@ $(document).ready(function () {
       $(this).siblings('li.toggleable').slideToggle();
     }); 
     
-});
+}); // END Document Ready
 
 // Window Load Function
 $(window).on("load",function(){
@@ -74,5 +94,75 @@ $(window).on("load",function(){
         $(this).append('<li class="more">More...</li>');    
       }
 
+    });
+    
+    // View More or Less Function for Top Ambassadors
+    $('#top-ambassadors').each(function(){
+  
+      var liFind = $(this).find('dd').length;
+
+      if( liFind > 5){    
+        $('dd', this).eq(4).nextAll().hide().addClass('toggleable');
+        $(this).append('<dd class="more">More...</dd>');
+      }
+
+    });
+    
+    // View More or Less Plugin
+   (function($) {
+        $.fn.shorten = function (settings) {
+
+            var config = {
+                showChars: 100,
+                ellipsesText: "...",
+                moreText: "more",
+                lessText: "less"
+            };
+
+            if (settings) {
+                $.extend(config, settings);
+            }
+
+            $(document).off("click", '.morelink');
+
+            $(document).on({click: function () {
+
+                    var $this = $(this);
+                    if ($this.hasClass('less')) {
+                        $this.removeClass('less');
+                        $this.html(config.moreText);
+                    } else {
+                        $this.addClass('less');
+                        $this.html(config.lessText);
+                    }
+                    $this.parent().prev().toggle();
+                    $this.prev().toggle();
+                    return false;
+                }
+            }, '.morelink');
+
+            return this.each(function () {
+                var $this = $(this);
+                if($this.hasClass("shortened")) return;
+
+                $this.addClass("shortened");
+                var content = $this.html();
+                if (content.length > config.showChars) {
+                    var c = content.substr(0, config.showChars);
+                    var h = content.substr(config.showChars, content.length - config.showChars);
+                    var html = c + '<span class="moreellipses">' + config.ellipsesText + ' </span><span class="morecontent"><span>' + h + '</span> <a href="#" class="morelink">' + config.moreText + '</a></span>';
+                    $this.html(html);
+                    $(".morecontent span").hide();
+                }
+            });
+
+        };
+
+     })(jQuery);
+    // Class with options for More/Less
+    $(".more-less-text>p").shorten({
+        "showChars" : 170,
+        "moreText"	: "See More",
+        "lessText"	: "Show Less",
     });
 });

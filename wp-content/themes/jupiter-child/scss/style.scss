@@ -250,6 +250,13 @@ strong {
 button {
     font-family: $h-font;
 }
+
+@media screen and (min-width: 1500px) {
+    #background-layer--2 {
+        background-position: center top !important;
+    }
+}
+
 // === BREAK POINT FOR TABLET === //
 @media screen and (max-width: 939px) {
     .vc_col-sm-8,
@@ -492,6 +499,20 @@ ul.main-navigation-ul {
     @media screen and (max-width: 768px) {
         display: block;
         text-align: center;
+    }
+}
+
+.desktop-image {
+    @media screen and (max-width: 939px) {
+        display: none;
+    }
+}
+
+.mobile-image {
+    display: none;
+    @media screen and (max-width: 939px) {
+        display: block;
+        margin-bottom: 0px;
     }
 }
 
@@ -2140,7 +2161,7 @@ display: inline-block;
         padding-top: 50px;
         padding-bottom: 50px;
     }
-    min-height: 320px;    
+    min-height: 305px;    
     background: black;
     p, h3 {
         color: $white;
@@ -2162,7 +2183,8 @@ display: inline-block;
             padding-left: 15px;
         }
         padding: 40px 15px;
-        margin-top: -75px;
+        padding-bottom: 5px;
+        margin-top: -160px;
         margin-left: 40px !important;
         margin-right: -15px !important;
     }
@@ -2766,4 +2788,9 @@ display: inline-block;
             padding-top: 0px;
         }
     }
+}
+
+// Google Maps
+.day-two-map {
+    display: none;
 }
