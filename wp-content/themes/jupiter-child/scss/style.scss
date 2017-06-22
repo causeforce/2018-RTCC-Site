@@ -350,6 +350,10 @@ ul.main-navigation-ul {
 
 /* ============== Custom Classes ============== */
 
+.text-indent {
+    margin-left: 5%;
+}
+
 .header-pg-row {
     z-index: 100 !important;
     .page-section-content {
@@ -648,7 +652,8 @@ ul.main-navigation-ul {
     width: 200px;
 }
 
-ul#menu-main_menu {
+ul#menu-main_menu,
+ul#menu-main_menu_french{
     width: auto;
 }
 
@@ -656,15 +661,33 @@ ul#menu-main_menu {
     position: relative;
 }
 
-ul#menu-main_menu {
+ul#menu-main_menu,
+ul#menu-main_menu_french{
     li {
         ul.sub-menu{
             background-color: $white !important;
             color: $black;
             min-width: 160px; 
             position: absolute;
-            top: 20px;
-            left: -20px;
+            top: 22px;
+            left: -25px;
+            li{
+                a {
+                    text-align: center;
+                    width: auto;
+                    font-size: 12px !important;
+                    background-image: none;
+                }
+            }
+        }
+    }
+}
+
+ul#menu-main_menu_french{
+    li {
+        ul.sub-menu{
+            top: 22px;
+            left: 5px;
             li{
                 a {
                     text-align: center;
@@ -701,7 +724,8 @@ ul#menu-main_menu {
 
 /* ============== Main Menu Links, Buttons and Styles ============== */
 
-#menu-main_menu{
+#menu-main_menu,
+#menu-main_menu_french{
     li.menu-item.no-mega-menu{
         height: auto !important;
         margin-top: 45px !important;
@@ -722,11 +746,16 @@ ul#menu-main_menu {
         &:nth-child(-n+3){
             margin-right: 25px;
             @extend %link-hover-effect;
-            @media screen and (max-width: 1325px){
+            @media screen and (max-width: 1410px){
                 margin-right: 10px;
+                a {
+                    font-size: 14px !important;
+                }
             }
             a {
                 font-size: 18px;
+                padding-left: 5px;
+                padding-right: 5px;
             }
         }
         &:nth-child(n+4){
@@ -739,8 +768,8 @@ ul#menu-main_menu {
             margin-right: 10px;
             transition: all 0.3s ease-in;
             margin-top: 0px !important;
-            @media screen and (max-width: 1220px){
-                width: 120px;
+            @media screen and (max-width: 1410px){
+                width: 115px;
             }
             a{
                 height: 100%;
@@ -768,6 +797,16 @@ ul#menu-main_menu {
                 a {
                     color: $blue;
                 }
+            }
+        }
+    }
+}
+
+#menu-main_menu_french{
+    li.menu-item.no-mega-menu{
+        &:nth-child(-n+3){
+            a {
+              font-size: 16px;  
             }
         }
     }
@@ -823,7 +862,10 @@ ul#menu-main_menu {
         div {
             #menu-about_footer_menu,
             #menu-impact_footer_menu,
-            #menu-rider-hub_footer_menu{
+            #menu-rider-hub_footer_menu,
+            #menu-about_footer_menu_french,
+            #menu-impact_footer_menu_french,
+            #menu-rider-hub_footer_menu_french{
                 li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children{
                     &::before {
                         display: none;
@@ -841,7 +883,7 @@ ul#menu-main_menu {
                         color: $white !important;
                         text-transform: uppercase;
                         font-family: $h-font;
-                        font-size: 16px;
+                        font-size: 15px;
                         max-width: 100px;
                         margin: 0 auto;
                         @media screen and (max-width: 768px) {
@@ -1568,6 +1610,7 @@ display: inline-block;
         p {
             font-size: 12px;
             margin-bottom: 10px;
+            padding: 0 5px;
             strong {
                 font-size: 16px;
             }
@@ -1670,7 +1713,8 @@ display: inline-block;
     .mk-header-inner.add-header-height{
         border-bottom: none;
     }
-    nav.menu-main_menu-container{
+    nav.menu-main_menu-container,
+    nav.menu-main_menu_french-container{
         ul.mk-responsive-nav {
             li.menu-button-links{
                 &:nth-child(-n+3) {
@@ -2502,7 +2546,15 @@ display: inline-block;
         }
     }
 }
-
+.fun-tool-kit {
+    @extend .text-indent;
+    @media screen and (max-width: 768px) {
+        h2 {
+            margin-left: auto;
+            font-size: 16px !important;
+        }
+    }
+}
 .fundraising-white-pg-section {
     @extend .about-white-pg-section;
     padding: 3% 5%;
@@ -2536,6 +2588,11 @@ display: inline-block;
             }
         }
     }
+}
+
+.donation-btn {
+    @extend .btn-with-link-blue;
+    display: inline-block;
 }
 
 // ===== WORKPLACE GIVING STYLING ==== //
@@ -2702,6 +2759,13 @@ display: inline-block;
             }
         }
     }
+    @media screen and (max-width: 400px) {
+        .pg-title {
+            p {
+                font-size: 6vw;
+            }
+        }
+    }
 }
 
 #dollars-at-work-header,
@@ -2752,11 +2816,25 @@ display: inline-block;
     }
 }
 
-#support-header {
+#workplace-giving-header {
+    @media screen and (max-width: 1012px){
+        .pg-title {
+            p {
+                font-size: 38px;
+            }
+        }
+    }
+     @media screen and (max-width: 768px){
+        .pg-title {
+            p {
+                font-size: 16px;
+            }
+        }
+    }
     @media screen and (max-width: 400px) {
         .pg-title {
             p {
-                font-size: 6vw;
+                font-size: 4.2vw;
             }
         }
     }
@@ -2793,4 +2871,47 @@ display: inline-block;
 // Google Maps
 .day-two-map {
     display: none;
+}
+
+// MONTREAL French Button
+
+.english-btn {
+    display: none;
+}
+
+.french-btn,
+.english-btn{
+    @extend .btn-with-link-black;
+    border: none !important;
+    position: absolute!important;
+    left: 240px;
+    z-index: 400;
+    list-style: none;
+    a {
+        font-family: $p-font !important;
+        padding: 10px 25px;
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+    &:hover {
+        background: none !important;
+    }
+    @media screen and (max-width: 1265px){
+        width: 140px !important;
+    }
+    @media screen and (max-width: 1140px) {
+        position: relative !important;
+        left: auto;
+        margin-left: 20px !important;
+        margin-bottom: 10px !important;
+        a {
+            text-align: center !important;
+        }
+    }
+}
+.french-btn.menu-item.menu-item-type-custom.menu-item-object-custom.no-mega-menu,
+.english-btn.menu-item.menu-item-type-custom.menu-item-object-custom.no-mega-menu{
+    @media screen and (max-width: 1140px) {
+        display: none !important;
+    }
 }
