@@ -38,7 +38,13 @@ $(document).ready(function () {
     });
 
     // Footer Social Icons
-    $('#sub-footer>.mk-grid').prepend('<div class="footer-social"><div class="social-icon-container"><a  target="_blank" href="https://www.facebook.com/OntarioRide">&#xf09a;</a></div> <div class="social-icon-container"><a target="_blank" href="http://instagram.com/ontarioride">&#xf16d;</a></div> <div class="social-icon-container"><a target="_blank" href="http://www.twitter.com/TheOntarioRide">&#xf099;</a></div></div>');
+    $(function() {
+        if ( document.location.href.indexOf('/montreal') > -1 ) {
+            $('#sub-footer>.mk-grid').prepend('<div class="footer-social"><div class="social-icon-container"><a  target="_blank" href="https://www.facebook.com/LeCycloDefi/">&#xf09a;</a></div> <div class="social-icon-container"><a target="_blank" href="https://www.instagram.com/quebecride/">&#xf16d;</a></div> <div class="social-icon-container"><a target="_blank" href="https://twitter.com/TheQuebecRide">&#xf099;</a></div></div>');
+        } else {
+            $('#sub-footer>.mk-grid').prepend('<div class="footer-social"><div class="social-icon-container"><a  target="_blank" href="https://www.facebook.com/OntarioRide">&#xf09a;</a></div> <div class="social-icon-container"><a target="_blank" href="http://instagram.com/ontarioride">&#xf16d;</a></div> <div class="social-icon-container"><a target="_blank" href="http://www.twitter.com/TheOntarioRide">&#xf099;</a></div></div>');
+        }
+    });
     
     // Open Accordion on Outfitters Page
     $('.outfitters-accordion-section').removeClass('vc_active');
@@ -190,5 +196,10 @@ $(window).on("load",function(){
         "showChars" : 170,
         "moreText"	: "See More",
         "lessText"	: "Show Less",
+    });
+    $(".more-less-text-french>p").shorten({
+        "showChars" : 170,
+        "moreText"	: "Lire la suite",
+        "lessText"	: "Réduire",
     });
 });

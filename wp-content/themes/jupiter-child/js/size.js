@@ -56,8 +56,8 @@ $(document).ready(function () {
         });
         
         // Append French/English Button for Montreal in mobile
-        var languageButtons = $('.french-btn, .english-btn').not('.no-mega-menu');
-        $('ul.mk-responsive-nav').append(languageButtons);
+//        var languageButtons = $('.french-btn, .english-btn').not('.no-mega-menu');
+//        $('ul.mk-responsive-nav').append(languageButtons);
     }
     
 });
