@@ -78,24 +78,24 @@ $(document).ready(function () {
         var topFundraisingData = data.getTopParticipantsDataResponse.teamraiserData;
         $(topFundraisingData).each(function (index, value){
             $('#top-fundraising').append("<li>" + value.name + "</li>" + "<li>" + value.total + "</li>");
-       }); 
+       });
     });
     
     // Top Crews List
-    var topCrewsURL = 'https://crossorigin.me/http://to17.conquercancer.ca/top_ten_lists/cfrca.top_ten_crew_Toronto17.html';
-    
-    $.get(topCrewsURL, function(data) {
-       $('#top-crews').append(data);
-    });
+//    var topCrewsURL = 'https://crossorigin.me/http://to17.conquercancer.ca/top_ten_lists/cfrca.top_ten_crew_Toronto17.html';
+//    
+//    $.get(topCrewsURL, function(data) {
+//       $('#top-crews').append(data);
+//    });
     
     // Top Ambassadors List
-    var topAmbassadorsURL = 'https://crossorigin.me/http://to17.conquercancer.ca/top_ten_lists/cfrca.Toronto17_Ambassadors_List_hide.html';
-    
-    $.get(topAmbassadorsURL, function(data) {
-       
-        $('#top-ambassadors').html(data);
+//    var topAmbassadorsURL = 'https://crossorigin.me/http://to17.conquercancer.ca/top_ten_lists/cfrca.Toronto17_Ambassadors_List_hide.html';
+//    
+//    $.get(topAmbassadorsURL, function(data) {
+//       
+//        $('#top-ambassadors').html(data);
 //       $('#top-ambassadors').append(data);
-    });
+//    });
     
     // View More or View Less for Top List and Text
     $('ul#top-teams, ul#top-fundraising, #top-ambassadors').on('click','.more', function(){

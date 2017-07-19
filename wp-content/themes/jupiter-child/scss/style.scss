@@ -1277,7 +1277,27 @@ div.p-block {
 
 .leaderboard-section {
     @extend .photos-gray-section;
-    padding: 3% 0;
+    .mk-text-block {
+        h4 {
+            text-align: center;
+            @media screen and (max-width: 768px) {
+                border-bottom: 5px solid $blue;
+            }
+        }
+    }
+    .top-line {
+        width: 1116.11px;
+        margin: 0 auto;
+        border-bottom: 5px solid $blue;
+        position: relative;
+        top: 70px;
+        @media screen and (max-width: 1140px) {
+            width: 100%;
+        }
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
 }
 
 // === PHOTOS PAGE STYLING === //
@@ -2560,12 +2580,17 @@ display: inline-block;
     }
 }
 .fun-tool-kit {
-    @extend .text-indent;
+    margin-left: 33%;
+    margin-top: 30px;
     @media screen and (max-width: 768px) {
+        margin-left: auto;
         h2 {
             margin-left: auto;
-            font-size: 16px !important;
+            font-size: 24px !important;
         }
+    }
+    h2 {
+        color: $blue;
     }
 }
 .fundraising-white-pg-section {
@@ -2671,6 +2696,7 @@ display: inline-block;
 #top-teams,
 #top-fundraising{
     margin-left: 0px;
+    margin-top: 25px;
     @media screen and (max-width: 939px) {
         text-align: center;
     }
@@ -2679,6 +2705,7 @@ display: inline-block;
         margin-left: 0px;
         font-weight: bold;
         margin-bottom: 10px;
+        text-align: center;
          &:nth-child(even) {
             font-weight: initial;
         }
@@ -2695,17 +2722,6 @@ display: inline-block;
         color: $blue !important;
         @media screen and (max-width: 939px) {
             text-align: center;
-        }
-    }
-}
-
-.hr-line {
-    position: relative;
-    top: 90px;
-    hr {
-        border: 2px solid $black;
-         @media screen and (max-width: 939px) {
-            display: none;
         }
     }
 }
