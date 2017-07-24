@@ -2697,17 +2697,44 @@ display: inline-block;
 #top-fundraising{
     margin-left: 0px;
     margin-top: 25px;
+    list-style-position: inside;
     @media screen and (max-width: 939px) {
         text-align: center;
     }
     li {
-        list-style: none;
         margin-left: 0px;
         font-weight: bold;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         text-align: center;
-         &:nth-child(even) {
-            font-weight: initial;
+        font-size: 16px;
+    }
+    p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+.teams-container {
+    a {
+        text-align: center;
+        display: block;
+        font-weight: 700;
+        font-size: 18px;
+    }
+}
+.search-participants-col,
+.search-teams-col,{
+    form {
+        text-align: center;
+        input {
+        border: 2px solid #000;
+        min-width: 200px;
+        }
+        button {
+            height: 40px;
+            vertical-align: top;
+            width: 50px;
+            background: transparent;
+            border: 2px solid #000;
         }
     }
 }

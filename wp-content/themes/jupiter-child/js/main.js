@@ -62,22 +62,22 @@ $(document).ready(function () {
     });
     
     // Top Teams JSON Script
-    var topTeamsURL = 'https://secure2.convio.net/cfrca/site/CRTeamraiserAPI?method=getTopTeamsData&api_key=cfrca&v=1.0&fr_id=1581&response_format=json';
+    var topTeamsURL = 'https://secure2.convio.net/cfrca/site/CRTeamraiserAPI?method=getTopTeamsData&api_key=cfrca&v=1.0&fr_id=1641&response_format=json';
     
     $.getJSON(topTeamsURL, function(data){
         var topTeamsData = data.getTopTeamsDataResponse.teamraiserData;
         $(topTeamsData).each(function (index, value){
-            $('#top-teams').append("<li>" + value.name + "</li>" + "<li>" + value.total + "</li>");
+            $('#top-teams').append("<li>" + value.name + "</li>" + "<p>" + value.total + "</p>");
        }); 
     });
     
     // Top Fundraising JSON Script
-    var fundRaisingURL = 'https://secure2.convio.net/cfrca/site/CRTeamraiserAPI?method=getTopParticipantsData&api_key=cfrca&v=1.0&fr_id=1581&response_format=json';
+    var fundRaisingURL = 'https://secure2.convio.net/cfrca/site/CRTeamraiserAPI?method=getTopParticipantsData&api_key=cfrca&v=1.0&fr_id=1641&response_format=json';
     
     $.getJSON(fundRaisingURL, function(data){
         var topFundraisingData = data.getTopParticipantsDataResponse.teamraiserData;
         $(topFundraisingData).each(function (index, value){
-            $('#top-fundraising').append("<li>" + value.name + "</li>" + "<li>" + value.total + "</li>");
+            $('#top-fundraising').append("<li>" + value.name + "</li>" + "<p>" + value.total + "</p>");
        });
     });
     
@@ -98,12 +98,16 @@ $(document).ready(function () {
 //    });
     
     // View More or View Less for Top List and Text
-    $('ul#top-teams, ul#top-fundraising, #top-ambassadors').on('click','.more', function(){
+    $('ol#top-teams, ol#top-fundraising, #top-ambassadors').on('click','.more', function(){
 
       if( $(this).hasClass('less') ){    
         $(this).text('More...').removeClass('less');    
-      }else{
-        $(this).text('Less...').addClass('less'); 
+      }else if ($(this).parent('ol').hasClass('top-fundraising')) {
+        $(this).html('<a href="https://secure2.convio.net/cfrca/admin/PageBuilderPreviewPage?pageid=51041&pagename=Moe+Quraishi+-+07%2F20%2F2017%2C+v6+top+fundraiser+updated">View Full List...</a>').addClass('less'); 
+      }else if ($(this).parent('ol').hasClass('top-teams')) {
+        $(this).html('<a href="https://secure2.convio.net/cfrca/admin/PageBuilderPreviewPage?pageid=51041&pagename=Moe+Quraishi+-+07%2F20%2F2017%2C+v6+top+fundraiser+updated">View Full List...</a>').addClass('less'); 
+      } else {
+          $(this).text('Less...').addClass('less');
       }
 
       $(this).siblings('li.toggleable').slideToggle();
@@ -117,12 +121,12 @@ $(window).on("load",function(){
    $('div#ride-preloader').fadeOut('slow');
     
     // View More or Less Function
-    $('ul#top-teams, ul#top-fundraising').each(function(){
+    $('ol#top-teams, ol#top-fundraising').each(function(){
   
-      var liFind = $(this).find('li').length;
+      var liFind = $(this).find('li', 'p').length;
 
       if( liFind > 10){    
-        $('li', this).eq(9).nextAll().hide().addClass('toggleable');
+        $('li', 'p', this).eq(9).nextAll().hide().addClass('toggleable');
         $(this).append('<li class="more">More...</li>');    
       }
 
