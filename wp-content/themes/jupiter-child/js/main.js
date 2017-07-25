@@ -71,10 +71,28 @@ $(document).ready(function () {
        }); 
     });
     
+    var montrealTopTeamsURL = 'https://secure2.convio.net/cfrca/site/CRTeamraiserAPI?method=getTopTeamsData&api_key=cfrca&v=1.0&fr_id=1651&response_format=json';
+    
+    $.getJSON(montrealTopTeamsURL, function(data){
+        var topTeamsData = data.getTopTeamsDataResponse.teamraiserData;
+        $(topTeamsData).each(function (index, value){
+            $('#top-teams').append("<li>" + value.name + "</li>" + "<p>" + value.total + "</p>");
+       }); 
+    });
+    
     // Top Fundraising JSON Script
     var fundRaisingURL = 'https://secure2.convio.net/cfrca/site/CRTeamraiserAPI?method=getTopParticipantsData&api_key=cfrca&v=1.0&fr_id=1641&response_format=json';
     
     $.getJSON(fundRaisingURL, function(data){
+        var topFundraisingData = data.getTopParticipantsDataResponse.teamraiserData;
+        $(topFundraisingData).each(function (index, value){
+            $('#top-fundraising').append("<li>" + value.name + "</li>" + "<p>" + value.total + "</p>");
+       });
+    });
+    
+     var montrealFundRaisingURL = 'https://secure2.convio.net/cfrca/site/CRTeamraiserAPI?method=getTopParticipantsData&api_key=cfrca&v=1.0&fr_id=1651&response_format=json';
+    
+    $.getJSON(montrealFundRaisingURL, function(data){
         var topFundraisingData = data.getTopParticipantsDataResponse.teamraiserData;
         $(topFundraisingData).each(function (index, value){
             $('#top-fundraising').append("<li>" + value.name + "</li>" + "<p>" + value.total + "</p>");
