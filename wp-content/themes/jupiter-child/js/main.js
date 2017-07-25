@@ -76,7 +76,7 @@ $(document).ready(function () {
     $.getJSON(montrealTopTeamsURL, function(data){
         var topTeamsData = data.getTopTeamsDataResponse.teamraiserData;
         $(topTeamsData).each(function (index, value){
-            $('#top-teams').append("<li>" + value.name + "</li>" + "<p>" + value.total + "</p>");
+            $('#mo-top-teams').append("<li>" + value.name + "</li>" + "<p>" + value.total + "</p>");
        }); 
     });
     
@@ -95,7 +95,7 @@ $(document).ready(function () {
     $.getJSON(montrealFundRaisingURL, function(data){
         var topFundraisingData = data.getTopParticipantsDataResponse.teamraiserData;
         $(topFundraisingData).each(function (index, value){
-            $('#top-fundraising').append("<li>" + value.name + "</li>" + "<p>" + value.total + "</p>");
+            $('#mo-top-fundraising').append("<li>" + value.name + "</li>" + "<p>" + value.total + "</p>");
        });
     });
     
@@ -116,7 +116,7 @@ $(document).ready(function () {
 //    });
     
     // View More or View Less for Top List and Text
-    $('ol#top-teams, ol#top-fundraising, #top-ambassadors').on('click','.more', function(){
+    $('ul#top-teams, ul#top-fundraising, #top-ambassadors').on('click','.more', function(){
 
       if( $(this).hasClass('less') ){    
         $(this).text('More...').removeClass('less');    
@@ -139,7 +139,7 @@ $(window).on("load",function(){
    $('div#ride-preloader').fadeOut('slow');
     
     // View More or Less Function
-    $('ol#top-teams, ol#top-fundraising').each(function(){
+    $('ul#top-teams, ul#top-fundraising').each(function(){
   
       var liFind = $(this).find('li', 'p').length;
 
