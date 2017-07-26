@@ -39,9 +39,12 @@ $(document).ready(function () {
 
     // Footer Social Icons
     $(function() {
-        if ( document.location.href.indexOf('/montreal') > -1 ) {
+        if (document.location.href.indexOf('/montreal') > -1) {
             $('#sub-footer>.mk-grid').prepend('<div class="footer-social"><div class="social-icon-container"><a  target="_blank" href="https://www.facebook.com/LeCycloDefi/">&#xf09a;</a></div> <div class="social-icon-container"><a target="_blank" href="https://www.instagram.com/quebecride/">&#xf16d;</a></div> <div class="social-icon-container"><a target="_blank" href="https://twitter.com/TheQuebecRide">&#xf099;</a></div></div>');
-        } else {
+        } else if (document.location.href.indexOf('/alberta') > -1) {
+            $('#sub-footer>.mk-grid').prepend('<div class="footer-social"><div class="social-icon-container"><a  target="_blank" href="https://www.facebook.com/AlbertaRide/">&#xf09a;</a></div> <div class="social-icon-container"><a target="_blank" href="https://www.instagram.com/albertaride/">&#xf16d;</a></div> <div class="social-icon-container"><a target="_blank" href="https://twitter.com/thealbertaride">&#xf099;</a></div></div>');
+        }
+        else {
             $('#sub-footer>.mk-grid').prepend('<div class="footer-social"><div class="social-icon-container"><a  target="_blank" href="https://www.facebook.com/OntarioRide">&#xf09a;</a></div> <div class="social-icon-container"><a target="_blank" href="http://instagram.com/ontarioride">&#xf16d;</a></div> <div class="social-icon-container"><a target="_blank" href="http://www.twitter.com/TheOntarioRide">&#xf099;</a></div></div>');
         }
     });
@@ -214,14 +217,17 @@ $(window).on("load",function(){
 
      })(jQuery);
     // Class with options for More/Less
-    $(".more-less-text>p").shorten({
-        "showChars" : 170,
-        "moreText"	: "See More",
-        "lessText"	: "Show Less",
-    });
-    $(".more-less-text-french>p").shorten({
-        "showChars" : 170,
-        "moreText"	: "Lire la suite",
-        "lessText"	: "Réduire",
-    });
+     if(window.location.href.indexOf("?lang=fr") > -1) {
+        $(".more-less-text-french>p").shorten({
+            "showChars" : 170,
+            "moreText"	: "Lire la suite",
+            "lessText"	: "Réduire",
+        });
+     } else {
+         $(".more-less-text>p").shorten({
+            "showChars" : 170,
+            "moreText"	: "See More",
+            "lessText"	: "Show Less",
+        });
+     }
 });
