@@ -649,7 +649,7 @@ ul.main-navigation-ul {
 /* ============== Menu Link Styling ============== */
 
 .dark-logo {
-    width: 200px;
+    max-width: 200px;
 }
 
 ul#menu-main_menu,
@@ -990,6 +990,21 @@ ul#menu-main_menu_french{
         p {
             text-align: center;
         }
+    }
+}
+.footer-fifth {
+    img {
+        max-width: 200px !important;
+        &:first-child {
+            margin-bottom: 50px !important;
+        }
+    }
+}
+.ab-footer-column {
+    @extend .footer-column;
+    text-align: center;
+    p {
+        text-align: center;
     }
 }
 // === Quick Contact Remove === //
@@ -1550,6 +1565,80 @@ span.vc_tta-title-text.display-none-accordion{
     }
 }
 // image hover style
+
+.overlay-hover-01,
+.overlay-hover-02,
+.overlay-hover-03{
+    background: url(/../wp-content/uploads/sites/8/2017/08/ride-as-a-team-overlay.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: 270px;
+    width: 100%;
+    transition: 0.2s all ease-in;
+    &:hover {
+        background: url(/../staging/wp-content/uploads/sites/8/2017/08/ride-as-a-team.jpg);
+        background-position: center center;
+        background-size: cover;
+        .btn-outline-white-trans > button {
+            background: #fff !important;
+            a {
+                color: #000 !important;
+            }
+        }
+    }
+}
+
+.overlay-hover-02 {
+    background: url(/../wp-content/uploads/sites/8/2017/08/rider-stories-overlay.jpg);
+    background-position: center center;
+    background-size: cover;
+    &:hover {
+        background: url(/../wp-content/uploads/sites/8/2017/08/rider-stories.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+.overlay-hover-03 {
+    background: url(/../wp-content/uploads/sites/8/2017/08/request-info-overlay.jpg);
+    background-position: center center;
+    background-size: cover;
+    &:hover {
+        background: url(/../wp-content/uploads/sites/8/2017/08/request-info.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+.va18-overlay-hover-01 {
+    @extend .overlay-hover-01;
+    background: url(/../wp-content/uploads/sites/7/2017/08/ride-as-a-team-overlay.jpg) center center;
+    background-size: cover;
+    &:hover {
+        background: url(/../wp-content/uploads/sites/7/2017/08/ride-as-a-team.jpg) center center;
+        background-size: cover;
+    }
+}
+
+.va18-overlay-hover-02 {
+    @extend .overlay-hover-02;
+    background: url(/../wp-content/uploads/sites/7/2017/08/rider-stories-overlay.jpg) center center;
+    background-size: cover;
+    &:hover {
+        background: url(/../wp-content/uploads/sites/7/2017/08/rider-stories.jpg) center center;
+        background-size: cover;
+    }
+}
+
+.va18-overlay-hover-03 {
+    @extend .overlay-hover-03;
+    background: url(/../wp-content/uploads/sites/7/2017/08/request-info-overlay.jpg) center center;
+    background-size: cover;
+    &:hover {
+        background: url(/../wp-content/uploads/sites/7/2017/08/request-info.jpg) center center;
+        background-size: cover;
+    }
+}
 
 .img-hover-box {
 position: relative;
@@ -2724,12 +2813,15 @@ display: inline-block;
     }
 }
 .search-participants-col,
-.search-teams-col,{
+.search-teams-col{
     form {
         text-align: center;
         input {
         border: 2px solid #000;
         min-width: 200px;
+        &:focus {
+            border: 2px solid $blue;
+            }
         }
         button {
             height: 40px;
@@ -2737,6 +2829,12 @@ display: inline-block;
             width: 50px;
             background: transparent;
             border: 2px solid #000;
+            &:hover {
+                border-color: $blue;
+                i.fa .fa-search{
+                    color: $blue;
+                }
+            }
         }
     }
 }

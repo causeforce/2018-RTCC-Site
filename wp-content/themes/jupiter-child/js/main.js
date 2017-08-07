@@ -43,6 +43,8 @@ $(document).ready(function () {
             $('#sub-footer>.mk-grid').prepend('<div class="footer-social"><div class="social-icon-container"><a  target="_blank" href="https://www.facebook.com/LeCycloDefi/">&#xf09a;</a></div> <div class="social-icon-container"><a target="_blank" href="https://www.instagram.com/quebecride/">&#xf16d;</a></div> <div class="social-icon-container"><a target="_blank" href="https://twitter.com/TheQuebecRide">&#xf099;</a></div></div>');
         } else if (document.location.href.indexOf('/alberta') > -1) {
             $('#sub-footer>.mk-grid').prepend('<div class="footer-social"><div class="social-icon-container"><a  target="_blank" href="https://www.facebook.com/AlbertaRide/">&#xf09a;</a></div> <div class="social-icon-container"><a target="_blank" href="https://www.instagram.com/albertaride/">&#xf16d;</a></div> <div class="social-icon-container"><a target="_blank" href="https://twitter.com/thealbertaride">&#xf099;</a></div></div>');
+        } else if (document.location.href.indexOf('/vancouver') > -1) {
+            $('#sub-footer>.mk-grid').prepend('<div class="footer-social"><div class="social-icon-container"><a  target="_blank" href="https://www.facebook.com/BCRide">&#xf09a;</a></div> <div class="social-icon-container"><a target="_blank" href="http://instagram.com/thebcride/">&#xf16d;</a></div> <div class="social-icon-container"><a target="_blank" href="https://twitter.com/TheBCRide">&#xf099;</a></div></div>');
         }
         else {
             $('#sub-footer>.mk-grid').prepend('<div class="footer-social"><div class="social-icon-container"><a  target="_blank" href="https://www.facebook.com/OntarioRide">&#xf09a;</a></div> <div class="social-icon-container"><a target="_blank" href="http://instagram.com/ontarioride">&#xf16d;</a></div> <div class="social-icon-container"><a target="_blank" href="http://www.twitter.com/TheOntarioRide">&#xf099;</a></div></div>');
@@ -119,12 +121,12 @@ $(document).ready(function () {
 //    });
     
     // View More or View Less for Top List and Text
-    $('ul#top-teams, ul#top-fundraising, #top-ambassadors').on('click','.more', function(){
+    $('ol#top-fundraising').on('click','.more', function(){
 
       if( $(this).hasClass('less') ){    
         $(this).text('More...').removeClass('less');    
       }else if ($(this).parent('ol').hasClass('top-fundraising')) {
-        $(this).html('<a href="https://secure2.convio.net/cfrca/admin/PageBuilderPreviewPage?pageid=51041&pagename=Moe+Quraishi+-+07%2F20%2F2017%2C+v6+top+fundraiser+updated">View Full List...</a>').addClass('less'); 
+        $(this).html('<a href="http://to18.conquercancer.ca/site/PageServer?pagename=to18_top_fundraisers">View Full List...</a>').addClass('less'); 
       }else if ($(this).parent('ol').hasClass('top-teams')) {
         $(this).html('<a href="https://secure2.convio.net/cfrca/admin/PageBuilderPreviewPage?pageid=51041&pagename=Moe+Quraishi+-+07%2F20%2F2017%2C+v6+top+fundraiser+updated">View Full List...</a>').addClass('less'); 
       } else {
@@ -142,12 +144,13 @@ $(window).on("load",function(){
    $('div#ride-preloader').fadeOut('slow');
     
     // View More or Less Function
-    $('ul#top-teams, ul#top-fundraising').each(function(){
+    $('ol#top-fundraising').each(function(){
   
-      var liFind = $(this).find('li', 'p').length;
+      var liFind = $(this).find('li').length;
+      var pFind = $(this).find('p').length;
 
-      if( liFind > 10){    
-        $('li', 'p', this).eq(9).nextAll().hide().addClass('toggleable');
+      if( liFind > 10 && pFind > 10){    
+        $('li', this).eq(9).nextAll().hide().addClass('toggleable');
         $(this).append('<li class="more">More...</li>');    
       }
 
@@ -165,7 +168,7 @@ $(window).on("load",function(){
 
     });
     
-    // View More or Less Plugin
+    // View More or Less Plugin for Text
    (function($) {
         $.fn.shorten = function (settings) {
 
