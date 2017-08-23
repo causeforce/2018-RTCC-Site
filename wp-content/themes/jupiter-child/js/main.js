@@ -149,7 +149,7 @@ $(window).on("load",function(){
       var liFind = $(this).find('li').length;
       var pFind = $(this).find('p').length;
 
-      if( liFind > 10 && pFind > 10){    
+      if( liFind > 10 & pFind > 10){    
         $('li', this).eq(9).nextAll().hide().addClass('toggleable');
         $(this).append('<li class="more">More...</li>');    
       }

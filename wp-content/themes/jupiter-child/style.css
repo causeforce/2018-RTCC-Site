@@ -28,7 +28,7 @@
   cursor: pointer;
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif !important;
 }
-.btn-regular-blue, #menu-main_menu li.menu-item.no-mega-menu:nth-child(4), .btn-regular-with-link-blue > a, .btn-regular-black, .btn-regular-with-link-black > a {
+.btn-regular-blue, #menu-main_menu li.menu-item.no-mega-menu:nth-child(4), #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(4), .btn-regular-with-link-blue > a, .btn-regular-black, .btn-regular-with-link-black > a {
   padding: 17px;
   color: #fff;
   font-size: 14px;
@@ -38,18 +38,18 @@
   cursor: pointer;
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif !important;
 }
-.btn-outline-blue > button, #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4) > button, .btn-with-link-blue > a {
+.btn-outline-blue > button, #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4) > button, #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(n+4) > button, .btn-with-link-blue > a, .donation-btn > a {
   border: 2px solid #0075c9 !important;
   color: #0075c9 !important;
   transition: all 0.2s ease-in !important;
   background-color: #fff !important;
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif !important;
 }
-.btn-outline-blue > button:hover, #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4) > button:hover, .btn-with-link-blue > a:hover {
+.btn-outline-blue > button:hover, #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4) > button:hover, #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(n+4) > button:hover, .btn-with-link-blue > a:hover, .donation-btn > a:hover {
   background: #0075c9 !important;
   color: #fff !important;
 }
-.btn-outline-blue > button:active, #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4) > button:active, .btn-with-link-blue > a:active {
+.btn-outline-blue > button:active, #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4) > button:active, #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(n+4) > button:active, .btn-with-link-blue > a:active, .donation-btn > a:active {
   background: #fff !important;
   color: #0075c9 !important;
 }
@@ -106,35 +106,35 @@
   background: #000 !important;
   color: #fff !important;
 }
-.btn-outline-black > button, .btn-with-link-black > a, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-button-links:nth-child(-n+3) > a {
+.btn-outline-black > button, .btn-with-link-black > a, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-button-links:nth-child(-n+3) > a, nav.menu-main_menu_french-container ul.mk-responsive-nav li.menu-button-links:nth-child(-n+3) > a {
   border: 2px solid #000 !important;
   color: #000 !important;
   transition: all 0.2s ease-in !important;
   background-color: #fff !important;
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif !important;
 }
-.btn-outline-black > button:hover, .btn-with-link-black > a:hover, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-button-links:nth-child(-n+3) > a:hover {
+.btn-outline-black > button:hover, .btn-with-link-black > a:hover, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-button-links:nth-child(-n+3) > a:hover, nav.menu-main_menu_french-container ul.mk-responsive-nav li.menu-button-links:nth-child(-n+3) > a:hover {
   background: #000 !important;
   color: #fff !important;
 }
-.btn-outline-black > button:active, .btn-with-link-black > a:active, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-button-links:nth-child(-n+3) > a:active {
+.btn-outline-black > button:active, .btn-with-link-black > a:active, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-button-links:nth-child(-n+3) > a:active, nav.menu-main_menu_french-container ul.mk-responsive-nav li.menu-button-links:nth-child(-n+3) > a:active {
   background: #fff !important;
   color: #000 !important;
 }
-.btn-regular-blue, #menu-main_menu li.menu-item.no-mega-menu:nth-child(4), .btn-regular-with-link-blue > a, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-button-links:nth-child(4) > a {
+.btn-regular-blue, #menu-main_menu li.menu-item.no-mega-menu:nth-child(4), #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(4), .btn-regular-with-link-blue > a, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-button-links:nth-child(4) > a, nav.menu-main_menu_french-container ul.mk-responsive-nav li.menu-button-links:nth-child(4) > a {
   background: #0075c9 !important;
   border: 2px solid #0075c9;
   color: #fff;
   transition: all 0.2s ease-in;
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif !important;
 }
-.btn-regular-blue:active, #menu-main_menu li.menu-item.no-mega-menu:nth-child(4):active, .btn-regular-with-link-blue > a:active, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-button-links:nth-child(4) > a:active {
+.btn-regular-blue:active, #menu-main_menu li.menu-item.no-mega-menu:nth-child(4):active, #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(4):active, .btn-regular-with-link-blue > a:active, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-button-links:nth-child(4) > a:active, nav.menu-main_menu_french-container ul.mk-responsive-nav li.menu-button-links:nth-child(4) > a:active {
   background: #004e86;
 }
-.btn-regular-with-link-blue, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-button-links:nth-child(4) {
+.btn-regular-with-link-blue, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-button-links:nth-child(4), nav.menu-main_menu_french-container ul.mk-responsive-nav li.menu-button-links:nth-child(4) {
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif !important;
 }
-.btn-regular-with-link-blue:hover a, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-button-links:nth-child(4):hover a {
+.btn-regular-with-link-blue:hover a, nav.menu-main_menu-container ul.mk-responsive-nav li.menu-button-links:nth-child(4):hover a, nav.menu-main_menu_french-container ul.mk-responsive-nav li.menu-button-links:nth-child(4):hover a {
   color: #0075c9 !important;
   background: #fff !important;
 }
@@ -178,6 +178,11 @@ strong {
 button {
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
 }
+@media screen and (min-width: 1500px) {
+  #background-layer--2 {
+    background-position: center top !important;
+  }
+}
 @media screen and (max-width: 939px) {
   .vc_col-sm-8, .vc_col-sm-6, .vc_col-sm-4, .vc_col-sm-3, .vc_col-sm-2 {
     width: 100% !important;
@@ -187,7 +192,7 @@ button {
   }
 }
 /* ============== Link Hover Effect ============== */
-.hover-link-default, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3), .programs-front-row .programs-tabs-link-column div h4 a, .rider-hub-program-link {
+.hover-link-default, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3), #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(-n+3), .programs-front-row .programs-tabs-link-column div h4 a, .rider-hub-program-link {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -199,7 +204,7 @@ button {
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
 }
-.hover-link-default:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):before, .programs-front-row .programs-tabs-link-column div h4 a:before, .rider-hub-program-link:before {
+.hover-link-default:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):before, #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(-n+3):before, .programs-front-row .programs-tabs-link-column div h4 a:before, .rider-hub-program-link:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -219,7 +224,7 @@ button {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hover-link-default:hover:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):hover:before, .programs-front-row .programs-tabs-link-column div h4 a:hover:before, .rider-hub-program-link:hover:before, .hover-link-default:focus:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):focus:before, .programs-front-row .programs-tabs-link-column div h4 a:focus:before, .rider-hub-program-link:focus:before, .hover-link-default:active:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):active:before, .programs-front-row .programs-tabs-link-column div h4 a:active:before, .rider-hub-program-link:active:before {
+.hover-link-default:hover:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):hover:before, #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(-n+3):hover:before, .programs-front-row .programs-tabs-link-column div h4 a:hover:before, .rider-hub-program-link:hover:before, .hover-link-default:focus:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):focus:before, #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(-n+3):focus:before, .programs-front-row .programs-tabs-link-column div h4 a:focus:before, .rider-hub-program-link:focus:before, .hover-link-default:active:before, #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3):active:before, #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(-n+3):active:before, .programs-front-row .programs-tabs-link-column div h4 a:active:before, .rider-hub-program-link:active:before {
   -webkit-transform: scaleY(0.5);
   transform: scaleY(0.5);
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
@@ -248,6 +253,9 @@ ul.main-navigation-ul li.menu-item.menu-item-type-post_type.menu-item-object-pag
   color: #000;
 }
 /* ============== Custom Classes ============== */
+.text-indent {
+  margin-left: 5%;
+}
 .header-pg-row {
   z-index: 100 !important;
 }
@@ -273,7 +281,7 @@ ul.main-navigation-ul li.menu-item.menu-item-type-post_type.menu-item-object-pag
 .pg-title-column {
   position: relative;
 }
-.pg-title {
+.pg-title, .french-title {
   position: relative;
   top: 495px;
   width: 100%;
@@ -282,7 +290,7 @@ ul.main-navigation-ul li.menu-item.menu-item-type-post_type.menu-item-object-pag
   display: block;
 }
 @media screen and (max-width: 768px) {
-  .pg-title {
+  .pg-title, .french-title {
     top: auto !important;
     position: relative;
     bottom: -274px;
@@ -294,7 +302,7 @@ ul.main-navigation-ul li.menu-item.menu-item-type-post_type.menu-item-object-pag
     max-width: 420px;
   }
 }
-.pg-title p {
+.pg-title p, .french-title p {
   background-image: linear-gradient(bottom, #000 50%, transparent 50%);
   background-image: -o-linear-gradient(bottom, #000 50%, transparent 50%);
   background-image: -moz-linear-gradient(bottom, #000 50%, transparent 50%);
@@ -309,7 +317,7 @@ ul.main-navigation-ul li.menu-item.menu-item-type-post_type.menu-item-object-pag
   display: inline-block;
 }
 @media screen and (max-width: 768px) {
-  .pg-title p {
+  .pg-title p, .french-title p {
     font-size: 24px;
     background-image: linear-gradient(bottom, #000 60%, transparent 60%);
     background-image: -o-linear-gradient(bottom, #000 60%, transparent 60%);
@@ -399,6 +407,20 @@ ul.main-navigation-ul li.menu-item.menu-item-type-post_type.menu-item-object-pag
     text-align: center;
   }
 }
+@media screen and (max-width: 939px) {
+  .desktop-image {
+    display: none;
+  }
+}
+.mobile-image {
+  display: none;
+}
+@media screen and (max-width: 939px) {
+  .mobile-image {
+    display: block;
+    margin-bottom: 0px;
+  }
+}
 /* ============== Pattern Styling  ============== */
 .pattern-row .page-section-content {
   height: 100%;
@@ -441,15 +463,15 @@ ul.main-navigation-ul li.menu-item.menu-item-type-post_type.menu-item-object-pag
   font-size: 16px;
   margin-bottom: 10px;
 }
-.safety-accordion-section .vc_tta-panel-body .btn-outline-blue, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-body .btn-outline-blue, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-body .btn-outline-blue, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-body #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4), #menu-main_menu .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4), .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-body #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4), #menu-main_menu .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4), .safety-accordion-section .vc_tta-panel-body #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4), #menu-main_menu .safety-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4) {
+.safety-accordion-section .vc_tta-panel-body .btn-outline-blue, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-body .btn-outline-blue, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-body .btn-outline-blue, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-body #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4), #menu-main_menu .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4), .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-body #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(n+4), #menu-main_menu_french .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4), .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-body #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4), #menu-main_menu .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4), .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-body #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(n+4), #menu-main_menu_french .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4), .safety-accordion-section .vc_tta-panel-body #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4), #menu-main_menu .safety-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4), .safety-accordion-section .vc_tta-panel-body #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(n+4), #menu-main_menu_french .safety-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4) {
   margin-left: 40px;
 }
-.safety-accordion-section .vc_tta-panel-body .btn-outline-blue button, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-body .btn-outline-blue button, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-body .btn-outline-blue button, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-body #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4) button, #menu-main_menu .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4) button, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-body #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4) button, #menu-main_menu .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4) button, .safety-accordion-section .vc_tta-panel-body #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4) button, #menu-main_menu .safety-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4) button {
+.safety-accordion-section .vc_tta-panel-body .btn-outline-blue button, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-body .btn-outline-blue button, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-body .btn-outline-blue button, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-body #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4) button, #menu-main_menu .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4) button, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-body #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(n+4) button, #menu-main_menu_french .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4) button, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-body #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4) button, #menu-main_menu .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4) button, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-body #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(n+4) button, #menu-main_menu_french .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4) button, .safety-accordion-section .vc_tta-panel-body #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4) button, #menu-main_menu .safety-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4) button, .safety-accordion-section .vc_tta-panel-body #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(n+4) button, #menu-main_menu_french .safety-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4) button {
   font-weight: 700;
   padding: 10px 30px;
 }
 @media screen and (max-width: 768px) {
-  .safety-accordion-section .vc_tta-panel-body .btn-outline-blue, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-body .btn-outline-blue, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-body .btn-outline-blue, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-body #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4), #menu-main_menu .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4), .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-body #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4), #menu-main_menu .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4), .safety-accordion-section .vc_tta-panel-body #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4), #menu-main_menu .safety-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4) {
+  .safety-accordion-section .vc_tta-panel-body .btn-outline-blue, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-body .btn-outline-blue, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-body .btn-outline-blue, .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-body #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4), #menu-main_menu .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4), .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-body #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(n+4), #menu-main_menu_french .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .photos-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4), .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-body #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4), #menu-main_menu .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4), .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-body #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(n+4), #menu-main_menu_french .outfitters-full-accordion-section .outfitters-accordion-column .vc_tta-container .outfitters-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4), .safety-accordion-section .vc_tta-panel-body #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4), #menu-main_menu .safety-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4), .safety-accordion-section .vc_tta-panel-body #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(n+4), #menu-main_menu_french .safety-accordion-section .vc_tta-panel-body li.menu-item.no-mega-menu:nth-child(n+4) {
     margin-left: auto;
   }
 }
@@ -509,23 +531,33 @@ ul.main-navigation-ul li.menu-item.menu-item-type-post_type.menu-item-object-pag
 }
 /* ============== Menu Link Styling ============== */
 .dark-logo {
-  width: 200px;
+  max-width: 200px;
 }
-ul#menu-main_menu {
+ul#menu-main_menu, ul#menu-main_menu_french {
   width: auto;
 }
 .mk-main-navigation {
   position: relative;
 }
-ul#menu-main_menu li ul.sub-menu {
+ul#menu-main_menu li ul.sub-menu, ul#menu-main_menu_french li ul.sub-menu {
   background-color: #fff !important;
   color: #000;
   min-width: 160px;
   position: absolute;
-  top: 20px;
-  left: -20px;
+  top: 22px;
+  left: -25px;
 }
-ul#menu-main_menu li ul.sub-menu li a {
+ul#menu-main_menu li ul.sub-menu li a, ul#menu-main_menu_french li ul.sub-menu li a {
+  text-align: center;
+  width: auto;
+  font-size: 12px !important;
+  background-image: none;
+}
+ul#menu-main_menu_french li ul.sub-menu {
+  top: 22px;
+  left: 5px;
+}
+ul#menu-main_menu_french li ul.sub-menu li a {
   text-align: center;
   width: auto;
   font-size: 12px !important;
@@ -545,32 +577,37 @@ ul#menu-main_menu li ul.sub-menu li a {
   color: #0075c9 !important;
 }
 /* ============== Main Menu Links, Buttons and Styles ============== */
-#menu-main_menu li.menu-item.no-mega-menu {
+#menu-main_menu li.menu-item.no-mega-menu, #menu-main_menu_french li.menu-item.no-mega-menu {
   height: auto !important;
   margin-top: 45px !important;
 }
-#menu-main_menu li.menu-item.no-mega-menu a {
+#menu-main_menu li.menu-item.no-mega-menu a, #menu-main_menu_french li.menu-item.no-mega-menu a {
   height: auto !important;
   line-height: normal !important;
 }
-#menu-main_menu li.menu-item.no-mega-menu:first-child .sub-menu {
+#menu-main_menu li.menu-item.no-mega-menu:first-child .sub-menu, #menu-main_menu_french li.menu-item.no-mega-menu:first-child .sub-menu {
   left: -40px;
 }
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(2) .sub-menu {
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(2) .sub-menu, #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(2) .sub-menu {
   left: -40px;
 }
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3) {
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3), #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(-n+3) {
   margin-right: 25px;
 }
-@media screen and (max-width: 1325px) {
-  #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3) {
+@media screen and (max-width: 1410px) {
+  #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3), #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(-n+3) {
     margin-right: 10px;
   }
+  #menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3) a, #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(-n+3) a {
+    font-size: 12px !important;
+  }
 }
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3) a {
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(-n+3) a, #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(-n+3) a {
   font-size: 18px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4) {
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4), #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(n+4) {
   padding: 0px;
   width: 140px;
   top: 35px;
@@ -580,34 +617,40 @@ ul#menu-main_menu li ul.sub-menu li a {
   transition: all 0.3s ease-in;
   margin-top: 0px !important;
 }
-@media screen and (max-width: 1220px) {
-  #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4) {
-    width: 120px;
+@media screen and (max-width: 1410px) {
+  #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4), #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(n+4) {
+    width: 110px;
+  }
+  #menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4) a, #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(n+4) a {
+    font-size: 11px;
   }
 }
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4) a {
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4) a, #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(n+4) a {
   height: 100%;
   line-height: 35px !important;
   color: #0075c9;
 }
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4) a:hover {
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4) a:hover, #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(n+4) a:hover {
   color: #fff;
 }
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4):hover {
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4):hover, #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(n+4):hover {
   background: #0075c9;
 }
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4):hover a {
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(n+4):hover a, #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(n+4):hover a {
   color: #fff;
 }
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(4) a {
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(4) a, #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(4) a {
   color: #fff;
 }
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(4):hover {
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(4):hover, #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(4):hover {
   background: #fff !important;
   border: 2px solid #0075c9;
 }
-#menu-main_menu li.menu-item.no-mega-menu:nth-child(4):hover a {
+#menu-main_menu li.menu-item.no-mega-menu:nth-child(4):hover a, #menu-main_menu_french li.menu-item.no-mega-menu:nth-child(4):hover a {
   color: #0075c9;
+}
+#menu-main_menu_french li.menu-item.no-mega-menu:nth-child(-n+3) a {
+  font-size: 16px;
 }
 .header-grid.mk-grid {
   max-width: none;
@@ -638,56 +681,59 @@ ul#menu-main_menu li ul.sub-menu li a {
 #mk-footer .footer-wrapper .mk-padding-wrapper .mk-col-2-3 {
   padding: 0px;
 }
-#mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before {
+#mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before, #mk-footer .widget_nav_menu div #menu-about_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before, #mk-footer .widget_nav_menu div #menu-impact_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before {
   display: none;
   top: 1px;
   color: rgba(255, 255, 255, 0.7);
 }
 @media screen and (max-width: 768px) {
-  #mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before {
+  #mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before, #mk-footer .widget_nav_menu div #menu-about_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before, #mk-footer .widget_nav_menu div #menu-impact_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children::before {
     display: block;
     right: 25%;
     font-size: 25px;
   }
 }
-#mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a {
+#mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a, #mk-footer .widget_nav_menu div #menu-about_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a, #mk-footer .widget_nav_menu div #menu-impact_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a {
   display: block;
   text-align: center;
-  color: #fff !important;
   text-transform: uppercase;
+  color: #fff;
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   max-width: 100px;
   margin: 0 auto;
 }
 @media screen and (max-width: 768px) {
-  #mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a {
+  #mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a, #mk-footer .widget_nav_menu div #menu-about_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a, #mk-footer .widget_nav_menu div #menu-impact_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children a {
     text-align: center;
   }
 }
-#mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu {
+#mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu, #mk-footer .widget_nav_menu div #menu-about_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu, #mk-footer .widget_nav_menu div #menu-impact_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu {
   display: block;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
-  #mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu {
+  #mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu, #mk-footer .widget_nav_menu div #menu-about_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu, #mk-footer .widget_nav_menu div #menu-impact_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu {
     display: none;
   }
 }
-#mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a {
-  color: #95989a !important;
+#mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a, #mk-footer .widget_nav_menu div #menu-about_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a, #mk-footer .widget_nav_menu div #menu-impact_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a {
+  color: #95989a;
   font-family: "Futura LT Pro Body", Helvetica, sans-serif;
   font-size: 14px;
-  text-transform: capitalize;
+  text-transform: inherit;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
-  #mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a {
+  #mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a, #mk-footer .widget_nav_menu div #menu-about_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a, #mk-footer .widget_nav_menu div #menu-impact_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a {
     text-align: center;
   }
 }
-#mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a .mk-svg-icon, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a .mk-svg-icon, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a .mk-svg-icon {
+#mk-footer .widget_nav_menu div #menu-about_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a .mk-svg-icon, #mk-footer .widget_nav_menu div #menu-impact_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a .mk-svg-icon, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a .mk-svg-icon, #mk-footer .widget_nav_menu div #menu-about_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a .mk-svg-icon, #mk-footer .widget_nav_menu div #menu-impact_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a .mk-svg-icon, #mk-footer .widget_nav_menu div #menu-rider-hub_footer_menu_french li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children .sub-menu li a .mk-svg-icon {
   display: none;
+}
+#mk-footer .widget_nav_menu ul li.current_page_item a {
+  color: #fff !important;
 }
 #sub-footer {
   background: #000;
@@ -717,7 +763,7 @@ ul#menu-main_menu li ul.sub-menu li a {
   }
 }
 #sub-footer .mk-grid .footer-social .social-icon-container {
-  width: 23%;
+  width: 21%;
   display: inline-block;
   padding: 0 5px;
 }
@@ -739,19 +785,34 @@ ul#menu-main_menu li ul.sub-menu li a {
     padding: 15px !important;
   }
 }
-.footer-column .footer-text-gold {
+.footer-column .footer-text-gold, .ab-footer-column .footer-text-gold {
   color: #ffcd00 !important;
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
 }
+.footer-column p, .ab-footer-column p {
+  color: #95989a;
+}
 @media screen and (max-width: 768px) {
-  .footer-column img {
+  .footer-column img, .ab-footer-column img {
     display: block;
     margin: 0 auto;
     max-width: 260px !important;
   }
-  .footer-column p {
+  .footer-column p, .ab-footer-column p {
     text-align: center;
   }
+}
+.footer-fifth img {
+  max-width: 200px !important;
+}
+.footer-fifth img:first-child {
+  margin-bottom: 50px !important;
+}
+.ab-footer-column {
+  text-align: center;
+}
+.ab-footer-column p {
+  text-align: center;
 }
 .mk-quick-contact-wrapper {
   display: none;
@@ -997,8 +1058,30 @@ ul#menu-main_menu li ul.sub-menu li a {
   color: #c5c5c5;
   text-transform: uppercase;
 }
-.leaderboard-section {
-  padding: 3% 0;
+.leaderboard-section .mk-text-block h4 {
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .leaderboard-section .mk-text-block h4 {
+    border-bottom: 5px solid #0075c9;
+  }
+}
+.leaderboard-section .top-line {
+  width: 1116.11px;
+  margin: 0 auto;
+  border-bottom: 5px solid #0075c9;
+  position: relative;
+  top: 70px;
+}
+@media screen and (max-width: 1140px) {
+  .leaderboard-section .top-line {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .leaderboard-section .top-line {
+    display: none;
+  }
 }
 #photos-accordion div h4 a span {
   color: #000;
@@ -1197,6 +1280,69 @@ span.vc_tta-title-text.display-none-accordion:after {
 .about-routes-tab section {
   background: #f5f5f5;
 }
+.overlay-hover-01, .va18-overlay-hover-01, .overlay-hover-02, .va18-overlay-hover-02, .overlay-hover-03, .va18-overlay-hover-03 {
+  background: url(/../wp-content/uploads/sites/8/2017/08/ride-as-a-team-overlay.jpg);
+  background-position: center center;
+  background-size: cover;
+  min-height: 270px;
+  width: 100%;
+  transition: 0.2s all ease-in;
+}
+.overlay-hover-01:hover, .va18-overlay-hover-01:hover, .overlay-hover-02:hover, .va18-overlay-hover-02:hover, .overlay-hover-03:hover, .va18-overlay-hover-03:hover {
+  background: url(/../staging/wp-content/uploads/sites/8/2017/08/ride-as-a-team.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.overlay-hover-01:hover .btn-outline-white-trans > button, .va18-overlay-hover-01:hover .btn-outline-white-trans > button, .overlay-hover-02:hover .btn-outline-white-trans > button, .va18-overlay-hover-02:hover .btn-outline-white-trans > button, .overlay-hover-03:hover .btn-outline-white-trans > button, .va18-overlay-hover-03:hover .btn-outline-white-trans > button {
+  background: #fff !important;
+}
+.overlay-hover-01:hover .btn-outline-white-trans > button a, .va18-overlay-hover-01:hover .btn-outline-white-trans > button a, .overlay-hover-02:hover .btn-outline-white-trans > button a, .va18-overlay-hover-02:hover .btn-outline-white-trans > button a, .overlay-hover-03:hover .btn-outline-white-trans > button a, .va18-overlay-hover-03:hover .btn-outline-white-trans > button a {
+  color: #000 !important;
+}
+.overlay-hover-02, .va18-overlay-hover-02 {
+  background: url(/../wp-content/uploads/sites/8/2017/08/rider-stories-overlay.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.overlay-hover-02:hover, .va18-overlay-hover-02:hover {
+  background: url(/../wp-content/uploads/sites/8/2017/08/rider-stories.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.overlay-hover-03, .va18-overlay-hover-03 {
+  background: url(/../wp-content/uploads/sites/8/2017/08/request-info-overlay.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.overlay-hover-03:hover, .va18-overlay-hover-03:hover {
+  background: url(/../wp-content/uploads/sites/8/2017/08/request-info.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+.va18-overlay-hover-01 {
+  background: url(/../wp-content/uploads/sites/7/2017/08/ride-as-a-team-overlay.jpg) center center;
+  background-size: cover;
+}
+.va18-overlay-hover-01:hover {
+  background: url(/../wp-content/uploads/sites/7/2017/08/ride-as-a-team.jpg) center center;
+  background-size: cover;
+}
+.va18-overlay-hover-02 {
+  background: url(/../wp-content/uploads/sites/7/2017/08/rider-stories-overlay.jpg) center center;
+  background-size: cover;
+}
+.va18-overlay-hover-02:hover {
+  background: url(/../wp-content/uploads/sites/7/2017/08/rider-stories.jpg) center center;
+  background-size: cover;
+}
+.va18-overlay-hover-03 {
+  background: url(/../wp-content/uploads/sites/7/2017/08/request-info-overlay.jpg) center center;
+  background-size: cover;
+}
+.va18-overlay-hover-03:hover {
+  background: url(/../wp-content/uploads/sites/7/2017/08/request-info.jpg) center center;
+  background-size: cover;
+}
 .img-hover-box {
   position: relative;
   display: inline-block;
@@ -1277,6 +1423,7 @@ span.vc_tta-title-text.display-none-accordion:after {
 .ambassador-levels-column .ambassador-bronze p, .ambassador-levels-column .ambassador-silver p, .ambassador-levels-column .ambassador-gold p, .ambassador-levels-column .ambassador-platinum p {
   font-size: 12px;
   margin-bottom: 10px;
+  padding: 0 5px;
 }
 .ambassador-levels-column .ambassador-bronze p strong, .ambassador-levels-column .ambassador-silver p strong, .ambassador-levels-column .ambassador-gold p strong, .ambassador-levels-column .ambassador-platinum p strong {
   font-size: 16px;
@@ -1352,17 +1499,17 @@ span.vc_tta-title-text.display-none-accordion:after {
   .mk-header-inner.add-header-height {
     border-bottom: none;
   }
-  nav.menu-main_menu-container ul.mk-responsive-nav li.menu-button-links:nth-child(4) a {
+  nav.menu-main_menu-container ul.mk-responsive-nav li.menu-button-links:nth-child(4) a, nav.menu-main_menu_french-container ul.mk-responsive-nav li.menu-button-links:nth-child(4) a {
     color: #fff !important;
   }
-  nav.menu-main_menu-container ul.mk-responsive-nav li.menu-button-links a {
+  nav.menu-main_menu-container ul.mk-responsive-nav li.menu-button-links a, nav.menu-main_menu_french-container ul.mk-responsive-nav li.menu-button-links a {
     border-top: none;
     width: 100px;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 10px;
   }
-  nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page a {
+  nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page a, nav.menu-main_menu_french-container ul.mk-responsive-nav li.menu-item-object-page a {
     color: #000 !important;
     font-size: 16px;
     font-family: "Futura LT Pro Heading", Helvetica, sans-serif;
@@ -1370,10 +1517,10 @@ span.vc_tta-title-text.display-none-accordion:after {
     margin: 0 auto;
     display: block;
   }
-  nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu {
+  nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu, nav.menu-main_menu_french-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu {
     border-top: none;
   }
-  nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a {
+  nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a, nav.menu-main_menu_french-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a {
     font-family: "Futura LT Pro Body", Helvetica, sans-serif;
     font-size: 14px;
     width: 100px;
@@ -1381,21 +1528,21 @@ span.vc_tta-title-text.display-none-accordion:after {
     padding: 10px 5px;
     transition: 0.3s all ease-in;
   }
-  nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:hover {
+  nav.menu-main_menu-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:hover, nav.menu-main_menu_french-container ul.mk-responsive-nav li.menu-item-object-page ul.sub-menu a:hover {
     color: #0075c9 !important;
     background: none;
     font-weight: 700;
   }
-  nav.menu-main_menu-container ul.mk-responsive-nav li {
+  nav.menu-main_menu-container ul.mk-responsive-nav li, nav.menu-main_menu_french-container ul.mk-responsive-nav li {
     border: none;
   }
-  nav.menu-main_menu-container ul.mk-responsive-nav li a:hover {
+  nav.menu-main_menu-container ul.mk-responsive-nav li a:hover, nav.menu-main_menu_french-container ul.mk-responsive-nav li a:hover {
     background: none;
   }
-  nav.menu-main_menu-container ul.mk-responsive-nav li span.mk-nav-arrow svg {
+  nav.menu-main_menu-container ul.mk-responsive-nav li span.mk-nav-arrow svg, nav.menu-main_menu_french-container ul.mk-responsive-nav li span.mk-nav-arrow svg {
     fill: #0075c9;
   }
-  nav.menu-main_menu-container ul.mk-responsive-nav .menu-item-has-children:last-child ul {
+  nav.menu-main_menu-container ul.mk-responsive-nav .menu-item-has-children:last-child ul, nav.menu-main_menu_french-container ul.mk-responsive-nav .menu-item-has-children:last-child ul {
     padding-bottom: 45px;
   }
   form.responsive-searchform {
@@ -1493,7 +1640,7 @@ span.vc_tta-title-text.display-none-accordion:after {
   display: none !important;
 }
 .vc_images_carousel .vc_carousel-indicators {
-  bottom: -10px !important;
+  bottom: -30px !important;
 }
 @media screen and (max-width: 768px) {
   .vc_images_carousel .vc_carousel-indicators {
@@ -1743,7 +1890,7 @@ span.vc_tta-title-text.display-none-accordion:after {
     margin-bottom: 0;
   }
 }
-.rider-hub-header-v2 .mk-text-block h1 {
+.rider-hub-header-v2 .mk-text-block h1, .black-bar-mobile-only .mk-text-block h1 {
   color: #fff;
 }
 .rider-hub-icon-row a {
@@ -1783,7 +1930,7 @@ span.vc_tta-title-text.display-none-accordion:after {
   padding: 0px;
 }
 .announcement-text-row.vc_inner.vc_row {
-  min-height: 320px;
+  min-height: 305px;
   background: black;
 }
 .announcement-text-row.vc_inner.vc_row .important-announce-text-cont {
@@ -1799,7 +1946,8 @@ span.vc_tta-title-text.display-none-accordion:after {
 @media screen and (min-width: 968px) {
   .announcement-text-row.vc_inner.vc_row {
     padding: 40px 15px;
-    margin-top: -75px;
+    padding-bottom: 5px;
+    margin-top: -160px;
     margin-left: 40px !important;
     margin-right: -15px !important;
   }
@@ -2070,6 +2218,22 @@ span.vc_tta-title-text.display-none-accordion:after {
     padding-left: initial;
   }
 }
+.fun-tool-kit {
+  margin-left: 33%;
+  margin-top: 30px;
+}
+@media screen and (max-width: 768px) {
+  .fun-tool-kit {
+    margin-left: auto;
+  }
+  .fun-tool-kit h2 {
+    margin-left: auto;
+    font-size: 24px !important;
+  }
+}
+.fun-tool-kit h2 {
+  color: #0075c9;
+}
 .fundraising-white-pg-section {
   padding: 3% 5%;
 }
@@ -2100,6 +2264,9 @@ span.vc_tta-title-text.display-none-accordion:after {
   .fundraising-gray-section .mk-text-block h2 {
     font-size: 1.93em;
   }
+}
+.donation-btn {
+  display: inline-block;
 }
 @media screen and (max-width: 768px) {
   .workplace-giving-pg-section {
@@ -2132,7 +2299,7 @@ span.vc_tta-title-text.display-none-accordion:after {
     font-size: 1.8em;
   }
 }
-.page-template-template-partners .btn-with-link-black a, .page-template-template-partners nav.menu-main_menu-container ul.mk-responsive-nav li.menu-button-links:nth-child(-n+3) a, nav.menu-main_menu-container ul.mk-responsive-nav .page-template-template-partners li.menu-button-links:nth-child(-n+3) a {
+.page-template-template-partners .btn-with-link-black a, .page-template-template-partners nav.menu-main_menu-container ul.mk-responsive-nav li.menu-button-links:nth-child(-n+3) a, nav.menu-main_menu-container ul.mk-responsive-nav .page-template-template-partners li.menu-button-links:nth-child(-n+3) a, .page-template-template-partners nav.menu-main_menu_french-container ul.mk-responsive-nav li.menu-button-links:nth-child(-n+3) a, nav.menu-main_menu_french-container ul.mk-responsive-nav .page-template-template-partners li.menu-button-links:nth-child(-n+3) a {
   font-family: "Futura LT Pro Heading", Helvetica, sans-serif !important;
 }
 .page-template-template-partners .wpb_column.vc_column_container.vc_col-sm-4 {
@@ -2143,22 +2310,55 @@ span.vc_tta-title-text.display-none-accordion:after {
   width: 50% !important;
   display: inline-block;
 }
-#top-teams {
+#top-teams, #top-fundraising, #mo-top-teams, #mo-top-fundraising {
   margin-left: 0px;
+  margin-top: 25px;
+  list-style-position: inside;
 }
 @media screen and (max-width: 939px) {
-  #top-teams {
+  #top-teams, #top-fundraising, #mo-top-teams, #mo-top-fundraising {
     text-align: center;
   }
 }
-#top-teams li {
-  list-style: none;
+#top-teams li, #top-fundraising li, #mo-top-teams li, #mo-top-fundraising li {
   margin-left: 0px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 16px;
 }
-#top-teams li:nth-child(even) {
-  font-weight: initial;
+#top-teams p, #top-fundraising p, #mo-top-teams p, #mo-top-fundraising p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.teams-container a {
+  text-align: center;
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+}
+.search-participants-col form, .search-teams-col form {
+  text-align: center;
+}
+.search-participants-col form input, .search-teams-col form input {
+  border: 2px solid #000;
+  min-width: 200px;
+}
+.search-participants-col form input:focus, .search-teams-col form input:focus {
+  border: 2px solid #0075c9;
+}
+.search-participants-col form button, .search-teams-col form button {
+  height: 40px;
+  vertical-align: top;
+  width: 50px;
+  background: transparent;
+  border: 2px solid #000;
+}
+.search-participants-col form button:hover, .search-teams-col form button:hover {
+  border-color: #0075c9;
+}
+.search-participants-col form button:hover i.fa .fa-search, .search-teams-col form button:hover i.fa .fa-search {
+  color: #0075c9;
 }
 .more {
   color: #0075c9;
@@ -2172,18 +2372,6 @@ span.vc_tta-title-text.display-none-accordion:after {
 @media screen and (max-width: 939px) {
   .teamraiser-header h4 {
     text-align: center;
-  }
-}
-.hr-line {
-  position: relative;
-  top: 90px;
-}
-.hr-line hr {
-  border: 2px solid #000;
-}
-@media screen and (max-width: 939px) {
-  .hr-line hr {
-    display: none;
   }
 }
 .elegant-tabs-container nav li a {
@@ -2212,46 +2400,61 @@ span.vc_tta-title-text.display-none-accordion:after {
   }
 }
 @media screen and (max-width: 782px) {
-  #support-header .pg-title p {
+  #support-header .pg-title p, #support-header .french-title p {
     font-size: 50px;
     padding: 0 5px;
   }
 }
 @media screen and (max-width: 768px) {
-  #support-header .pg-title p {
+  #support-header .pg-title p, #support-header .french-title p {
     font-size: 24px;
   }
 }
-#dollars-at-work-header .pg-title, #support-header .pg-title, #training-header .pg-title, #workplace-giving-header .pg-title, #programs-header .pg-title, #about-cancer-header .pg-title, .ride-as-team-header .pg-title, .rider-stories-header .pg-title, .media-header .pg-title, .impact-header .pg-title, .about-header .pg-title, .partners-header .pg-title, #fundraising-header .pg-title, #outfitters-header .pg-title {
+@media screen and (max-width: 400px) {
+  #support-header .pg-title p, #support-header .french-title p {
+    font-size: 6vw;
+  }
+}
+#dollars-at-work-header .pg-title, #dollars-at-work-header .french-title, #support-header .pg-title, #support-header .french-title, #training-header .pg-title, #training-header .french-title, #workplace-giving-header .pg-title, #workplace-giving-header .french-title, #programs-header .pg-title, #programs-header .french-title, #about-cancer-header .pg-title, .ride-as-team-header .pg-title, .ride-as-team-header .french-title, .rider-stories-header .pg-title, .rider-stories-header .french-title, .media-header .pg-title, .media-header .french-title, .impact-header .pg-title, .impact-header .french-title, .about-header .pg-title, .about-header .french-title, .partners-header .pg-title, .partners-header .french-title, #fundraising-header .pg-title, #fundraising-header .french-title, #outfitters-header .pg-title, #outfitters-header .french-title, #about-cancer-header .french-title {
   top: 486px;
 }
 @media screen and (max-width: 768px) {
-  .media-header .pg-title, .about-header .pg-title, .partners-header .pg-title, .impact-header .pg-title, .rider-stories-header .pg-title, #fundraising-header .pg-title, #outfitters-header .pg-title, #programs-header .pg-title {
+  .media-header .pg-title, .media-header .french-title, .about-header .pg-title, .about-header .french-title, .partners-header .pg-title, .partners-header .french-title, .impact-header .pg-title, .impact-header .french-title, .rider-stories-header .pg-title, .rider-stories-header .french-title, #fundraising-header .pg-title, #fundraising-header .french-title, #outfitters-header .pg-title, #outfitters-header .french-title, #programs-header .pg-title, #programs-header .french-title {
     bottom: -262px;
   }
-  .media-header .pg-title p, .about-header .pg-title p, .partners-header .pg-title p, .impact-header .pg-title p, .rider-stories-header .pg-title p, #fundraising-header .pg-title p, #outfitters-header .pg-title p, #programs-header .pg-title p {
+  .media-header .pg-title p, .media-header .french-title p, .about-header .pg-title p, .about-header .french-title p, .partners-header .pg-title p, .partners-header .french-title p, .impact-header .pg-title p, .impact-header .french-title p, .rider-stories-header .pg-title p, .rider-stories-header .french-title p, #fundraising-header .pg-title p, #fundraising-header .french-title p, #outfitters-header .pg-title p, #outfitters-header .french-title p, #programs-header .pg-title p, #programs-header .french-title p {
     font-size: 42px;
   }
 }
 @media screen and (max-width: 768px) {
-  .ride-as-team-header .pg-title {
+  .ride-as-team-header .pg-title, .ride-as-team-header .french-title {
     bottom: -268px;
   }
-  .ride-as-team-header .pg-title p {
+  .ride-as-team-header .pg-title p, .ride-as-team-header .french-title p {
     font-size: 33px;
   }
 }
 @media screen and (max-width: 400px) {
-  .ride-as-team-header .pg-title {
+  .ride-as-team-header .pg-title, .ride-as-team-header .french-title {
     bottom: -268px;
   }
-  .ride-as-team-header .pg-title p {
+  .ride-as-team-header .pg-title p, .ride-as-team-header .french-title p {
     font-size: 8.2vw;
   }
 }
+@media screen and (max-width: 1012px) {
+  #workplace-giving-header .pg-title p, #workplace-giving-header .french-title p {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #workplace-giving-header .pg-title p, #workplace-giving-header .french-title p {
+    font-size: 16px;
+  }
+}
 @media screen and (max-width: 400px) {
-  #support-header .pg-title p {
-    font-size: 6vw;
+  #workplace-giving-header .pg-title p, #workplace-giving-header .french-title p {
+    font-size: 4.2vw;
   }
 }
 .et-tabs nav a {
@@ -2274,4 +2477,66 @@ span.vc_tta-title-text.display-none-accordion:after {
 }
 .et-tabs .et-content-wrap section {
   padding-top: 0px;
+}
+.day-two-map {
+  display: none;
+}
+.english-btn {
+  display: none;
+}
+.french-btn, .english-btn {
+  border: none !important;
+  position: absolute !important;
+  top: -30px;
+  right: 80px;
+  z-index: 400;
+  list-style: none;
+}
+.french-btn a, .english-btn a {
+  font-family: "Futura LT Pro Body", Helvetica, sans-serif !important;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000;
+}
+.french-btn:hover, .english-btn:hover {
+  color: #0075c9;
+}
+@media screen and (max-width: 1140px) {
+  .french-btn, .english-btn {
+    top: -22px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .french-btn.menu-item.menu-item-type-custom.menu-item-object-custom.no-mega-menu, .english-btn.menu-item.menu-item-type-custom.menu-item-object-custom.no-mega-menu {
+    display: none !important;
+  }
+}
+.black-bar-mobile-only h1 {
+  color: #fff;
+  padding: 0 20px;
+}
+@media screen and (max-width: 400px) {
+  .black-bar-mobile-only h1 {
+    font-size: 27px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .black-bar-mobile-only {
+    display: block;
+  }
+}
+@media screen and (min-width: 769px) {
+  .black-bar-mobile-only {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .french-title {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) {
+  .french-title {
+    display: block;
+  }
 }
